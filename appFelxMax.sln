@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33920.266
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appFelxMax", "appFelxMax.csproj", "{B5F20D02-6A57-41D5-8C94-08C2783089BA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{720EF367-4095-42A8-97F7-C4CCBBCDE592} = {720EF367-4095-42A8-97F7-C4CCBBCDE592}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexMax_db", "..\FlexMax_db\FlexMax_db.csproj", "{720EF367-4095-42A8-97F7-C4CCBBCDE592}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5F20D02-6A57-41D5-8C94-08C2783089BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F20D02-6A57-41D5-8C94-08C2783089BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F20D02-6A57-41D5-8C94-08C2783089BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F20D02-6A57-41D5-8C94-08C2783089BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{720EF367-4095-42A8-97F7-C4CCBBCDE592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{720EF367-4095-42A8-97F7-C4CCBBCDE592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{720EF367-4095-42A8-97F7-C4CCBBCDE592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{720EF367-4095-42A8-97F7-C4CCBBCDE592}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27C27CB2-B2DD-44B7-BC62-68DA74E4E401}
+	EndGlobalSection
+EndGlobal

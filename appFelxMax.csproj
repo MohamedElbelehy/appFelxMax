@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5F20D02-6A57-41D5-8C94-08C2783089BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>appFelxMax</RootNamespace>
+    <AssemblyName>appFelxMax</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\FlexMax_db\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\FlexMax_db\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="appClass\clsDesign\clsUIDesign.cs" />
+    <Compile Include="appClass\clsProgOptions\clsCopyDetails.cs" />
+    <Compile Include="appForms\MenuForms\AccountForms\frmTreasure_MainCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmTreasure_MainCash.Designer.cs">
+      <DependentUpon>frmTreasure_MainCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\DuesForms\frmDues_Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\DuesForms\frmDues_Type.Designer.cs">
+      <DependentUpon>frmDues_Type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmBranch_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmBranch_Info.Designer.cs">
+      <DependentUpon>frmBranch_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmProduct_Group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmProduct_Group.Designer.cs">
+      <DependentUpon>frmProduct_Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmProduct_Section.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmProduct_Section.Designer.cs">
+      <DependentUpon>frmProduct_Section.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmStore_Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmStore_Init.Designer.cs">
+      <DependentUpon>frmStore_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmUnits.Designer.cs">
+      <DependentUpon>frmUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MainForms\frmCustVend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MainForms\frmCustVend.Designer.cs">
+      <DependentUpon>frmCustVend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MainForms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MainForms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MainForms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MainForms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\BillForms\frmSalesPOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\BillForms\frmSalesPOS.Designer.cs">
+      <DependentUpon>frmSalesPOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MainForms\TapPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="appForms\MainForms\TapPage.Designer.cs">
+      <DependentUpon>TapPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmCompanyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmCompanyInfo.Designer.cs">
+      <DependentUpon>frmCompanyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\FolderForms\frmCopyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\FolderForms\frmCopyInfo.Designer.cs">
+      <DependentUpon>frmCopyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\OtherForms\frmMasterPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\OtherForms\frmMasterPassword.Designer.cs">
+      <DependentUpon>frmMasterPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\OtherForms\frmNotifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\OtherForms\frmNotifications.Designer.cs">
+      <DependentUpon>frmNotifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\ServerForms\frmActivation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\ServerForms\frmActivation.Designer.cs">
+      <DependentUpon>frmActivation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\ServerForms\frmServerSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\ServerForms\frmServerSettings.Designer.cs">
+      <DependentUpon>frmServerSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmAdd_Cust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmAdd_Cust.Designer.cs">
+      <DependentUpon>frmAdd_Cust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmAdd_Vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmAdd_Vendor.Designer.cs">
+      <DependentUpon>frmAdd_Vendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\SubForms\frmDeliveryInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\SubForms\frmDeliveryInfo.Designer.cs">
+      <DependentUpon>frmDeliveryInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\SubForms\frmInstallment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\SubForms\frmInstallment.Designer.cs">
+      <DependentUpon>frmInstallment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmRadio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmRadio.Designer.cs">
+      <DependentUpon>frmRadio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmTreasure_MainCash.resx">
+      <DependentUpon>frmTreasure_MainCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\DuesForms\frmDues_Type.resx">
+      <DependentUpon>frmDues_Type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmBranch_Info.resx">
+      <DependentUpon>frmBranch_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmProduct_Group.resx">
+      <DependentUpon>frmProduct_Group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmProduct_Section.resx">
+      <DependentUpon>frmProduct_Section.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmStore_Init.resx">
+      <DependentUpon>frmStore_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmUnits.resx">
+      <DependentUpon>frmUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MainForms\frmCustVend.resx">
+      <DependentUpon>frmCustVend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MainForms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MainForms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\BillForms\frmSalesPOS.resx">
+      <DependentUpon>frmSalesPOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MainForms\TapPage.resx">
+      <DependentUpon>TapPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmCompanyInfo.resx">
+      <DependentUpon>frmCompanyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\FolderForms\frmCopyInfo.resx">
+      <DependentUpon>frmCopyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\OtherForms\frmMasterPassword.resx">
+      <DependentUpon>frmMasterPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\OtherForms\frmNotifications.resx">
+      <DependentUpon>frmNotifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\ServerForms\frmActivation.resx">
+      <DependentUpon>frmActivation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\ServerForms\frmServerSettings.resx">
+      <DependentUpon>frmServerSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmAdd_Cust.resx">
+      <DependentUpon>frmAdd_Cust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmAdd_Vendor.resx">
+      <DependentUpon>frmAdd_Vendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\SubForms\frmDeliveryInfo.resx">
+      <DependentUpon>frmDeliveryInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\SubForms\frmInstallment.resx">
+      <DependentUpon>frmInstallment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmRadio.resx">
+      <DependentUpon>frmRadio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\FolderColor.png" />
+    <None Include="Resources\LogoutColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="appReports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FlexMax_db\FlexMax_db.csproj">
+      <Project>{720ef367-4095-42a8-97f7-c4ccbbcde592}</Project>
+      <Name>FlexMax_db</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddProductColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdminB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdminS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdminW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlarmB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlarmColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlarmS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlarmW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AttachB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AttachColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AttachS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AttachW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BankB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BankS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BankW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BarcodeB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BarcodeColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BarcodeS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BarcodeW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalendarB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalendarColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalendarS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalendarW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClockB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClockS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClockW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloudsColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConnectionColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CopyColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeliveryB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeliveryS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeliveryW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoneB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoneS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoneW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DownloadBackupB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DownloadBackupColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DownloadBackupS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DownloadBackupW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmptyBoxB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmptyBoxS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmptyBoxW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EuroB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EuroColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EuroS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EuroW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExcelB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExcelColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExcelS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExcelW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExpireB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExpireS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExpireW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExportBackupColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File2B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File2Color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File2S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File2W.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FileB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FileColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FileS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FileW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FingerprintColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FolderB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FolderS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FolderW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HDDColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HelpColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedgerColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotherboardColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NetworkCardColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoSyncB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoSyncS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoSyncW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasswordB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasswordS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasswordW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PauseB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PauseS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PauseW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDFB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDFS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDFW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrinterColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrinterS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrinterW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PuaseColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReloadB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReloadS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReloadW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServerColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettingsB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettingsS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettingsW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShortfallsB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShortfallsS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShortfallsW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignautreResetColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StoreB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StoreS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StoreW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SyncB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SyncS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SyncW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnitColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User1Color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User2Color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User3Color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserGroup1Color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserGroup2Color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserNameB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserNameS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserNameW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettingsColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
