@@ -190,15 +190,15 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             this.textBox1.Location = new System.Drawing.Point(490, 34);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(389, 30);
+            this.textBox1.Size = new System.Drawing.Size(389, 36);
             this.textBox1.TabIndex = 21;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(382, 34);
+            this.checkBox1.Location = new System.Drawing.Point(358, 34);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(102, 26);
+            this.checkBox1.Size = new System.Drawing.Size(126, 33);
             this.checkBox1.TabIndex = 22;
             this.checkBox1.Text = "الأرقام المسلسلة";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -206,14 +206,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(6, 34);
+            this.comboBox1.Location = new System.Drawing.Point(618, 76);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(370, 30);
+            this.comboBox1.Size = new System.Drawing.Size(370, 37);
             this.comboBox1.TabIndex = 23;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(885, 67);
+            this.label2.Location = new System.Drawing.Point(509, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 33);
             this.label2.TabIndex = 24;
@@ -223,14 +223,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(6, 70);
+            this.comboBox2.Location = new System.Drawing.Point(115, 119);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(873, 30);
+            this.comboBox2.Size = new System.Drawing.Size(873, 37);
             this.comboBox2.TabIndex = 25;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(885, 103);
+            this.label3.Location = new System.Drawing.Point(6, 116);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 33);
             this.label3.TabIndex = 26;
@@ -240,14 +240,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(6, 106);
+            this.comboBox3.Location = new System.Drawing.Point(115, 162);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(873, 30);
+            this.comboBox3.Size = new System.Drawing.Size(873, 37);
             this.comboBox3.TabIndex = 27;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(885, 139);
+            this.label4.Location = new System.Drawing.Point(6, 159);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 33);
             this.label4.TabIndex = 28;
@@ -256,14 +256,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(6, 142);
+            this.textBox2.Location = new System.Drawing.Point(115, 205);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(873, 30);
+            this.textBox2.Size = new System.Drawing.Size(873, 36);
             this.textBox2.TabIndex = 29;
             // 
             // checkBox2
             // 
-            this.checkBox2.Location = new System.Drawing.Point(886, 178);
+            this.checkBox2.Location = new System.Drawing.Point(7, 205);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(102, 26);
             this.checkBox2.TabIndex = 30;
@@ -279,14 +279,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.comboBox4.Items.AddRange(new object[] {
             "نشط",
             "غير نشط"});
-            this.comboBox4.Location = new System.Drawing.Point(490, 178);
+            this.comboBox4.Location = new System.Drawing.Point(598, 247);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(390, 30);
+            this.comboBox4.Size = new System.Drawing.Size(390, 37);
             this.comboBox4.TabIndex = 31;
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(381, 175);
+            this.label6.Location = new System.Drawing.Point(489, 244);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 33);
             this.label6.TabIndex = 32;
@@ -295,15 +295,15 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 178);
+            this.textBox3.Location = new System.Drawing.Point(114, 247);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(369, 30);
+            this.textBox3.Size = new System.Drawing.Size(369, 36);
             this.textBox3.TabIndex = 33;
             // 
             // label15
             // 
             this.label15.BackColor = System.Drawing.Color.LightGray;
-            this.label15.Location = new System.Drawing.Point(6, 211);
+            this.label15.Location = new System.Drawing.Point(6, 287);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(982, 31);
             this.label15.TabIndex = 64;
@@ -312,7 +312,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // label16
             // 
-            this.label16.Location = new System.Drawing.Point(885, 242);
+            this.label16.Location = new System.Drawing.Point(885, 318);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(103, 33);
             this.label16.TabIndex = 65;
@@ -321,14 +321,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(749, 245);
+            this.textBox11.Location = new System.Drawing.Point(749, 321);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(130, 30);
+            this.textBox11.Size = new System.Drawing.Size(130, 36);
             this.textBox11.TabIndex = 66;
             // 
             // label17
             // 
-            this.label17.Location = new System.Drawing.Point(640, 242);
+            this.label17.Location = new System.Drawing.Point(640, 318);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(103, 33);
             this.label17.TabIndex = 67;
@@ -337,14 +337,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(504, 245);
+            this.textBox12.Location = new System.Drawing.Point(504, 321);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(130, 30);
+            this.textBox12.Size = new System.Drawing.Size(130, 36);
             this.textBox12.TabIndex = 68;
             // 
             // label18
             // 
-            this.label18.Location = new System.Drawing.Point(395, 242);
+            this.label18.Location = new System.Drawing.Point(395, 318);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(103, 33);
             this.label18.TabIndex = 69;
@@ -353,14 +353,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(259, 245);
+            this.textBox13.Location = new System.Drawing.Point(259, 321);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(130, 30);
+            this.textBox13.Size = new System.Drawing.Size(130, 36);
             this.textBox13.TabIndex = 70;
             // 
             // label19
             // 
-            this.label19.Location = new System.Drawing.Point(150, 242);
+            this.label19.Location = new System.Drawing.Point(150, 318);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(103, 33);
             this.label19.TabIndex = 71;
@@ -369,14 +369,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(6, 245);
+            this.textBox14.Location = new System.Drawing.Point(6, 321);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(138, 30);
+            this.textBox14.Size = new System.Drawing.Size(138, 36);
             this.textBox14.TabIndex = 72;
             // 
             // label20
             // 
-            this.label20.Location = new System.Drawing.Point(885, 278);
+            this.label20.Location = new System.Drawing.Point(885, 360);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(103, 33);
             this.label20.TabIndex = 73;
@@ -385,14 +385,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(749, 281);
+            this.textBox15.Location = new System.Drawing.Point(749, 363);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(130, 30);
+            this.textBox15.Size = new System.Drawing.Size(130, 36);
             this.textBox15.TabIndex = 74;
             // 
             // label21
             // 
-            this.label21.Location = new System.Drawing.Point(640, 278);
+            this.label21.Location = new System.Drawing.Point(640, 360);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(103, 33);
             this.label21.TabIndex = 75;
@@ -401,14 +401,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox16
             // 
-            this.textBox16.Location = new System.Drawing.Point(504, 281);
+            this.textBox16.Location = new System.Drawing.Point(504, 363);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(130, 30);
+            this.textBox16.Size = new System.Drawing.Size(130, 36);
             this.textBox16.TabIndex = 76;
             // 
             // label22
             // 
-            this.label22.Location = new System.Drawing.Point(395, 278);
+            this.label22.Location = new System.Drawing.Point(395, 360);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(103, 33);
             this.label22.TabIndex = 77;
@@ -417,14 +417,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox17
             // 
-            this.textBox17.Location = new System.Drawing.Point(259, 281);
+            this.textBox17.Location = new System.Drawing.Point(259, 363);
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(130, 30);
+            this.textBox17.Size = new System.Drawing.Size(130, 36);
             this.textBox17.TabIndex = 78;
             // 
             // label23
             // 
-            this.label23.Location = new System.Drawing.Point(150, 278);
+            this.label23.Location = new System.Drawing.Point(150, 360);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(103, 33);
             this.label23.TabIndex = 79;
@@ -433,9 +433,9 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(6, 281);
+            this.textBox18.Location = new System.Drawing.Point(6, 363);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(138, 30);
+            this.textBox18.Size = new System.Drawing.Size(138, 36);
             this.textBox18.TabIndex = 80;
             // 
             // flowLayoutPanel2
@@ -522,7 +522,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(504, 35);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(375, 30);
+            this.comboBox5.Size = new System.Drawing.Size(375, 37);
             this.comboBox5.TabIndex = 67;
             // 
             // label9
@@ -538,12 +538,12 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             this.textBox4.Location = new System.Drawing.Point(6, 35);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(383, 30);
+            this.textBox4.Size = new System.Drawing.Size(383, 36);
             this.textBox4.TabIndex = 69;
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(885, 68);
+            this.label10.Location = new System.Drawing.Point(885, 75);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(103, 33);
             this.label10.TabIndex = 81;
@@ -552,14 +552,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(749, 71);
+            this.textBox5.Location = new System.Drawing.Point(749, 78);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(130, 30);
+            this.textBox5.Size = new System.Drawing.Size(130, 36);
             this.textBox5.TabIndex = 82;
             // 
             // label11
             // 
-            this.label11.Location = new System.Drawing.Point(640, 68);
+            this.label11.Location = new System.Drawing.Point(640, 75);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(103, 33);
             this.label11.TabIndex = 83;
@@ -568,14 +568,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(504, 71);
+            this.textBox6.Location = new System.Drawing.Point(504, 78);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(130, 30);
+            this.textBox6.Size = new System.Drawing.Size(130, 36);
             this.textBox6.TabIndex = 84;
             // 
             // label12
             // 
-            this.label12.Location = new System.Drawing.Point(395, 68);
+            this.label12.Location = new System.Drawing.Point(395, 75);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(103, 33);
             this.label12.TabIndex = 85;
@@ -584,14 +584,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(259, 71);
+            this.textBox7.Location = new System.Drawing.Point(259, 78);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(130, 30);
+            this.textBox7.Size = new System.Drawing.Size(130, 36);
             this.textBox7.TabIndex = 86;
             // 
             // label13
             // 
-            this.label13.Location = new System.Drawing.Point(150, 68);
+            this.label13.Location = new System.Drawing.Point(150, 75);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(103, 33);
             this.label13.TabIndex = 87;
@@ -600,14 +600,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(6, 71);
+            this.textBox8.Location = new System.Drawing.Point(6, 78);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(138, 30);
+            this.textBox8.Size = new System.Drawing.Size(138, 36);
             this.textBox8.TabIndex = 88;
             // 
             // label14
             // 
-            this.label14.Location = new System.Drawing.Point(885, 104);
+            this.label14.Location = new System.Drawing.Point(885, 117);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(103, 33);
             this.label14.TabIndex = 89;
@@ -616,14 +616,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(749, 107);
+            this.textBox9.Location = new System.Drawing.Point(749, 120);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(130, 30);
+            this.textBox9.Size = new System.Drawing.Size(130, 36);
             this.textBox9.TabIndex = 90;
             // 
             // label24
             // 
-            this.label24.Location = new System.Drawing.Point(640, 104);
+            this.label24.Location = new System.Drawing.Point(640, 117);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(103, 33);
             this.label24.TabIndex = 91;
@@ -632,14 +632,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(504, 107);
+            this.textBox10.Location = new System.Drawing.Point(504, 120);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(130, 30);
+            this.textBox10.Size = new System.Drawing.Size(130, 36);
             this.textBox10.TabIndex = 92;
             // 
             // label25
             // 
-            this.label25.Location = new System.Drawing.Point(395, 104);
+            this.label25.Location = new System.Drawing.Point(395, 117);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(103, 33);
             this.label25.TabIndex = 93;
@@ -648,14 +648,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox19
             // 
-            this.textBox19.Location = new System.Drawing.Point(259, 107);
+            this.textBox19.Location = new System.Drawing.Point(259, 120);
             this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(130, 30);
+            this.textBox19.Size = new System.Drawing.Size(130, 36);
             this.textBox19.TabIndex = 94;
             // 
             // label26
             // 
-            this.label26.Location = new System.Drawing.Point(150, 104);
+            this.label26.Location = new System.Drawing.Point(150, 117);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(103, 33);
             this.label26.TabIndex = 95;
@@ -664,14 +664,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(6, 107);
+            this.textBox20.Location = new System.Drawing.Point(6, 120);
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(138, 30);
+            this.textBox20.Size = new System.Drawing.Size(138, 36);
             this.textBox20.TabIndex = 96;
             // 
             // label27
             // 
-            this.label27.Location = new System.Drawing.Point(885, 140);
+            this.label27.Location = new System.Drawing.Point(885, 159);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(103, 33);
             this.label27.TabIndex = 97;
@@ -681,14 +681,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // comboBox6
             // 
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(504, 143);
+            this.comboBox6.Location = new System.Drawing.Point(504, 162);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(375, 30);
+            this.comboBox6.Size = new System.Drawing.Size(375, 37);
             this.comboBox6.TabIndex = 98;
             // 
             // label28
             // 
-            this.label28.Location = new System.Drawing.Point(395, 140);
+            this.label28.Location = new System.Drawing.Point(395, 159);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(103, 33);
             this.label28.TabIndex = 99;
@@ -697,14 +697,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(6, 143);
+            this.textBox21.Location = new System.Drawing.Point(6, 162);
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(383, 30);
+            this.textBox21.Size = new System.Drawing.Size(383, 36);
             this.textBox21.TabIndex = 100;
             // 
             // label29
             // 
-            this.label29.Location = new System.Drawing.Point(885, 176);
+            this.label29.Location = new System.Drawing.Point(885, 202);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(103, 33);
             this.label29.TabIndex = 101;
@@ -713,14 +713,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox22
             // 
-            this.textBox22.Location = new System.Drawing.Point(749, 179);
+            this.textBox22.Location = new System.Drawing.Point(749, 205);
             this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(130, 30);
+            this.textBox22.Size = new System.Drawing.Size(130, 36);
             this.textBox22.TabIndex = 102;
             // 
             // label30
             // 
-            this.label30.Location = new System.Drawing.Point(640, 176);
+            this.label30.Location = new System.Drawing.Point(640, 202);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(103, 33);
             this.label30.TabIndex = 103;
@@ -729,14 +729,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox23
             // 
-            this.textBox23.Location = new System.Drawing.Point(504, 179);
+            this.textBox23.Location = new System.Drawing.Point(504, 205);
             this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(130, 30);
+            this.textBox23.Size = new System.Drawing.Size(130, 36);
             this.textBox23.TabIndex = 104;
             // 
             // label31
             // 
-            this.label31.Location = new System.Drawing.Point(395, 176);
+            this.label31.Location = new System.Drawing.Point(395, 202);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(103, 33);
             this.label31.TabIndex = 105;
@@ -745,14 +745,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox24
             // 
-            this.textBox24.Location = new System.Drawing.Point(259, 179);
+            this.textBox24.Location = new System.Drawing.Point(259, 205);
             this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(130, 30);
+            this.textBox24.Size = new System.Drawing.Size(130, 36);
             this.textBox24.TabIndex = 106;
             // 
             // label32
             // 
-            this.label32.Location = new System.Drawing.Point(150, 176);
+            this.label32.Location = new System.Drawing.Point(150, 202);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(103, 33);
             this.label32.TabIndex = 107;
@@ -761,14 +761,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox25
             // 
-            this.textBox25.Location = new System.Drawing.Point(6, 179);
+            this.textBox25.Location = new System.Drawing.Point(6, 205);
             this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(138, 30);
+            this.textBox25.Size = new System.Drawing.Size(138, 36);
             this.textBox25.TabIndex = 108;
             // 
             // label33
             // 
-            this.label33.Location = new System.Drawing.Point(885, 212);
+            this.label33.Location = new System.Drawing.Point(885, 244);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(103, 33);
             this.label33.TabIndex = 109;
@@ -777,14 +777,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox26
             // 
-            this.textBox26.Location = new System.Drawing.Point(749, 215);
+            this.textBox26.Location = new System.Drawing.Point(749, 247);
             this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(130, 30);
+            this.textBox26.Size = new System.Drawing.Size(130, 36);
             this.textBox26.TabIndex = 110;
             // 
             // label34
             // 
-            this.label34.Location = new System.Drawing.Point(640, 212);
+            this.label34.Location = new System.Drawing.Point(640, 244);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(103, 33);
             this.label34.TabIndex = 111;
@@ -793,14 +793,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox27
             // 
-            this.textBox27.Location = new System.Drawing.Point(504, 215);
+            this.textBox27.Location = new System.Drawing.Point(504, 247);
             this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(130, 30);
+            this.textBox27.Size = new System.Drawing.Size(130, 36);
             this.textBox27.TabIndex = 112;
             // 
             // label35
             // 
-            this.label35.Location = new System.Drawing.Point(395, 212);
+            this.label35.Location = new System.Drawing.Point(395, 244);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(103, 33);
             this.label35.TabIndex = 113;
@@ -809,14 +809,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox28
             // 
-            this.textBox28.Location = new System.Drawing.Point(259, 215);
+            this.textBox28.Location = new System.Drawing.Point(259, 247);
             this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(130, 30);
+            this.textBox28.Size = new System.Drawing.Size(130, 36);
             this.textBox28.TabIndex = 114;
             // 
             // label36
             // 
-            this.label36.Location = new System.Drawing.Point(150, 212);
+            this.label36.Location = new System.Drawing.Point(150, 244);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(103, 33);
             this.label36.TabIndex = 115;
@@ -825,14 +825,14 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // textBox29
             // 
-            this.textBox29.Location = new System.Drawing.Point(6, 215);
+            this.textBox29.Location = new System.Drawing.Point(6, 247);
             this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(138, 30);
+            this.textBox29.Size = new System.Drawing.Size(138, 36);
             this.textBox29.TabIndex = 116;
             // 
             // frmProduct_Card
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(991, 636);

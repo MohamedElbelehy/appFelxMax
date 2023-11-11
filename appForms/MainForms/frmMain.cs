@@ -221,5 +221,10 @@ namespace appFelxMax.appForms.MainForms
             frmCopyInfo frmCopyInfo = new frmCopyInfo();
             frmCopyInfo.ShowDialog();
         }
+
+        private void mnsItems_Click(object sender, EventArgs e)
+        {
+            appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmProduct_Card(), pnlTools, pnlMiddle);
+        }
     }
 }
