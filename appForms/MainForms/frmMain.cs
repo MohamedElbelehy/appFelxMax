@@ -160,7 +160,7 @@ namespace appFelxMax.appForms.MainForms
 
         private void btnCustomers_Click(object sender, EventArgs e)
         {
-            appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmCustVend(), pnlTools, pnlMiddle);
+            //appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmCustVend(), pnlTools, pnlMiddle);
         }
 
         private void btnOperations_Click(object sender, EventArgs e)
@@ -214,6 +214,12 @@ namespace appFelxMax.appForms.MainForms
         {
             appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmStore_Init(), pnlTools, pnlMiddle);
 
+        }
+
+        private void mnuCopyDetails_Click(object sender, EventArgs e)
+        {
+            frmCopyInfo frmCopyInfo = new frmCopyInfo();
+            frmCopyInfo.ShowDialog();
         }
     }
 }

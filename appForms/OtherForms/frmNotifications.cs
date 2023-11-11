@@ -101,19 +101,19 @@ namespace appFelxMax.appForms.OtherForms
             switch (type)
             {
                 case enmType.vSuccess:
-                 //   this.picIcon.Image = Resources.SuccessW;
+                    this.picIcon.Image = Resources.SuccessW;
                     this.BackColor = Color.SeaGreen;
                     break;
                 case enmType.vError:
-                  //  this.picIcon.Image = Resources.ErrorCloudW;
+                    this.picIcon.Image = Resources.ErrorW;
                     this.BackColor = Color.DarkRed;
                     break;
                 case enmType.vInfo:
-                  //  this.picIcon.Image = Resources.InfoW;
+                    this.picIcon.Image = Resources.InfoW;
                     this.BackColor = Color.RoyalBlue;
                     break;
                 case enmType.vWarning:
-                 //   this.picIcon.Image = Resources.WarningW;
+                    this.picIcon.Image = Resources.WarrningW;
                     this.BackColor = Color.DarkOrange;
                     break;
             }

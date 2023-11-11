@@ -32,27 +32,23 @@ namespace appFelxMax.appForms.MainForms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.mnsMain = new System.Windows.Forms.MenuStrip();
             this.mnsFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCopyDetails = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuLogout = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsProgramReset = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsCompanyInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsBranchInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsSotre_Init = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsItemsCatagory = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsProduct_Group = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsProduct_Sections = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsItems = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsUnits = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsOperationsSet = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsSotre_Init = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBills = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuSalesBill = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPruchasesBill = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuReturnsBill = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuDestroyedBill = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuDues = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuDues_Type = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuDues_Manage = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuDues_Account = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuDues_History = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuShow = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsShowSalesBills = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsShowPruchasesBills = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,11 +57,12 @@ namespace appFelxMax.appForms.MainForms
             this.mnuAccounts = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuClinets = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuVendors = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuExpenses = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsNewExpenses = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsExpensesLog = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuTreasures = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuTreasure_MainCash = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBanks = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuLedger = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuAccountOperations = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuEmp = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAttendance = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuNewEmp = new System.Windows.Forms.ToolStripMenuItem();
@@ -73,6 +70,8 @@ namespace appFelxMax.appForms.MainForms
             this.mnuStores = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuItems = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuNotify = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsItemsLimit = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsExpireDate = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsItemTransfer = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsBranshTransfer = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuReports = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,10 +80,7 @@ namespace appFelxMax.appForms.MainForms
             this.mnuPrinterSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBackup = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsStoresSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsSYNC = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsActSync = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsDisSYNC = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAdmin = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHistory = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsFeatures = new System.Windows.Forms.ToolStripMenuItem();
@@ -98,7 +94,6 @@ namespace appFelxMax.appForms.MainForms
             this.pnlGeneral = new System.Windows.Forms.Panel();
             this.btnGeneral = new System.Windows.Forms.Button();
             this.pnlAccounting = new System.Windows.Forms.Panel();
-            this.btnOperations = new System.Windows.Forms.Button();
             this.btnVendor = new System.Windows.Forms.Button();
             this.btnCustomers = new System.Windows.Forms.Button();
             this.btnAccounts = new System.Windows.Forms.Button();
@@ -132,7 +127,6 @@ namespace appFelxMax.appForms.MainForms
             this.mnsFile,
             this.mnsProgramReset,
             this.mnuBills,
-            this.mnuDues,
             this.mnuShow,
             this.mnuAccounts,
             this.mnuEmp,
@@ -143,21 +137,32 @@ namespace appFelxMax.appForms.MainForms
             this.mnuAdmin});
             this.mnsMain.Location = new System.Drawing.Point(0, 0);
             this.mnsMain.Name = "mnsMain";
-            this.mnsMain.Size = new System.Drawing.Size(1210, 37);
+            this.mnsMain.Size = new System.Drawing.Size(1212, 30);
             this.mnsMain.TabIndex = 0;
             // 
             // mnsFile
             // 
             this.mnsFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuCopyDetails,
             this.mnuLogout});
+            this.mnsFile.Image = global::appFelxMax.Properties.Resources.FolderColor;
             this.mnsFile.Name = "mnsFile";
-            this.mnsFile.Size = new System.Drawing.Size(70, 33);
+            this.mnsFile.Size = new System.Drawing.Size(61, 26);
             this.mnsFile.Text = "ملف";
+            // 
+            // mnuCopyDetails
+            // 
+            this.mnuCopyDetails.Image = global::appFelxMax.Properties.Resources.HelpColor;
+            this.mnuCopyDetails.Name = "mnuCopyDetails";
+            this.mnuCopyDetails.Size = new System.Drawing.Size(143, 26);
+            this.mnuCopyDetails.Text = "بيانات النسخة";
+            this.mnuCopyDetails.Click += new System.EventHandler(this.mnuCopyDetails_Click);
             // 
             // mnuLogout
             // 
+            this.mnuLogout.Image = global::appFelxMax.Properties.Resources.LogoutColor;
             this.mnuLogout.Name = "mnuLogout";
-            this.mnuLogout.Size = new System.Drawing.Size(168, 34);
+            this.mnuLogout.Size = new System.Drawing.Size(143, 26);
             this.mnuLogout.Text = "تسجيل خروج";
             this.mnuLogout.Click += new System.EventHandler(this.mnuLogout_Click);
             // 
@@ -166,78 +171,88 @@ namespace appFelxMax.appForms.MainForms
             this.mnsProgramReset.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnsCompanyInfo,
             this.mnsBranchInfo,
+            this.mnsSotre_Init,
             this.mnsItemsCatagory,
             this.mnsItems,
             this.mnsUnits,
-            this.mnsOperationsSet,
-            this.mnsSotre_Init});
+            this.mnsOperationsSet});
+            this.mnsProgramReset.Image = global::appFelxMax.Properties.Resources.AttachColor;
             this.mnsProgramReset.Name = "mnsProgramReset";
-            this.mnsProgramReset.Size = new System.Drawing.Size(115, 33);
+            this.mnsProgramReset.Size = new System.Drawing.Size(99, 26);
             this.mnsProgramReset.Text = "تهيئة البرنامج";
             // 
             // mnsCompanyInfo
             // 
+            this.mnsCompanyInfo.Image = global::appFelxMax.Properties.Resources.WindowColor;
             this.mnsCompanyInfo.Name = "mnsCompanyInfo";
-            this.mnsCompanyInfo.Size = new System.Drawing.Size(231, 34);
+            this.mnsCompanyInfo.Size = new System.Drawing.Size(192, 26);
             this.mnsCompanyInfo.Text = "بيانات المؤسسة";
             this.mnsCompanyInfo.Click += new System.EventHandler(this.mnsCompanyInfo_Click);
             // 
             // mnsBranchInfo
             // 
+            this.mnsBranchInfo.Image = global::appFelxMax.Properties.Resources.StoreColor;
             this.mnsBranchInfo.Name = "mnsBranchInfo";
-            this.mnsBranchInfo.Size = new System.Drawing.Size(231, 34);
-            this.mnsBranchInfo.Text = "بيانات الفرع";
+            this.mnsBranchInfo.Size = new System.Drawing.Size(192, 26);
+            this.mnsBranchInfo.Text = "تعريف الفرع";
             this.mnsBranchInfo.Click += new System.EventHandler(this.mnsBranchInfo_Click);
+            // 
+            // mnsSotre_Init
+            // 
+            this.mnsSotre_Init.Image = global::appFelxMax.Properties.Resources.TrolleyColor;
+            this.mnsSotre_Init.Name = "mnsSotre_Init";
+            this.mnsSotre_Init.Size = new System.Drawing.Size(192, 26);
+            this.mnsSotre_Init.Text = "تعريف المخازن";
+            this.mnsSotre_Init.Click += new System.EventHandler(this.mnsSotre_Init_Click);
             // 
             // mnsItemsCatagory
             // 
             this.mnsItemsCatagory.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnsProduct_Group,
             this.mnsProduct_Sections});
+            this.mnsItemsCatagory.Image = ((System.Drawing.Image)(resources.GetObject("mnsItemsCatagory.Image")));
             this.mnsItemsCatagory.Name = "mnsItemsCatagory";
-            this.mnsItemsCatagory.Size = new System.Drawing.Size(231, 34);
+            this.mnsItemsCatagory.Size = new System.Drawing.Size(192, 26);
             this.mnsItemsCatagory.Text = "تعريف مجموعات الاصناف";
             this.mnsItemsCatagory.Click += new System.EventHandler(this.mnsItemsCatagory_Click);
             // 
             // mnsProduct_Group
             // 
+            this.mnsProduct_Group.Image = global::appFelxMax.Properties.Resources.AddGroup;
             this.mnsProduct_Group.Name = "mnsProduct_Group";
-            this.mnsProduct_Group.Size = new System.Drawing.Size(195, 34);
+            this.mnsProduct_Group.Size = new System.Drawing.Size(162, 26);
             this.mnsProduct_Group.Text = "تعريف المجموعات";
             this.mnsProduct_Group.Click += new System.EventHandler(this.mnsProduct_Group_Click);
             // 
             // mnsProduct_Sections
             // 
+            this.mnsProduct_Sections.Image = global::appFelxMax.Properties.Resources.AddListColor;
             this.mnsProduct_Sections.Name = "mnsProduct_Sections";
-            this.mnsProduct_Sections.Size = new System.Drawing.Size(195, 34);
+            this.mnsProduct_Sections.Size = new System.Drawing.Size(162, 26);
             this.mnsProduct_Sections.Text = "تعريف الاقسام";
             this.mnsProduct_Sections.Click += new System.EventHandler(this.mnsProduct_Sections_Click);
             // 
             // mnsItems
             // 
+            this.mnsItems.Image = ((System.Drawing.Image)(resources.GetObject("mnsItems.Image")));
             this.mnsItems.Name = "mnsItems";
-            this.mnsItems.Size = new System.Drawing.Size(231, 34);
+            this.mnsItems.Size = new System.Drawing.Size(192, 26);
             this.mnsItems.Text = "تعريف الاصناف";
             // 
             // mnsUnits
             // 
+            this.mnsUnits.Image = global::appFelxMax.Properties.Resources.UnitColor;
             this.mnsUnits.Name = "mnsUnits";
-            this.mnsUnits.Size = new System.Drawing.Size(231, 34);
+            this.mnsUnits.Size = new System.Drawing.Size(192, 26);
             this.mnsUnits.Text = "تعريف الوحدات";
             this.mnsUnits.Click += new System.EventHandler(this.mnsUnits_Click);
             // 
             // mnsOperationsSet
             // 
+            this.mnsOperationsSet.Image = global::appFelxMax.Properties.Resources.EuroColor;
             this.mnsOperationsSet.Name = "mnsOperationsSet";
-            this.mnsOperationsSet.Size = new System.Drawing.Size(231, 34);
+            this.mnsOperationsSet.Size = new System.Drawing.Size(192, 26);
             this.mnsOperationsSet.Text = "تعريف العمليات";
-            // 
-            // mnsSotre_Init
-            // 
-            this.mnsSotre_Init.Name = "mnsSotre_Init";
-            this.mnsSotre_Init.Size = new System.Drawing.Size(231, 34);
-            this.mnsSotre_Init.Text = "تعريف المخازن";
-            this.mnsSotre_Init.Click += new System.EventHandler(this.mnsSotre_Init_Click);
             // 
             // mnuBills
             // 
@@ -246,70 +261,39 @@ namespace appFelxMax.appForms.MainForms
             this.mnuPruchasesBill,
             this.mnuReturnsBill,
             this.mnuDestroyedBill});
+            this.mnuBills.Image = global::appFelxMax.Properties.Resources.File2Color;
             this.mnuBills.Name = "mnuBills";
-            this.mnuBills.Size = new System.Drawing.Size(83, 33);
+            this.mnuBills.Size = new System.Drawing.Size(73, 26);
             this.mnuBills.Text = "الفواتير";
             // 
             // mnuSalesBill
             // 
+            this.mnuSalesBill.Image = ((System.Drawing.Image)(resources.GetObject("mnuSalesBill.Image")));
             this.mnuSalesBill.Name = "mnuSalesBill";
-            this.mnuSalesBill.Size = new System.Drawing.Size(183, 34);
+            this.mnuSalesBill.Size = new System.Drawing.Size(150, 26);
             this.mnuSalesBill.Text = "فاتورة مبيعات";
             this.mnuSalesBill.Click += new System.EventHandler(this.mnuSalesBill_Click);
             // 
             // mnuPruchasesBill
             // 
+            this.mnuPruchasesBill.Image = ((System.Drawing.Image)(resources.GetObject("mnuPruchasesBill.Image")));
             this.mnuPruchasesBill.Name = "mnuPruchasesBill";
-            this.mnuPruchasesBill.Size = new System.Drawing.Size(183, 34);
+            this.mnuPruchasesBill.Size = new System.Drawing.Size(150, 26);
             this.mnuPruchasesBill.Text = "فاتورة مشتريات";
             // 
             // mnuReturnsBill
             // 
+            this.mnuReturnsBill.Image = ((System.Drawing.Image)(resources.GetObject("mnuReturnsBill.Image")));
             this.mnuReturnsBill.Name = "mnuReturnsBill";
-            this.mnuReturnsBill.Size = new System.Drawing.Size(183, 34);
+            this.mnuReturnsBill.Size = new System.Drawing.Size(150, 26);
             this.mnuReturnsBill.Text = "فاتورة مرتجعات";
             // 
             // mnuDestroyedBill
             // 
+            this.mnuDestroyedBill.Image = ((System.Drawing.Image)(resources.GetObject("mnuDestroyedBill.Image")));
             this.mnuDestroyedBill.Name = "mnuDestroyedBill";
-            this.mnuDestroyedBill.Size = new System.Drawing.Size(183, 34);
+            this.mnuDestroyedBill.Size = new System.Drawing.Size(150, 26);
             this.mnuDestroyedBill.Text = "فاتورة تالف";
-            // 
-            // mnuDues
-            // 
-            this.mnuDues.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuDues_Type,
-            this.mnuDues_Manage,
-            this.mnuDues_Account,
-            this.mnuDues_History});
-            this.mnuDues.Name = "mnuDues";
-            this.mnuDues.Size = new System.Drawing.Size(103, 33);
-            this.mnuDues.Text = "المصروفات";
-            // 
-            // mnuDues_Type
-            // 
-            this.mnuDues_Type.Name = "mnuDues_Type";
-            this.mnuDues_Type.Size = new System.Drawing.Size(202, 34);
-            this.mnuDues_Type.Text = "انواع المصروفات";
-            this.mnuDues_Type.Click += new System.EventHandler(this.mnuDues_Type_Click);
-            // 
-            // mnuDues_Manage
-            // 
-            this.mnuDues_Manage.Name = "mnuDues_Manage";
-            this.mnuDues_Manage.Size = new System.Drawing.Size(202, 34);
-            this.mnuDues_Manage.Text = "سند صرف";
-            // 
-            // mnuDues_Account
-            // 
-            this.mnuDues_Account.Name = "mnuDues_Account";
-            this.mnuDues_Account.Size = new System.Drawing.Size(202, 34);
-            this.mnuDues_Account.Text = "حسابات المصروفات";
-            // 
-            // mnuDues_History
-            // 
-            this.mnuDues_History.Name = "mnuDues_History";
-            this.mnuDues_History.Size = new System.Drawing.Size(202, 34);
-            this.mnuDues_History.Text = "سجل المصروفات";
             // 
             // mnuShow
             // 
@@ -318,32 +302,37 @@ namespace appFelxMax.appForms.MainForms
             this.mnsShowPruchasesBills,
             this.mnsShowReturnsBills,
             this.mnsShowDestroyedBills});
+            this.mnuShow.Image = global::appFelxMax.Properties.Resources.File2Color;
             this.mnuShow.Name = "mnuShow";
-            this.mnuShow.Size = new System.Drawing.Size(75, 33);
+            this.mnuShow.Size = new System.Drawing.Size(65, 26);
             this.mnuShow.Text = "عرض";
             // 
             // mnsShowSalesBills
             // 
+            this.mnsShowSalesBills.Image = ((System.Drawing.Image)(resources.GetObject("mnsShowSalesBills.Image")));
             this.mnsShowSalesBills.Name = "mnsShowSalesBills";
-            this.mnsShowSalesBills.Size = new System.Drawing.Size(187, 34);
+            this.mnsShowSalesBills.Size = new System.Drawing.Size(156, 26);
             this.mnsShowSalesBills.Text = "فواتير المبيعات";
             // 
             // mnsShowPruchasesBills
             // 
+            this.mnsShowPruchasesBills.Image = ((System.Drawing.Image)(resources.GetObject("mnsShowPruchasesBills.Image")));
             this.mnsShowPruchasesBills.Name = "mnsShowPruchasesBills";
-            this.mnsShowPruchasesBills.Size = new System.Drawing.Size(187, 34);
+            this.mnsShowPruchasesBills.Size = new System.Drawing.Size(156, 26);
             this.mnsShowPruchasesBills.Text = "فواتير المشتريات";
             // 
             // mnsShowReturnsBills
             // 
+            this.mnsShowReturnsBills.Image = ((System.Drawing.Image)(resources.GetObject("mnsShowReturnsBills.Image")));
             this.mnsShowReturnsBills.Name = "mnsShowReturnsBills";
-            this.mnsShowReturnsBills.Size = new System.Drawing.Size(187, 34);
+            this.mnsShowReturnsBills.Size = new System.Drawing.Size(156, 26);
             this.mnsShowReturnsBills.Text = "فواتير المرتجعات";
             // 
             // mnsShowDestroyedBills
             // 
+            this.mnsShowDestroyedBills.Image = ((System.Drawing.Image)(resources.GetObject("mnsShowDestroyedBills.Image")));
             this.mnsShowDestroyedBills.Name = "mnsShowDestroyedBills";
-            this.mnsShowDestroyedBills.Size = new System.Drawing.Size(187, 34);
+            this.mnsShowDestroyedBills.Size = new System.Drawing.Size(156, 26);
             this.mnsShowDestroyedBills.Text = "فواتير التوالف";
             // 
             // mnuAccounts
@@ -351,58 +340,73 @@ namespace appFelxMax.appForms.MainForms
             this.mnuAccounts.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuClinets,
             this.mnuVendors,
+            this.mnuExpenses,
             this.mnuTreasures,
             this.mnuBanks,
-            this.mnuLedger,
-            this.mnuAccountOperations});
+            this.mnuLedger});
+            this.mnuAccounts.Image = global::appFelxMax.Properties.Resources.CardColor;
             this.mnuAccounts.Name = "mnuAccounts";
-            this.mnuAccounts.Size = new System.Drawing.Size(97, 33);
+            this.mnuAccounts.Size = new System.Drawing.Size(82, 26);
             this.mnuAccounts.Text = "الحسابات";
             // 
             // mnuClinets
             // 
+            this.mnuClinets.Image = global::appFelxMax.Properties.Resources.UserGroup1Color;
             this.mnuClinets.Name = "mnuClinets";
-            this.mnuClinets.Size = new System.Drawing.Size(146, 34);
+            this.mnuClinets.Size = new System.Drawing.Size(184, 26);
             this.mnuClinets.Text = "العملاء";
             // 
             // mnuVendors
             // 
+            this.mnuVendors.Image = global::appFelxMax.Properties.Resources.UserGroup2Color;
             this.mnuVendors.Name = "mnuVendors";
-            this.mnuVendors.Size = new System.Drawing.Size(146, 34);
+            this.mnuVendors.Size = new System.Drawing.Size(184, 26);
             this.mnuVendors.Text = "الموردين";
+            // 
+            // mnuExpenses
+            // 
+            this.mnuExpenses.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsNewExpenses,
+            this.mnsExpensesLog});
+            this.mnuExpenses.Image = global::appFelxMax.Properties.Resources.DuesColor;
+            this.mnuExpenses.Name = "mnuExpenses";
+            this.mnuExpenses.Size = new System.Drawing.Size(184, 26);
+            this.mnuExpenses.Text = "المصروفات";
+            // 
+            // mnsNewExpenses
+            // 
+            this.mnsNewExpenses.Image = global::appFelxMax.Properties.Resources.DueAdd;
+            this.mnsNewExpenses.Name = "mnsNewExpenses";
+            this.mnsNewExpenses.Size = new System.Drawing.Size(184, 26);
+            this.mnsNewExpenses.Text = "سند جديد";
+            // 
+            // mnsExpensesLog
+            // 
+            this.mnsExpensesLog.Image = global::appFelxMax.Properties.Resources.DueReport;
+            this.mnsExpensesLog.Name = "mnsExpensesLog";
+            this.mnsExpensesLog.Size = new System.Drawing.Size(184, 26);
+            this.mnsExpensesLog.Text = "سجل السندات ";
             // 
             // mnuTreasures
             // 
-            this.mnuTreasures.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuTreasure_MainCash});
+            this.mnuTreasures.Image = global::appFelxMax.Properties.Resources.SafeColor;
             this.mnuTreasures.Name = "mnuTreasures";
-            this.mnuTreasures.Size = new System.Drawing.Size(146, 34);
+            this.mnuTreasures.Size = new System.Drawing.Size(184, 26);
             this.mnuTreasures.Text = "الخزن";
-            // 
-            // mnuTreasure_MainCash
-            // 
-            this.mnuTreasure_MainCash.Name = "mnuTreasure_MainCash";
-            this.mnuTreasure_MainCash.Size = new System.Drawing.Size(174, 34);
-            this.mnuTreasure_MainCash.Text = "الخزن الرئيسية";
-            this.mnuTreasure_MainCash.Click += new System.EventHandler(this.mnuTreasure_MainCash_Click);
             // 
             // mnuBanks
             // 
+            this.mnuBanks.Image = global::appFelxMax.Properties.Resources.BankColor;
             this.mnuBanks.Name = "mnuBanks";
-            this.mnuBanks.Size = new System.Drawing.Size(146, 34);
+            this.mnuBanks.Size = new System.Drawing.Size(184, 26);
             this.mnuBanks.Text = "البنوك";
             // 
             // mnuLedger
             // 
+            this.mnuLedger.Image = global::appFelxMax.Properties.Resources.LedgerColor;
             this.mnuLedger.Name = "mnuLedger";
-            this.mnuLedger.Size = new System.Drawing.Size(146, 34);
+            this.mnuLedger.Size = new System.Drawing.Size(184, 26);
             this.mnuLedger.Text = "الارصدة";
-            // 
-            // mnuAccountOperations
-            // 
-            this.mnuAccountOperations.Name = "mnuAccountOperations";
-            this.mnuAccountOperations.Size = new System.Drawing.Size(146, 34);
-            this.mnuAccountOperations.Text = "عمليات";
             // 
             // mnuEmp
             // 
@@ -410,26 +414,30 @@ namespace appFelxMax.appForms.MainForms
             this.mnuAttendance,
             this.mnuNewEmp,
             this.mnuEmpAccount});
+            this.mnuEmp.Image = global::appFelxMax.Properties.Resources.Emp;
             this.mnuEmp.Name = "mnuEmp";
-            this.mnuEmp.Size = new System.Drawing.Size(98, 33);
+            this.mnuEmp.Size = new System.Drawing.Size(85, 26);
             this.mnuEmp.Text = "الموظفين";
             // 
             // mnuAttendance
             // 
+            this.mnuAttendance.Image = global::appFelxMax.Properties.Resources.AttendanceColor;
             this.mnuAttendance.Name = "mnuAttendance";
-            this.mnuAttendance.Size = new System.Drawing.Size(199, 34);
+            this.mnuAttendance.Size = new System.Drawing.Size(163, 26);
             this.mnuAttendance.Text = "الحضور والانصراف";
             // 
             // mnuNewEmp
             // 
+            this.mnuNewEmp.Image = global::appFelxMax.Properties.Resources.AddUserColor;
             this.mnuNewEmp.Name = "mnuNewEmp";
-            this.mnuNewEmp.Size = new System.Drawing.Size(199, 34);
+            this.mnuNewEmp.Size = new System.Drawing.Size(163, 26);
             this.mnuNewEmp.Text = "انشاء موظف جديد";
             // 
             // mnuEmpAccount
             // 
+            this.mnuEmpAccount.Image = global::appFelxMax.Properties.Resources.EmpAccount;
             this.mnuEmpAccount.Name = "mnuEmpAccount";
-            this.mnuEmpAccount.Size = new System.Drawing.Size(199, 34);
+            this.mnuEmpAccount.Size = new System.Drawing.Size(163, 26);
             this.mnuEmpAccount.Text = "حسابات الموظفين";
             // 
             // mnuStores
@@ -439,38 +447,61 @@ namespace appFelxMax.appForms.MainForms
             this.mnuNotify,
             this.mnsItemTransfer,
             this.mnsBranshTransfer});
+            this.mnuStores.Image = global::appFelxMax.Properties.Resources.TrolleyColor;
             this.mnuStores.Name = "mnuStores";
-            this.mnuStores.Size = new System.Drawing.Size(85, 33);
+            this.mnuStores.Size = new System.Drawing.Size(73, 26);
             this.mnuStores.Text = "المخازن";
             // 
             // mnuItems
             // 
+            this.mnuItems.Image = ((System.Drawing.Image)(resources.GetObject("mnuItems.Image")));
             this.mnuItems.Name = "mnuItems";
-            this.mnuItems.Size = new System.Drawing.Size(167, 34);
+            this.mnuItems.Size = new System.Drawing.Size(184, 26);
             this.mnuItems.Text = "جرد الاصناف";
             // 
             // mnuNotify
             // 
+            this.mnuNotify.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnsItemsLimit,
+            this.mnsExpireDate});
+            this.mnuNotify.Image = global::appFelxMax.Properties.Resources.AlarmColor;
             this.mnuNotify.Name = "mnuNotify";
-            this.mnuNotify.Size = new System.Drawing.Size(167, 34);
+            this.mnuNotify.Size = new System.Drawing.Size(184, 26);
             this.mnuNotify.Text = "التنبيهات";
+            // 
+            // mnsItemsLimit
+            // 
+            this.mnsItemsLimit.Image = global::appFelxMax.Properties.Resources.ItemLimitColor;
+            this.mnsItemsLimit.Name = "mnsItemsLimit";
+            this.mnsItemsLimit.Size = new System.Drawing.Size(184, 26);
+            this.mnsItemsLimit.Text = "حد الطلب";
+            // 
+            // mnsExpireDate
+            // 
+            this.mnsExpireDate.Image = global::appFelxMax.Properties.Resources.Expired;
+            this.mnsExpireDate.Name = "mnsExpireDate";
+            this.mnsExpireDate.Size = new System.Drawing.Size(184, 26);
+            this.mnsExpireDate.Text = "تاريخ الصلاحية";
             // 
             // mnsItemTransfer
             // 
+            this.mnsItemTransfer.Image = global::appFelxMax.Properties.Resources.StoreMove;
             this.mnsItemTransfer.Name = "mnsItemTransfer";
-            this.mnsItemTransfer.Size = new System.Drawing.Size(167, 34);
+            this.mnsItemTransfer.Size = new System.Drawing.Size(184, 26);
             this.mnsItemTransfer.Text = "نقل المخزون";
             // 
             // mnsBranshTransfer
             // 
+            this.mnsBranshTransfer.Image = global::appFelxMax.Properties.Resources.BranchTransferColor;
             this.mnsBranshTransfer.Name = "mnsBranshTransfer";
-            this.mnsBranshTransfer.Size = new System.Drawing.Size(167, 34);
+            this.mnsBranshTransfer.Size = new System.Drawing.Size(184, 26);
             this.mnsBranshTransfer.Text = "تغيير الفرع";
             // 
             // mnuReports
             // 
+            this.mnuReports.Image = global::appFelxMax.Properties.Resources.Scroll;
             this.mnuReports.Name = "mnuReports";
-            this.mnuReports.Size = new System.Drawing.Size(81, 33);
+            this.mnuReports.Size = new System.Drawing.Size(70, 26);
             this.mnuReports.Text = "التقارير";
             // 
             // mnuPrint
@@ -480,85 +511,70 @@ namespace appFelxMax.appForms.MainForms
             this.mnuPrinterSettings});
             this.mnuPrint.Image = ((System.Drawing.Image)(resources.GetObject("mnuPrint.Image")));
             this.mnuPrint.Name = "mnuPrint";
-            this.mnuPrint.Size = new System.Drawing.Size(84, 33);
+            this.mnuPrint.Size = new System.Drawing.Size(73, 26);
             this.mnuPrint.Text = "الطباعة";
             // 
             // mnuBarcodeCenter
             // 
             this.mnuBarcodeCenter.BackColor = System.Drawing.SystemColors.Control;
+            this.mnuBarcodeCenter.Image = global::appFelxMax.Properties.Resources.BarcodeColor;
             this.mnuBarcodeCenter.Name = "mnuBarcodeCenter";
-            this.mnuBarcodeCenter.Size = new System.Drawing.Size(218, 34);
+            this.mnuBarcodeCenter.Size = new System.Drawing.Size(182, 26);
             this.mnuBarcodeCenter.Text = "طباعة الباركود";
             // 
             // mnuPrinterSettings
             // 
             this.mnuPrinterSettings.Image = ((System.Drawing.Image)(resources.GetObject("mnuPrinterSettings.Image")));
             this.mnuPrinterSettings.Name = "mnuPrinterSettings";
-            this.mnuPrinterSettings.Size = new System.Drawing.Size(218, 34);
+            this.mnuPrinterSettings.Size = new System.Drawing.Size(182, 26);
             this.mnuPrinterSettings.Text = "اعدادات طابعة الفواتير";
             // 
             // mnuSettings
             // 
             this.mnuSettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuBackup,
-            this.mnsStoresSettings,
             this.mnsSYNC});
+            this.mnuSettings.Image = global::appFelxMax.Properties.Resources.SettingsColor;
             this.mnuSettings.Name = "mnuSettings";
-            this.mnuSettings.Size = new System.Drawing.Size(98, 33);
+            this.mnuSettings.Size = new System.Drawing.Size(86, 26);
             this.mnuSettings.Text = "الاعدادات";
             // 
             // mnuBackup
             // 
+            this.mnuBackup.Image = global::appFelxMax.Properties.Resources.CloudsColor;
             this.mnuBackup.Name = "mnuBackup";
-            this.mnuBackup.Size = new System.Drawing.Size(227, 34);
+            this.mnuBackup.Size = new System.Drawing.Size(154, 26);
             this.mnuBackup.Text = "النسخ الاحتياطي";
-            // 
-            // mnsStoresSettings
-            // 
-            this.mnsStoresSettings.Name = "mnsStoresSettings";
-            this.mnsStoresSettings.Size = new System.Drawing.Size(227, 34);
-            this.mnsStoresSettings.Text = "اعدادات الافرع / المخازن";
             // 
             // mnsSYNC
             // 
-            this.mnsSYNC.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnsActSync,
-            this.mnsDisSYNC});
+            this.mnsSYNC.Image = global::appFelxMax.Properties.Resources.SynchronizeColor;
             this.mnsSYNC.Name = "mnsSYNC";
-            this.mnsSYNC.Size = new System.Drawing.Size(227, 34);
+            this.mnsSYNC.Size = new System.Drawing.Size(154, 26);
             this.mnsSYNC.Text = "التزامن";
-            // 
-            // mnsActSync
-            // 
-            this.mnsActSync.Name = "mnsActSync";
-            this.mnsActSync.Size = new System.Drawing.Size(137, 34);
-            this.mnsActSync.Text = "تفعيل";
-            // 
-            // mnsDisSYNC
-            // 
-            this.mnsDisSYNC.Name = "mnsDisSYNC";
-            this.mnsDisSYNC.Size = new System.Drawing.Size(137, 34);
-            this.mnsDisSYNC.Text = "تعطيل";
             // 
             // mnuAdmin
             // 
             this.mnuAdmin.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuHistory,
             this.mnsFeatures});
+            this.mnuAdmin.Image = global::appFelxMax.Properties.Resources.AdminColored;
             this.mnuAdmin.Name = "mnuAdmin";
-            this.mnuAdmin.Size = new System.Drawing.Size(82, 33);
+            this.mnuAdmin.Size = new System.Drawing.Size(72, 26);
             this.mnuAdmin.Text = "الادمن";
             // 
             // mnuHistory
             // 
+            this.mnuHistory.Image = global::appFelxMax.Properties.Resources.FeatureSettingsColored;
             this.mnuHistory.Name = "mnuHistory";
-            this.mnuHistory.Size = new System.Drawing.Size(147, 34);
+            this.mnuHistory.Size = new System.Drawing.Size(122, 26);
             this.mnuHistory.Text = "السجل";
             // 
             // mnsFeatures
             // 
+            this.mnsFeatures.Image = global::appFelxMax.Properties.Resources.WindowColor;
             this.mnsFeatures.Name = "mnsFeatures";
-            this.mnsFeatures.Size = new System.Drawing.Size(147, 34);
+            this.mnsFeatures.Size = new System.Drawing.Size(122, 26);
             this.mnsFeatures.Text = "الخصائص";
             // 
             // pbProgressbar
@@ -578,16 +594,16 @@ namespace appFelxMax.appForms.MainForms
             this.pnlBottom.Controls.Add(this.lblStore);
             this.pnlBottom.Controls.Add(this.lblUserName);
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottom.Location = new System.Drawing.Point(0, 748);
+            this.pnlBottom.Location = new System.Drawing.Point(0, 746);
             this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.Size = new System.Drawing.Size(1210, 40);
+            this.pnlBottom.Size = new System.Drawing.Size(1212, 40);
             this.pnlBottom.TabIndex = 2;
             // 
             // lblConnection
             // 
             this.lblConnection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblConnection.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblConnection.Location = new System.Drawing.Point(592, 9);
+            this.lblConnection.Location = new System.Drawing.Point(594, 9);
             this.lblConnection.Name = "lblConnection";
             this.lblConnection.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.lblConnection.Size = new System.Drawing.Size(147, 22);
@@ -598,8 +614,9 @@ namespace appFelxMax.appForms.MainForms
             // lblProgDate
             // 
             this.lblProgDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblProgDate.Image = global::appFelxMax.Properties.Resources.ScheduleS;
             this.lblProgDate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblProgDate.Location = new System.Drawing.Point(745, 9);
+            this.lblProgDate.Location = new System.Drawing.Point(747, 9);
             this.lblProgDate.Name = "lblProgDate";
             this.lblProgDate.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.lblProgDate.Size = new System.Drawing.Size(147, 22);
@@ -610,8 +627,9 @@ namespace appFelxMax.appForms.MainForms
             // lblStore
             // 
             this.lblStore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblStore.Image = global::appFelxMax.Properties.Resources.BoxS;
             this.lblStore.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblStore.Location = new System.Drawing.Point(898, 9);
+            this.lblStore.Location = new System.Drawing.Point(900, 9);
             this.lblStore.Name = "lblStore";
             this.lblStore.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.lblStore.Size = new System.Drawing.Size(147, 22);
@@ -622,8 +640,9 @@ namespace appFelxMax.appForms.MainForms
             // lblUserName
             // 
             this.lblUserName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblUserName.Image = global::appFelxMax.Properties.Resources.UserCardS;
             this.lblUserName.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblUserName.Location = new System.Drawing.Point(1051, 9);
+            this.lblUserName.Location = new System.Drawing.Point(1053, 9);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.lblUserName.Size = new System.Drawing.Size(147, 22);
@@ -639,9 +658,9 @@ namespace appFelxMax.appForms.MainForms
             this.pnlSlide.Controls.Add(this.pnlBills);
             this.pnlSlide.Controls.Add(this.pnlLogo);
             this.pnlSlide.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlSlide.Location = new System.Drawing.Point(0, 37);
+            this.pnlSlide.Location = new System.Drawing.Point(0, 30);
             this.pnlSlide.Name = "pnlSlide";
-            this.pnlSlide.Size = new System.Drawing.Size(200, 711);
+            this.pnlSlide.Size = new System.Drawing.Size(200, 716);
             this.pnlSlide.TabIndex = 3;
             // 
             // pnlGeneral
@@ -666,13 +685,12 @@ namespace appFelxMax.appForms.MainForms
             this.btnGeneral.Padding = new System.Windows.Forms.Padding(30, 0, 12, 0);
             this.btnGeneral.Size = new System.Drawing.Size(200, 35);
             this.btnGeneral.TabIndex = 2;
-            this.btnGeneral.Text = "عامة";
+            this.btnGeneral.Text = "-------";
             this.btnGeneral.UseVisualStyleBackColor = true;
             this.btnGeneral.Click += new System.EventHandler(this.btnGeneral_Click);
             // 
             // pnlAccounting
             // 
-            this.pnlAccounting.Controls.Add(this.btnOperations);
             this.pnlAccounting.Controls.Add(this.btnVendor);
             this.pnlAccounting.Controls.Add(this.btnCustomers);
             this.pnlAccounting.Controls.Add(this.btnAccounts);
@@ -682,23 +700,6 @@ namespace appFelxMax.appForms.MainForms
             this.pnlAccounting.Size = new System.Drawing.Size(200, 155);
             this.pnlAccounting.TabIndex = 2;
             // 
-            // btnOperations
-            // 
-            this.btnOperations.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnOperations.FlatAppearance.BorderSize = 0;
-            this.btnOperations.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnOperations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOperations.ForeColor = System.Drawing.Color.White;
-            this.btnOperations.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOperations.Location = new System.Drawing.Point(0, 105);
-            this.btnOperations.Name = "btnOperations";
-            this.btnOperations.Padding = new System.Windows.Forms.Padding(30, 0, 12, 0);
-            this.btnOperations.Size = new System.Drawing.Size(200, 35);
-            this.btnOperations.TabIndex = 4;
-            this.btnOperations.Text = "عمليات";
-            this.btnOperations.UseVisualStyleBackColor = true;
-            this.btnOperations.Click += new System.EventHandler(this.btnOperations_Click);
-            // 
             // btnVendor
             // 
             this.btnVendor.Dock = System.Windows.Forms.DockStyle.Top;
@@ -706,7 +707,7 @@ namespace appFelxMax.appForms.MainForms
             this.btnVendor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnVendor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVendor.ForeColor = System.Drawing.Color.White;
-            this.btnVendor.Image = ((System.Drawing.Image)(resources.GetObject("btnVendor.Image")));
+            this.btnVendor.Image = global::appFelxMax.Properties.Resources.VendorsW;
             this.btnVendor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVendor.Location = new System.Drawing.Point(0, 70);
             this.btnVendor.Name = "btnVendor";
@@ -723,7 +724,7 @@ namespace appFelxMax.appForms.MainForms
             this.btnCustomers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomers.ForeColor = System.Drawing.Color.White;
-            this.btnCustomers.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomers.Image")));
+            this.btnCustomers.Image = global::appFelxMax.Properties.Resources.ClientsW;
             this.btnCustomers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCustomers.Location = new System.Drawing.Point(0, 35);
             this.btnCustomers.Name = "btnCustomers";
@@ -741,6 +742,7 @@ namespace appFelxMax.appForms.MainForms
             this.btnAccounts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccounts.ForeColor = System.Drawing.Color.White;
+            this.btnAccounts.Image = global::appFelxMax.Properties.Resources.CardW;
             this.btnAccounts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAccounts.Location = new System.Drawing.Point(0, 0);
             this.btnAccounts.Name = "btnAccounts";
@@ -770,6 +772,7 @@ namespace appFelxMax.appForms.MainForms
             this.btnReturnBill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnReturnBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturnBill.ForeColor = System.Drawing.Color.White;
+            this.btnReturnBill.Image = ((System.Drawing.Image)(resources.GetObject("btnReturnBill.Image")));
             this.btnReturnBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReturnBill.Location = new System.Drawing.Point(0, 105);
             this.btnReturnBill.Name = "btnReturnBill";
@@ -786,6 +789,7 @@ namespace appFelxMax.appForms.MainForms
             this.btnPruchaseBill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnPruchaseBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPruchaseBill.ForeColor = System.Drawing.Color.White;
+            this.btnPruchaseBill.Image = ((System.Drawing.Image)(resources.GetObject("btnPruchaseBill.Image")));
             this.btnPruchaseBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPruchaseBill.Location = new System.Drawing.Point(0, 70);
             this.btnPruchaseBill.Name = "btnPruchaseBill";
@@ -802,6 +806,7 @@ namespace appFelxMax.appForms.MainForms
             this.btnSalesBill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnSalesBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalesBill.ForeColor = System.Drawing.Color.White;
+            this.btnSalesBill.Image = ((System.Drawing.Image)(resources.GetObject("btnSalesBill.Image")));
             this.btnSalesBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalesBill.Location = new System.Drawing.Point(0, 35);
             this.btnSalesBill.Name = "btnSalesBill";
@@ -819,6 +824,7 @@ namespace appFelxMax.appForms.MainForms
             this.btnBills.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnBills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBills.ForeColor = System.Drawing.Color.White;
+            this.btnBills.Image = global::appFelxMax.Properties.Resources.FileW;
             this.btnBills.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBills.Location = new System.Drawing.Point(0, 0);
             this.btnBills.Name = "btnBills";
@@ -876,27 +882,27 @@ namespace appFelxMax.appForms.MainForms
             // 
             this.pnlTools.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlTools.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTools.Location = new System.Drawing.Point(200, 37);
+            this.pnlTools.Location = new System.Drawing.Point(200, 30);
             this.pnlTools.Name = "pnlTools";
-            this.pnlTools.Size = new System.Drawing.Size(1010, 40);
+            this.pnlTools.Size = new System.Drawing.Size(1012, 40);
             this.pnlTools.TabIndex = 4;
             // 
             // pnlMiddle
             // 
             this.pnlMiddle.BackColor = System.Drawing.Color.Transparent;
             this.pnlMiddle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMiddle.Location = new System.Drawing.Point(200, 77);
+            this.pnlMiddle.Location = new System.Drawing.Point(200, 70);
             this.pnlMiddle.Name = "pnlMiddle";
             this.pnlMiddle.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pnlMiddle.Size = new System.Drawing.Size(1010, 671);
+            this.pnlMiddle.Size = new System.Drawing.Size(1012, 676);
             this.pnlMiddle.TabIndex = 5;
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1210, 788);
+            this.ClientSize = new System.Drawing.Size(1212, 786);
             this.Controls.Add(this.pnlMiddle);
             this.Controls.Add(this.pnlTools);
             this.Controls.Add(this.pnlSlide);
@@ -950,7 +956,7 @@ namespace appFelxMax.appForms.MainForms
         private System.Windows.Forms.ToolStripMenuItem mnuTreasures;
         private System.Windows.Forms.ToolStripMenuItem mnuBanks;
         private System.Windows.Forms.ToolStripMenuItem mnuLedger;
-        private System.Windows.Forms.ToolStripMenuItem mnuAccountOperations;
+        private System.Windows.Forms.ToolStripMenuItem mnuExpenses;
         private System.Windows.Forms.ToolStripMenuItem mnuAttendance;
         private System.Windows.Forms.ToolStripMenuItem mnuNewEmp;
         private System.Windows.Forms.ToolStripMenuItem mnuEmpAccount;
@@ -975,8 +981,6 @@ namespace appFelxMax.appForms.MainForms
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Label lblHome;
         private System.Windows.Forms.ToolStripMenuItem mnsSYNC;
-        private System.Windows.Forms.ToolStripMenuItem mnsActSync;
-        private System.Windows.Forms.ToolStripMenuItem mnsDisSYNC;
         private System.Windows.Forms.Panel pnlBills;
         private System.Windows.Forms.Button btnBills;
         private System.Windows.Forms.Button btnPruchaseBill;
@@ -984,12 +988,10 @@ namespace appFelxMax.appForms.MainForms
         private System.Windows.Forms.Panel pnlGeneral;
         private System.Windows.Forms.Button btnGeneral;
         private System.Windows.Forms.Panel pnlAccounting;
-        private System.Windows.Forms.Button btnOperations;
         private System.Windows.Forms.Button btnVendor;
         private System.Windows.Forms.Button btnCustomers;
         private System.Windows.Forms.Button btnAccounts;
         private System.Windows.Forms.Button btnReturnBill;
-        private System.Windows.Forms.ToolStripMenuItem mnsStoresSettings;
         private System.Windows.Forms.ToolStripMenuItem mnsProgramReset;
         private System.Windows.Forms.ToolStripMenuItem mnsCompanyInfo;
         private System.Windows.Forms.ToolStripMenuItem mnsItemsCatagory;
@@ -1004,14 +1006,13 @@ namespace appFelxMax.appForms.MainForms
         private System.Windows.Forms.ToolStripMenuItem mnsItemTransfer;
         private System.Windows.Forms.ToolStripMenuItem mnsBranshTransfer;
         private System.Windows.Forms.ToolStripMenuItem mnsBranchInfo;
-        private System.Windows.Forms.ToolStripMenuItem mnuDues;
-        private System.Windows.Forms.ToolStripMenuItem mnuDues_Type;
-        private System.Windows.Forms.ToolStripMenuItem mnuDues_Manage;
-        private System.Windows.Forms.ToolStripMenuItem mnuDues_Account;
-        private System.Windows.Forms.ToolStripMenuItem mnuDues_History;
-        private System.Windows.Forms.ToolStripMenuItem mnuTreasure_MainCash;
         private System.Windows.Forms.ToolStripMenuItem mnsProduct_Group;
         private System.Windows.Forms.ToolStripMenuItem mnsProduct_Sections;
         private System.Windows.Forms.ToolStripMenuItem mnsSotre_Init;
+        private System.Windows.Forms.ToolStripMenuItem mnuCopyDetails;
+        private System.Windows.Forms.ToolStripMenuItem mnsNewExpenses;
+        private System.Windows.Forms.ToolStripMenuItem mnsExpensesLog;
+        private System.Windows.Forms.ToolStripMenuItem mnsItemsLimit;
+        private System.Windows.Forms.ToolStripMenuItem mnsExpireDate;
     }
 }

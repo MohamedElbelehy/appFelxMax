@@ -34,23 +34,23 @@ namespace appFelxMax.appForms.MainForms
             this.cmbUser = new System.Windows.Forms.ComboBox();
             this.lblConnection = new System.Windows.Forms.Label();
             this.pnlHead = new System.Windows.Forms.Panel();
-            this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.cmsMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.cmbStores = new System.Windows.Forms.ComboBox();
+            this.pnlSide = new System.Windows.Forms.Panel();
+            this.lblIPV4 = new System.Windows.Forms.Label();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.Button();
             this.cmsServer = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsAtivation = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsSYNC = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsRefSYNC = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.cmbStores = new System.Windows.Forms.ComboBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.pnlSide = new System.Windows.Forms.Panel();
-            this.lblIPV4 = new System.Windows.Forms.Label();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.iPassword = new System.Windows.Forms.Label();
             this.iStores = new System.Windows.Forms.Label();
             this.iUser = new System.Windows.Forms.Label();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.pnlHead.SuspendLayout();
             this.cmsMenu.SuspendLayout();
             this.pnlSide.SuspendLayout();
@@ -71,14 +71,14 @@ namespace appFelxMax.appForms.MainForms
             // 
             // lblConnection
             // 
-            this.lblConnection.AutoSize = true;
             this.lblConnection.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConnection.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblConnection.Location = new System.Drawing.Point(154, 417);
+            this.lblConnection.Location = new System.Drawing.Point(59, 417);
             this.lblConnection.Name = "lblConnection";
-            this.lblConnection.Size = new System.Drawing.Size(71, 27);
+            this.lblConnection.Size = new System.Drawing.Size(267, 30);
             this.lblConnection.TabIndex = 0;
             this.lblConnection.Text = "حالة الاتصال";
+            this.lblConnection.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pnlHead
             // 
@@ -90,19 +90,6 @@ namespace appFelxMax.appForms.MainForms
             this.pnlHead.Name = "pnlHead";
             this.pnlHead.Size = new System.Drawing.Size(400, 30);
             this.pnlHead.TabIndex = 3;
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Image = global::appFelxMax.Properties.Resources.CloseColor;
-            this.btnClose.Location = new System.Drawing.Point(374, 5);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(20, 20);
-            this.btnClose.TabIndex = 0;
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblTitle
             // 
@@ -128,45 +115,6 @@ namespace appFelxMax.appForms.MainForms
             this.cmsMenu.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cmsMenu.Size = new System.Drawing.Size(152, 108);
             // 
-            // cmsServer
-            // 
-            this.cmsServer.Image = ((System.Drawing.Image)(resources.GetObject("cmsServer.Image")));
-            this.cmsServer.Name = "cmsServer";
-            this.cmsServer.Size = new System.Drawing.Size(151, 26);
-            this.cmsServer.Text = "اعدادات السيرفر";
-            this.cmsServer.Click += new System.EventHandler(this.cmsServer_Click);
-            // 
-            // cmsAtivation
-            // 
-            this.cmsAtivation.Image = ((System.Drawing.Image)(resources.GetObject("cmsAtivation.Image")));
-            this.cmsAtivation.Name = "cmsAtivation";
-            this.cmsAtivation.Size = new System.Drawing.Size(151, 26);
-            this.cmsAtivation.Text = "تفعيل البرنامج";
-            this.cmsAtivation.Click += new System.EventHandler(this.cmsAtivation_Click);
-            // 
-            // cmsSYNC
-            // 
-            this.cmsSYNC.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmsRefSYNC});
-            this.cmsSYNC.Image = ((System.Drawing.Image)(resources.GetObject("cmsSYNC.Image")));
-            this.cmsSYNC.Name = "cmsSYNC";
-            this.cmsSYNC.Size = new System.Drawing.Size(151, 26);
-            this.cmsSYNC.Text = "التزامن";
-            // 
-            // cmsRefSYNC
-            // 
-            this.cmsRefSYNC.Image = ((System.Drawing.Image)(resources.GetObject("cmsRefSYNC.Image")));
-            this.cmsRefSYNC.Name = "cmsRefSYNC";
-            this.cmsRefSYNC.Size = new System.Drawing.Size(138, 26);
-            this.cmsRefSYNC.Text = "تزامن البيانات";
-            // 
-            // cmsExit
-            // 
-            this.cmsExit.Image = ((System.Drawing.Image)(resources.GetObject("cmsExit.Image")));
-            this.cmsExit.Name = "cmsExit";
-            this.cmsExit.Size = new System.Drawing.Size(151, 26);
-            this.cmsExit.Text = "خروج";
-            // 
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -188,22 +136,6 @@ namespace appFelxMax.appForms.MainForms
             this.cmbStores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cmbStores.Size = new System.Drawing.Size(267, 26);
             this.cmbStores.TabIndex = 0;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLogin.Location = new System.Drawing.Point(59, 384);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Padding = new System.Windows.Forms.Padding(80, 0, 80, 0);
-            this.btnLogin.Size = new System.Drawing.Size(267, 30);
-            this.btnLogin.TabIndex = 3;
-            this.btnLogin.Text = "تسجيل دخول";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // pnlSide
             // 
@@ -236,6 +168,58 @@ namespace appFelxMax.appForms.MainForms
             this.picLogo.TabIndex = 4;
             this.picLogo.TabStop = false;
             // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Image = global::appFelxMax.Properties.Resources.CloseColor;
+            this.btnClose.Location = new System.Drawing.Point(374, 5);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(20, 20);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // cmsServer
+            // 
+            this.cmsServer.Image = global::appFelxMax.Properties.Resources.ServerColor;
+            this.cmsServer.Name = "cmsServer";
+            this.cmsServer.Size = new System.Drawing.Size(151, 26);
+            this.cmsServer.Text = "اعدادات السيرفر";
+            this.cmsServer.Click += new System.EventHandler(this.cmsServer_Click);
+            // 
+            // cmsAtivation
+            // 
+            this.cmsAtivation.Image = global::appFelxMax.Properties.Resources.Key;
+            this.cmsAtivation.Name = "cmsAtivation";
+            this.cmsAtivation.Size = new System.Drawing.Size(151, 26);
+            this.cmsAtivation.Text = "تفعيل البرنامج";
+            this.cmsAtivation.Click += new System.EventHandler(this.cmsAtivation_Click);
+            // 
+            // cmsSYNC
+            // 
+            this.cmsSYNC.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cmsRefSYNC});
+            this.cmsSYNC.Image = global::appFelxMax.Properties.Resources.SynchronizeColor;
+            this.cmsSYNC.Name = "cmsSYNC";
+            this.cmsSYNC.Size = new System.Drawing.Size(151, 26);
+            this.cmsSYNC.Text = "التزامن";
+            // 
+            // cmsRefSYNC
+            // 
+            this.cmsRefSYNC.Image = ((System.Drawing.Image)(resources.GetObject("cmsRefSYNC.Image")));
+            this.cmsRefSYNC.Name = "cmsRefSYNC";
+            this.cmsRefSYNC.Size = new System.Drawing.Size(138, 26);
+            this.cmsRefSYNC.Text = "تزامن البيانات";
+            // 
+            // cmsExit
+            // 
+            this.cmsExit.Image = global::appFelxMax.Properties.Resources.LogoutColor;
+            this.cmsExit.Name = "cmsExit";
+            this.cmsExit.Size = new System.Drawing.Size(151, 26);
+            this.cmsExit.Text = "خروج";
+            // 
             // iPassword
             // 
             this.iPassword.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -262,6 +246,23 @@ namespace appFelxMax.appForms.MainForms
             this.iUser.Name = "iUser";
             this.iUser.Size = new System.Drawing.Size(30, 26);
             this.iUser.TabIndex = 2;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Image = global::appFelxMax.Properties.Resources.DoneColored;
+            this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLogin.Location = new System.Drawing.Point(59, 384);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Padding = new System.Windows.Forms.Padding(80, 0, 80, 0);
+            this.btnLogin.Size = new System.Drawing.Size(267, 30);
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.Text = "تسجيل دخول";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // frmLogin
             // 

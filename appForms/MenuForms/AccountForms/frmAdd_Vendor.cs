@@ -54,7 +54,7 @@ namespace appFelxMax.appForms.SubForms
         {
             txtVend_ID.Text = fnMax_ID().ToString();
             txtVend_Name.Text = "";
-            txtVend_Mobil.Text = "";
+            txtVend_Mobile.Text = "";
             txtVend_Code.Text =  fnMax_ID().ToString() + string.Format(DateTime.Now.Day.ToString()) + string.Format(DateTime.Now.Year.ToString());
             txtVend_Address.Text = "";
             dtpVend_S_Date.Value = DateTime.Now;
@@ -64,7 +64,7 @@ namespace appFelxMax.appForms.SubForms
         {
             if (txtVend_ID.Text == "") return false;
             else if (txtVend_Code.Text == "") return false;
-            else if (txtVend_Mobil.Text == "") return false;
+            else if (txtVend_Mobile.Text == "") return false;
             else if (txtVend_Name.Text == "") return false;
             else return true;
         }
@@ -80,7 +80,7 @@ namespace appFelxMax.appForms.SubForms
                     {
                         vTblSup.Sup_Code = Convert.ToInt32(txtVend_Code.Text);
                         vTblSup.Sup_Name = txtVend_Name.Text;
-                        vTblSup.Sup_Mobile = txtVend_Mobil.Text;
+                        vTblSup.Sup_Mobile = txtVend_Mobile.Text;
                         vTblSup.Sup_Address = txtVend_Address.Text;
                         vTblSup.Sup_S_Date = dtpVend_S_Date.Value;
                         vTblSup.Sup_State = chkVend_State.Checked;
@@ -94,7 +94,7 @@ namespace appFelxMax.appForms.SubForms
                             Sup_ID = Convert.ToInt32(txtVend_ID.Text),
                             Sup_Code = Convert.ToInt32(txtVend_Code.Text),
                             Sup_Name = txtVend_Name.Text,
-                            Sup_Mobile = txtVend_Mobil.Text,
+                            Sup_Mobile = txtVend_Mobile.Text,
                             Sup_Address = txtVend_Address.Text,
                             Sup_S_Date = dtpVend_S_Date.Value,
                             Sup_State = chkVend_State.Checked,

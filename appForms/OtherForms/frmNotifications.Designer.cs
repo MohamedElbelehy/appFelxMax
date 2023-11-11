@@ -57,6 +57,7 @@ namespace appFelxMax.appForms.OtherForms
             // picColse
             // 
             this.picColse.Dock = System.Windows.Forms.DockStyle.Right;
+            this.picColse.Image = global::appFelxMax.Properties.Resources.CloseColor;
             this.picColse.Location = new System.Drawing.Point(317, 0);
             this.picColse.Name = "picColse";
             this.picColse.Size = new System.Drawing.Size(30, 74);

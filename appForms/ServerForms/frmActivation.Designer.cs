@@ -30,72 +30,107 @@ namespace appFelxMax.appForms.ServerForms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmActivation));
-            this.txtActivationCode = new System.Windows.Forms.TextBox();
-            this.lblCopySig = new System.Windows.Forms.Label();
-            this.txtSerial = new System.Windows.Forms.TextBox();
-            this.txtOwnerName = new System.Windows.Forms.TextBox();
-            this.btnActviate = new System.Windows.Forms.Button();
-            this.lblHead = new System.Windows.Forms.Label();
+            this.lblSignature = new System.Windows.Forms.Label();
+            this.cmbMacAddress = new System.Windows.Forms.ComboBox();
+            this.floMain = new System.Windows.Forms.FlowLayoutPanel();
             this.lblOwner = new System.Windows.Forms.Label();
-            this.lblSerial = new System.Windows.Forms.Label();
-            this.lblAct = new System.Windows.Forms.Label();
-            this.txtMacAddress = new System.Windows.Forms.TextBox();
+            this.txtOwner = new System.Windows.Forms.TextBox();
+            this.lblOff = new System.Windows.Forms.Label();
+            this.txtOff = new System.Windows.Forms.TextBox();
+            this.lblOn = new System.Windows.Forms.Label();
+            this.txtOn = new System.Windows.Forms.TextBox();
+            this.lblHead = new System.Windows.Forms.Label();
+            this.btnActivate = new System.Windows.Forms.Button();
+            this.floMain.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtActivationCode
+            // lblSignature
             // 
-            this.txtActivationCode.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtActivationCode.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtActivationCode.Location = new System.Drawing.Point(56, 185);
-            this.txtActivationCode.Name = "txtActivationCode";
-            this.txtActivationCode.Size = new System.Drawing.Size(316, 23);
-            this.txtActivationCode.TabIndex = 2;
+            this.lblSignature.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblSignature.Location = new System.Drawing.Point(0, 40);
+            this.lblSignature.Name = "lblSignature";
+            this.lblSignature.Size = new System.Drawing.Size(384, 30);
+            this.lblSignature.TabIndex = 9;
+            this.lblSignature.Text = "بصمة النسخة";
+            this.lblSignature.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblCopySig
+            // cmbMacAddress
             // 
-            this.lblCopySig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblCopySig.ForeColor = System.Drawing.Color.Black;
-            this.lblCopySig.Location = new System.Drawing.Point(12, 88);
-            this.lblCopySig.Name = "lblCopySig";
-            this.lblCopySig.Size = new System.Drawing.Size(360, 36);
-            this.lblCopySig.TabIndex = 0;
-            this.lblCopySig.Text = "بصمة النسخة";
-            this.lblCopySig.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cmbMacAddress.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cmbMacAddress.Dock = System.Windows.Forms.DockStyle.Top;
+            this.cmbMacAddress.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMacAddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbMacAddress.FormattingEnabled = true;
+            this.cmbMacAddress.Location = new System.Drawing.Point(0, 70);
+            this.cmbMacAddress.Name = "cmbMacAddress";
+            this.cmbMacAddress.Size = new System.Drawing.Size(384, 30);
+            this.cmbMacAddress.TabIndex = 10;
             // 
-            // txtSerial
+            // floMain
             // 
-            this.txtSerial.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtSerial.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSerial.Location = new System.Drawing.Point(56, 156);
-            this.txtSerial.Name = "txtSerial";
-            this.txtSerial.Size = new System.Drawing.Size(316, 23);
-            this.txtSerial.TabIndex = 1;
+            this.floMain.Controls.Add(this.lblOwner);
+            this.floMain.Controls.Add(this.txtOwner);
+            this.floMain.Controls.Add(this.lblOff);
+            this.floMain.Controls.Add(this.txtOff);
+            this.floMain.Controls.Add(this.lblOn);
+            this.floMain.Controls.Add(this.txtOn);
+            this.floMain.Controls.Add(this.btnActivate);
+            this.floMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.floMain.Location = new System.Drawing.Point(0, 100);
+            this.floMain.Name = "floMain";
+            this.floMain.Size = new System.Drawing.Size(384, 151);
+            this.floMain.TabIndex = 11;
             // 
-            // txtOwnerName
+            // lblOwner
             // 
-            this.txtOwnerName.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtOwnerName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOwnerName.Location = new System.Drawing.Point(56, 127);
-            this.txtOwnerName.Name = "txtOwnerName";
-            this.txtOwnerName.Size = new System.Drawing.Size(316, 23);
-            this.txtOwnerName.TabIndex = 1;
+            this.lblOwner.Image = global::appFelxMax.Properties.Resources.OwnerColor;
+            this.lblOwner.Location = new System.Drawing.Point(3, 0);
+            this.lblOwner.Name = "lblOwner";
+            this.lblOwner.Size = new System.Drawing.Size(25, 22);
+            this.lblOwner.TabIndex = 0;
             // 
-            // btnActviate
+            // txtOwner
             // 
-            this.btnActviate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.btnActviate.FlatAppearance.BorderSize = 0;
-            this.btnActviate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnActviate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActviate.ForeColor = System.Drawing.Color.White;
-            this.btnActviate.Image = ((System.Drawing.Image)(resources.GetObject("btnActviate.Image")));
-            this.btnActviate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnActviate.Location = new System.Drawing.Point(56, 214);
-            this.btnActviate.Name = "btnActviate";
-            this.btnActviate.Padding = new System.Windows.Forms.Padding(105, 0, 110, 0);
-            this.btnActviate.Size = new System.Drawing.Size(316, 35);
-            this.btnActviate.TabIndex = 3;
-            this.btnActviate.Text = "تفعيل";
-            this.btnActviate.UseVisualStyleBackColor = false;
+            this.txtOwner.Location = new System.Drawing.Point(34, 3);
+            this.txtOwner.Name = "txtOwner";
+            this.txtOwner.Size = new System.Drawing.Size(338, 30);
+            this.txtOwner.TabIndex = 1;
+            this.txtOwner.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblOff
+            // 
+            this.lblOff.Image = global::appFelxMax.Properties.Resources.OffColor;
+            this.lblOff.Location = new System.Drawing.Point(3, 36);
+            this.lblOff.Name = "lblOff";
+            this.lblOff.Size = new System.Drawing.Size(25, 22);
+            this.lblOff.TabIndex = 2;
+            // 
+            // txtOff
+            // 
+            this.txtOff.ForeColor = System.Drawing.Color.OrangeRed;
+            this.txtOff.Location = new System.Drawing.Point(34, 39);
+            this.txtOff.Name = "txtOff";
+            this.txtOff.ReadOnly = true;
+            this.txtOff.Size = new System.Drawing.Size(338, 30);
+            this.txtOff.TabIndex = 3;
+            this.txtOff.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblOn
+            // 
+            this.lblOn.Image = global::appFelxMax.Properties.Resources.OnColor;
+            this.lblOn.Location = new System.Drawing.Point(3, 72);
+            this.lblOn.Name = "lblOn";
+            this.lblOn.Size = new System.Drawing.Size(25, 22);
+            this.lblOn.TabIndex = 4;
+            // 
+            // txtOn
+            // 
+            this.txtOn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.txtOn.Location = new System.Drawing.Point(34, 75);
+            this.txtOn.Name = "txtOn";
+            this.txtOn.Size = new System.Drawing.Size(338, 30);
+            this.txtOn.TabIndex = 5;
+            this.txtOn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblHead
             // 
@@ -103,73 +138,39 @@ namespace appFelxMax.appForms.ServerForms
             this.lblHead.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblHead.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.lblHead.Image = global::appFelxMax.Properties.Resources.Key;
             this.lblHead.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblHead.Location = new System.Drawing.Point(0, 0);
             this.lblHead.Name = "lblHead";
+            this.lblHead.Padding = new System.Windows.Forms.Padding(200, 0, 0, 0);
             this.lblHead.Size = new System.Drawing.Size(384, 40);
             this.lblHead.TabIndex = 8;
             this.lblHead.Text = "تفعيل البرنامج";
             this.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblOwner
+            // btnActivate
             // 
-            this.lblOwner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblOwner.ForeColor = System.Drawing.Color.Black;
-            this.lblOwner.Image = ((System.Drawing.Image)(resources.GetObject("lblOwner.Image")));
-            this.lblOwner.Location = new System.Drawing.Point(27, 127);
-            this.lblOwner.Name = "lblOwner";
-            this.lblOwner.Size = new System.Drawing.Size(23, 23);
-            this.lblOwner.TabIndex = 0;
-            this.lblOwner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSerial
-            // 
-            this.lblSerial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblSerial.ForeColor = System.Drawing.Color.Black;
-            this.lblSerial.Image = ((System.Drawing.Image)(resources.GetObject("lblSerial.Image")));
-            this.lblSerial.Location = new System.Drawing.Point(27, 156);
-            this.lblSerial.Name = "lblSerial";
-            this.lblSerial.Size = new System.Drawing.Size(23, 23);
-            this.lblSerial.TabIndex = 0;
-            this.lblSerial.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblAct
-            // 
-            this.lblAct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblAct.ForeColor = System.Drawing.Color.Black;
-            this.lblAct.Image = ((System.Drawing.Image)(resources.GetObject("lblAct.Image")));
-            this.lblAct.Location = new System.Drawing.Point(27, 185);
-            this.lblAct.Name = "lblAct";
-            this.lblAct.Size = new System.Drawing.Size(23, 23);
-            this.lblAct.TabIndex = 0;
-            this.lblAct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtMacAddress
-            // 
-            this.txtMacAddress.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtMacAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMacAddress.Location = new System.Drawing.Point(56, 62);
-            this.txtMacAddress.Name = "txtMacAddress";
-            this.txtMacAddress.Size = new System.Drawing.Size(316, 23);
-            this.txtMacAddress.TabIndex = 1;
+            this.btnActivate.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnActivate.Image = global::appFelxMax.Properties.Resources.DoneColored;
+            this.btnActivate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnActivate.Location = new System.Drawing.Point(3, 111);
+            this.btnActivate.Name = "btnActivate";
+            this.btnActivate.Padding = new System.Windows.Forms.Padding(130, 0, 150, 0);
+            this.btnActivate.Size = new System.Drawing.Size(369, 35);
+            this.btnActivate.TabIndex = 6;
+            this.btnActivate.Text = "تفعيل";
+            this.btnActivate.UseVisualStyleBackColor = false;
             // 
             // frmActivation
             // 
-            this.AcceptButton = this.btnActviate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(384, 261);
-            this.Controls.Add(this.txtMacAddress);
-            this.Controls.Add(this.txtOwnerName);
-            this.Controls.Add(this.txtSerial);
+            this.ClientSize = new System.Drawing.Size(384, 251);
+            this.Controls.Add(this.floMain);
+            this.Controls.Add(this.cmbMacAddress);
+            this.Controls.Add(this.lblSignature);
             this.Controls.Add(this.lblHead);
-            this.Controls.Add(this.btnActviate);
-            this.Controls.Add(this.lblAct);
-            this.Controls.Add(this.lblSerial);
-            this.Controls.Add(this.lblOwner);
-            this.Controls.Add(this.lblCopySig);
-            this.Controls.Add(this.txtActivationCode);
             this.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
@@ -179,22 +180,23 @@ namespace appFelxMax.appForms.ServerForms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "تفعيل البرنامج";
             this.Load += new System.EventHandler(this.frmActivation_Load);
+            this.floMain.ResumeLayout(false);
+            this.floMain.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtActivationCode;
-        private System.Windows.Forms.Label lblCopySig;
-        private System.Windows.Forms.Button btnActviate;
         private System.Windows.Forms.Label lblHead;
-        private System.Windows.Forms.TextBox txtSerial;
-        private System.Windows.Forms.TextBox txtOwnerName;
+        private System.Windows.Forms.Label lblSignature;
+        private System.Windows.Forms.ComboBox cmbMacAddress;
+        private System.Windows.Forms.FlowLayoutPanel floMain;
         private System.Windows.Forms.Label lblOwner;
-        private System.Windows.Forms.Label lblSerial;
-        private System.Windows.Forms.Label lblAct;
-        private System.Windows.Forms.TextBox txtMacAddress;
+        private System.Windows.Forms.TextBox txtOwner;
+        private System.Windows.Forms.Label lblOff;
+        private System.Windows.Forms.TextBox txtOff;
+        private System.Windows.Forms.Label lblOn;
+        private System.Windows.Forms.TextBox txtOn;
+        private System.Windows.Forms.Button btnActivate;
     }
 }

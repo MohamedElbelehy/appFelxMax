@@ -57,9 +57,9 @@ namespace appFelxMax.appForms.SubForms
         {
             txtCust_ID.Text = fnMax_ID().ToString();
             txtCust_Name.Text = "";
-            txtCust_Mobile.Text = "";
+            txtCust_Balance.Text = "";
             txtCust_Code.Text =  fnMax_ID().ToString() + string.Format(DateTime.Now.Month.ToString()) + string.Format(DateTime.Now.Year.ToString());
-            txtCust_Address.Text = "";
+            txtCust_Phone.Text = "";
             dtpCust_S_Date.Value = DateTime.Now;
         }
 
@@ -67,7 +67,7 @@ namespace appFelxMax.appForms.SubForms
         {
             if (txtCust_ID.Text == "") return false;
             else if (txtCust_Code.Text == "") return false;
-            else if (txtCust_Mobile.Text == "") return false;
+            else if (txtCust_Balance.Text == "") return false;
             else if (txtCust_Name.Text == "") return false;
             else return true;
         }
@@ -84,8 +84,8 @@ namespace appFelxMax.appForms.SubForms
                         vTblCust.Cust_ID = Convert.ToInt32(txtCust_ID.Text);
                         vTblCust.Cust_Code = Convert.ToInt32(txtCust_Code.Text);
                         vTblCust.Cust_Name = txtCust_Name.Text;
-                        vTblCust.Cust_Mobile = txtCust_Mobile.Text;
-                        vTblCust.Cust_Address = txtCust_Address.Text;
+                        vTblCust.Cust_Mobile = txtCust_Balance.Text;
+                        vTblCust.Cust_Address = txtCust_Phone.Text;
                         vTblCust.Cust_S_Date = dtpCust_S_Date.Value;
                         vTblCust.Cust_State = chkCust_State.Checked;
                         vTblCust.Cust_Note = txtCust_Notes.Text;
@@ -98,8 +98,8 @@ namespace appFelxMax.appForms.SubForms
                             Cust_ID = Convert.ToInt32(txtCust_ID.Text),
                             Cust_Code = Convert.ToInt32(txtCust_Code.Text),
                             Cust_Name = txtCust_Name.Text,
-                            Cust_Mobile = txtCust_Mobile.Text,
-                            Cust_Address = txtCust_Address.Text,
+                            Cust_Mobile = txtCust_Balance.Text,
+                            Cust_Address = txtCust_Phone.Text,
                             Cust_S_Date = dtpCust_S_Date.Value,
                             Cust_State = chkCust_State.Checked,
                             Cust_Note = "-"

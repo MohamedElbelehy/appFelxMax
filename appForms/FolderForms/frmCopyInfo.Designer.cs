@@ -31,30 +31,32 @@ namespace appFelxMax.appForms.OtherForms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCopyInfo));
             this.lblHead = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pnlRegData = new System.Windows.Forms.Panel();
+            this.txtRMotherboard = new System.Windows.Forms.TextBox();
+            this.lblRMotherboard = new System.Windows.Forms.Label();
+            this.txtRHDD = new System.Windows.Forms.TextBox();
+            this.lblRHDD = new System.Windows.Forms.Label();
+            this.txtRMAC = new System.Windows.Forms.TextBox();
+            this.lblRMAC = new System.Windows.Forms.Label();
+            this.lblRegData = new System.Windows.Forms.Label();
+            this.pnlCurrentData = new System.Windows.Forms.Panel();
+            this.txtCMotherboard = new System.Windows.Forms.TextBox();
+            this.lblCMotherboard = new System.Windows.Forms.Label();
+            this.txtCHDD = new System.Windows.Forms.TextBox();
+            this.lblCHDD = new System.Windows.Forms.Label();
+            this.txtCMAC = new System.Windows.Forms.TextBox();
+            this.lblCMAC = new System.Windows.Forms.Label();
+            this.lblCurrnetData = new System.Windows.Forms.Label();
+            this.pnlContainer = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_ID = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.pnlSignautre = new System.Windows.Forms.Panel();
+            this.btnChangeSig = new System.Windows.Forms.Button();
+            this.txtSignature = new System.Windows.Forms.TextBox();
+            this.lblSignature = new System.Windows.Forms.Label();
+            this.pnlRegData.SuspendLayout();
+            this.pnlCurrentData.SuspendLayout();
+            this.pnlContainer.SuspendLayout();
+            this.pnlSignautre.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblHead
@@ -63,262 +65,306 @@ namespace appFelxMax.appForms.OtherForms
             this.lblHead.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblHead.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.lblHead.Image = global::appFelxMax.Properties.Resources.HelpColor;
             this.lblHead.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblHead.Location = new System.Drawing.Point(0, 0);
             this.lblHead.Name = "lblHead";
+            this.lblHead.Padding = new System.Windows.Forms.Padding(400, 0, 0, 0);
             this.lblHead.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblHead.Size = new System.Drawing.Size(501, 41);
+            this.lblHead.Size = new System.Drawing.Size(647, 41);
             this.lblHead.TabIndex = 16;
             this.lblHead.Text = "معلومات النسخة ";
-            this.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblHead.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // panel1
+            // pnlRegData
             // 
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 187);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(501, 99);
-            this.panel1.TabIndex = 17;
+            this.pnlRegData.Controls.Add(this.txtRMotherboard);
+            this.pnlRegData.Controls.Add(this.lblRMotherboard);
+            this.pnlRegData.Controls.Add(this.txtRHDD);
+            this.pnlRegData.Controls.Add(this.lblRHDD);
+            this.pnlRegData.Controls.Add(this.txtRMAC);
+            this.pnlRegData.Controls.Add(this.lblRMAC);
+            this.pnlRegData.Controls.Add(this.lblRegData);
+            this.pnlRegData.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlRegData.Location = new System.Drawing.Point(323, 41);
+            this.pnlRegData.Name = "pnlRegData";
+            this.pnlRegData.Size = new System.Drawing.Size(324, 147);
+            this.pnlRegData.TabIndex = 18;
             // 
-            // panel4
+            // txtRMotherboard
             // 
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Controls.Add(this.btnSave);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.panel4.Size = new System.Drawing.Size(501, 46);
-            this.panel4.TabIndex = 0;
+            this.txtRMotherboard.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtRMotherboard.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRMotherboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtRMotherboard.ForeColor = System.Drawing.Color.OrangeRed;
+            this.txtRMotherboard.Location = new System.Drawing.Point(0, 121);
+            this.txtRMotherboard.Name = "txtRMotherboard";
+            this.txtRMotherboard.ReadOnly = true;
+            this.txtRMotherboard.Size = new System.Drawing.Size(324, 19);
+            this.txtRMotherboard.TabIndex = 23;
+            this.txtRMotherboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // lblRMotherboard
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(254, 46);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "حفظ - F2";
-            this.button1.UseVisualStyleBackColor = false;
+            this.lblRMotherboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblRMotherboard.Location = new System.Drawing.Point(0, 101);
+            this.lblRMotherboard.Name = "lblRMotherboard";
+            this.lblRMotherboard.Size = new System.Drawing.Size(324, 20);
+            this.lblRMotherboard.TabIndex = 22;
+            this.lblRMotherboard.Text = "Motherboard";
+            this.lblRMotherboard.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtRHDD
+            // 
+            this.txtRHDD.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtRHDD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRHDD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtRHDD.ForeColor = System.Drawing.Color.OrangeRed;
+            this.txtRHDD.Location = new System.Drawing.Point(0, 82);
+            this.txtRHDD.Name = "txtRHDD";
+            this.txtRHDD.ReadOnly = true;
+            this.txtRHDD.Size = new System.Drawing.Size(324, 19);
+            this.txtRHDD.TabIndex = 21;
+            this.txtRHDD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblRHDD
+            // 
+            this.lblRHDD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblRHDD.Location = new System.Drawing.Point(0, 62);
+            this.lblRHDD.Name = "lblRHDD";
+            this.lblRHDD.Size = new System.Drawing.Size(324, 20);
+            this.lblRHDD.TabIndex = 20;
+            this.lblRHDD.Text = "HDD ";
+            this.lblRHDD.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtRMAC
+            // 
+            this.txtRMAC.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtRMAC.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRMAC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtRMAC.ForeColor = System.Drawing.Color.OrangeRed;
+            this.txtRMAC.Location = new System.Drawing.Point(0, 43);
+            this.txtRMAC.Name = "txtRMAC";
+            this.txtRMAC.ReadOnly = true;
+            this.txtRMAC.Size = new System.Drawing.Size(324, 19);
+            this.txtRMAC.TabIndex = 19;
+            this.txtRMAC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblRMAC
+            // 
+            this.lblRMAC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblRMAC.Location = new System.Drawing.Point(0, 23);
+            this.lblRMAC.Name = "lblRMAC";
+            this.lblRMAC.Size = new System.Drawing.Size(324, 20);
+            this.lblRMAC.TabIndex = 18;
+            this.lblRMAC.Text = "MAC Address";
+            this.lblRMAC.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblRegData
+            // 
+            this.lblRegData.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblRegData.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblRegData.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.lblRegData.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblRegData.Location = new System.Drawing.Point(0, 0);
+            this.lblRegData.Name = "lblRegData";
+            this.lblRegData.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblRegData.Size = new System.Drawing.Size(324, 23);
+            this.lblRegData.TabIndex = 17;
+            this.lblRegData.Text = "البيانات المسجلة";
+            this.lblRegData.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pnlCurrentData
+            // 
+            this.pnlCurrentData.Controls.Add(this.txtCMotherboard);
+            this.pnlCurrentData.Controls.Add(this.lblCMotherboard);
+            this.pnlCurrentData.Controls.Add(this.txtCHDD);
+            this.pnlCurrentData.Controls.Add(this.lblCHDD);
+            this.pnlCurrentData.Controls.Add(this.txtCMAC);
+            this.pnlCurrentData.Controls.Add(this.lblCMAC);
+            this.pnlCurrentData.Controls.Add(this.lblCurrnetData);
+            this.pnlCurrentData.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlCurrentData.Location = new System.Drawing.Point(-1, 41);
+            this.pnlCurrentData.Name = "pnlCurrentData";
+            this.pnlCurrentData.Size = new System.Drawing.Size(324, 147);
+            this.pnlCurrentData.TabIndex = 19;
+            // 
+            // txtCMotherboard
+            // 
+            this.txtCMotherboard.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCMotherboard.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCMotherboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtCMotherboard.ForeColor = System.Drawing.Color.OrangeRed;
+            this.txtCMotherboard.Location = new System.Drawing.Point(0, 121);
+            this.txtCMotherboard.Name = "txtCMotherboard";
+            this.txtCMotherboard.ReadOnly = true;
+            this.txtCMotherboard.Size = new System.Drawing.Size(324, 19);
+            this.txtCMotherboard.TabIndex = 29;
+            this.txtCMotherboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblCMotherboard
+            // 
+            this.lblCMotherboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblCMotherboard.Location = new System.Drawing.Point(0, 101);
+            this.lblCMotherboard.Name = "lblCMotherboard";
+            this.lblCMotherboard.Size = new System.Drawing.Size(324, 20);
+            this.lblCMotherboard.TabIndex = 28;
+            this.lblCMotherboard.Text = "Motherboard";
+            this.lblCMotherboard.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtCHDD
+            // 
+            this.txtCHDD.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCHDD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCHDD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtCHDD.ForeColor = System.Drawing.Color.OrangeRed;
+            this.txtCHDD.Location = new System.Drawing.Point(0, 82);
+            this.txtCHDD.Name = "txtCHDD";
+            this.txtCHDD.ReadOnly = true;
+            this.txtCHDD.Size = new System.Drawing.Size(324, 19);
+            this.txtCHDD.TabIndex = 27;
+            this.txtCHDD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblCHDD
+            // 
+            this.lblCHDD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblCHDD.Location = new System.Drawing.Point(0, 62);
+            this.lblCHDD.Name = "lblCHDD";
+            this.lblCHDD.Size = new System.Drawing.Size(324, 20);
+            this.lblCHDD.TabIndex = 26;
+            this.lblCHDD.Text = "HDD ";
+            this.lblCHDD.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtCMAC
+            // 
+            this.txtCMAC.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCMAC.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCMAC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtCMAC.ForeColor = System.Drawing.Color.OrangeRed;
+            this.txtCMAC.Location = new System.Drawing.Point(0, 43);
+            this.txtCMAC.Name = "txtCMAC";
+            this.txtCMAC.ReadOnly = true;
+            this.txtCMAC.Size = new System.Drawing.Size(324, 19);
+            this.txtCMAC.TabIndex = 25;
+            this.txtCMAC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblCMAC
+            // 
+            this.lblCMAC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblCMAC.Location = new System.Drawing.Point(0, 23);
+            this.lblCMAC.Name = "lblCMAC";
+            this.lblCMAC.Size = new System.Drawing.Size(324, 20);
+            this.lblCMAC.TabIndex = 24;
+            this.lblCMAC.Text = "MAC Address";
+            this.lblCMAC.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblCurrnetData
+            // 
+            this.lblCurrnetData.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblCurrnetData.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblCurrnetData.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrnetData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.lblCurrnetData.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblCurrnetData.Location = new System.Drawing.Point(0, 0);
+            this.lblCurrnetData.Name = "lblCurrnetData";
+            this.lblCurrnetData.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblCurrnetData.Size = new System.Drawing.Size(324, 23);
+            this.lblCurrnetData.TabIndex = 18;
+            this.lblCurrnetData.Text = "البيانات الحالية";
+            this.lblCurrnetData.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pnlContainer
+            // 
+            this.pnlContainer.Controls.Add(this.btnSave);
+            this.pnlContainer.Controls.Add(this.pnlSignautre);
+            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlContainer.Location = new System.Drawing.Point(0, 188);
+            this.pnlContainer.Name = "pnlContainer";
+            this.pnlContainer.Size = new System.Drawing.Size(647, 112);
+            this.pnlContainer.TabIndex = 17;
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.btnSave.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnSave.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(254, 0);
+            this.btnSave.Image = global::appFelxMax.Properties.Resources.DoneW;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.Location = new System.Drawing.Point(0, 74);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(247, 46);
-            this.btnSave.TabIndex = 16;
+            this.btnSave.Padding = new System.Windows.Forms.Padding(180, 0, 180, 0);
+            this.btnSave.Size = new System.Drawing.Size(647, 38);
+            this.btnSave.TabIndex = 29;
             this.btnSave.Text = "حفظ - F2";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // pnlSignautre
             // 
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.txt_ID);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(251, 41);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 146);
-            this.panel2.TabIndex = 18;
+            this.pnlSignautre.Controls.Add(this.btnChangeSig);
+            this.pnlSignautre.Controls.Add(this.txtSignature);
+            this.pnlSignautre.Controls.Add(this.lblSignature);
+            this.pnlSignautre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSignautre.Location = new System.Drawing.Point(0, 0);
+            this.pnlSignautre.Name = "pnlSignautre";
+            this.pnlSignautre.Size = new System.Drawing.Size(647, 74);
+            this.pnlSignautre.TabIndex = 0;
             // 
-            // textBox2
+            // btnChangeSig
             // 
-            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox2.Location = new System.Drawing.Point(0, 121);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(250, 19);
-            this.textBox2.TabIndex = 23;
+            this.btnChangeSig.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnChangeSig.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnChangeSig.FlatAppearance.BorderSize = 0;
+            this.btnChangeSig.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnChangeSig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangeSig.ForeColor = System.Drawing.Color.Black;
+            this.btnChangeSig.Image = global::appFelxMax.Properties.Resources.FingerprintColor;
+            this.btnChangeSig.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnChangeSig.Location = new System.Drawing.Point(0, 43);
+            this.btnChangeSig.Name = "btnChangeSig";
+            this.btnChangeSig.Padding = new System.Windows.Forms.Padding(150, 0, 180, 0);
+            this.btnChangeSig.Size = new System.Drawing.Size(647, 31);
+            this.btnChangeSig.TabIndex = 28;
+            this.btnChangeSig.Text = "تغيير البصمة ";
+            this.btnChangeSig.UseVisualStyleBackColor = false;
+            this.btnChangeSig.Click += new System.EventHandler(this.btnChangeSig_Click);
             // 
-            // label5
+            // txtSignature
             // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label5.Location = new System.Drawing.Point(0, 101);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(250, 20);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Motherboard";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.txtSignature.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSignature.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSignature.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtSignature.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSignature.ForeColor = System.Drawing.Color.OrangeRed;
+            this.txtSignature.Location = new System.Drawing.Point(0, 20);
+            this.txtSignature.Name = "txtSignature";
+            this.txtSignature.ReadOnly = true;
+            this.txtSignature.Size = new System.Drawing.Size(647, 23);
+            this.txtSignature.TabIndex = 27;
+            this.txtSignature.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox1
+            // lblSignature
             // 
-            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox1.Location = new System.Drawing.Point(0, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(250, 19);
-            this.textBox1.TabIndex = 21;
-            // 
-            // label4
-            // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label4.Location = new System.Drawing.Point(0, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(250, 20);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "HDD ";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txt_ID
-            // 
-            this.txt_ID.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_ID.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txt_ID.Location = new System.Drawing.Point(0, 43);
-            this.txt_ID.Name = "txt_ID";
-            this.txt_ID.ReadOnly = true;
-            this.txt_ID.Size = new System.Drawing.Size(250, 19);
-            this.txt_ID.TabIndex = 19;
-            // 
-            // label3
-            // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Location = new System.Drawing.Point(0, 23);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(250, 20);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "MAC Address";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(250, 23);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "البيانات المسجلة";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.textBox4);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.textBox5);
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1, 41);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(250, 146);
-            this.panel3.TabIndex = 19;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox3.Location = new System.Drawing.Point(0, 121);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(250, 19);
-            this.textBox3.TabIndex = 29;
-            // 
-            // label6
-            // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label6.Location = new System.Drawing.Point(0, 101);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(250, 20);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Motherboard";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox4.Location = new System.Drawing.Point(0, 82);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(250, 19);
-            this.textBox4.TabIndex = 27;
-            // 
-            // label7
-            // 
-            this.label7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label7.Location = new System.Drawing.Point(0, 62);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(250, 20);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "HDD ";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox5.Location = new System.Drawing.Point(0, 43);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(250, 19);
-            this.textBox5.TabIndex = 25;
-            // 
-            // label8
-            // 
-            this.label8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label8.Location = new System.Drawing.Point(0, 23);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(250, 20);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "MAC Address";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(250, 23);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "البيانات الحالية";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblSignature.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblSignature.Location = new System.Drawing.Point(0, 0);
+            this.lblSignature.Name = "lblSignature";
+            this.lblSignature.Size = new System.Drawing.Size(647, 20);
+            this.lblSignature.TabIndex = 26;
+            this.lblSignature.Text = "Signature";
+            this.lblSignature.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // frmCopyInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(501, 286);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(647, 300);
+            this.Controls.Add(this.pnlCurrentData);
+            this.Controls.Add(this.pnlRegData);
+            this.Controls.Add(this.pnlContainer);
             this.Controls.Add(this.lblHead);
             this.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -329,12 +375,13 @@ namespace appFelxMax.appForms.OtherForms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "معلومات النسخة";
             this.Load += new System.EventHandler(this.frmCopyInfo_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.pnlRegData.ResumeLayout(false);
+            this.pnlRegData.PerformLayout();
+            this.pnlCurrentData.ResumeLayout(false);
+            this.pnlCurrentData.PerformLayout();
+            this.pnlContainer.ResumeLayout(false);
+            this.pnlSignautre.ResumeLayout(false);
+            this.pnlSignautre.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -342,25 +389,27 @@ namespace appFelxMax.appForms.OtherForms
         #endregion
 
         private System.Windows.Forms.Label lblHead;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_ID;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel pnlRegData;
+        private System.Windows.Forms.Panel pnlCurrentData;
+        private System.Windows.Forms.Label lblRegData;
+        private System.Windows.Forms.Label lblCurrnetData;
+        private System.Windows.Forms.Label lblRMAC;
+        private System.Windows.Forms.TextBox txtRMotherboard;
+        private System.Windows.Forms.Label lblRMotherboard;
+        private System.Windows.Forms.TextBox txtRHDD;
+        private System.Windows.Forms.Label lblRHDD;
+        private System.Windows.Forms.TextBox txtRMAC;
+        private System.Windows.Forms.TextBox txtCMotherboard;
+        private System.Windows.Forms.Label lblCMotherboard;
+        private System.Windows.Forms.TextBox txtCHDD;
+        private System.Windows.Forms.Label lblCHDD;
+        private System.Windows.Forms.TextBox txtCMAC;
+        private System.Windows.Forms.Label lblCMAC;
+        private System.Windows.Forms.Panel pnlContainer;
+        private System.Windows.Forms.Panel pnlSignautre;
+        private System.Windows.Forms.TextBox txtSignature;
+        private System.Windows.Forms.Label lblSignature;
+        private System.Windows.Forms.Button btnChangeSig;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button button1;
     }
 }

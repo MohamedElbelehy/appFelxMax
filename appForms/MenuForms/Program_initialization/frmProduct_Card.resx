@@ -117,35 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblSearch.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAXVJREFUSEvF1L0rRXEcx/ErD4ObVRIpgxJlohSDGExMmK9BLEwKxWKRXXn4CzyM
-        /gyzTSnCJAZlULw/5/fgnJNzOvfeHz71qu+5t37f83s4vxI5xiueA9A4l2iAzxuaTFl3NPANuqInGzUI
-        mWv0mNLkA2cBaZkSDd4xF9A9Eg1+fYn+tMEurjBqqS7iBC65DdrRi1ZLdRGdcMltMIEldFuqi5iBS26D
-        Beyhz1JdxDJc/neTD6E7ZdJK3zXOCpR+rGIHmn0Z02iETy0zaIEuyVvsYxP6ivWRTSGReINFHGHAUh03
-        C0WDX6AtevrOGB4wFD3ZxBuMQJ97h5W+BgahZdGbpwd3qUBXtk+1S7QGLUtWtHwv8PtQbYNtbJgyM0/w
-        M9Rtqo0pYhjzOEVW9IHemdJEG5a+07McQEdRp0Ub+lPOsW7K2qPZ6LRoQ5v1A9Gba/BP6P+6o6Oo06IN
-        fYSWRW/umo8jSHRa0kdWg6tJ1jIGCYOXtr4A8fmRRsd8F40AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="lblFilter.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAHhJREFUSEvllEsOgCAMRLn/sTSeSylJzUSGT6smiC95C5gyLiSE37BF9+iaVi8g
-        5aobLKmpsAzNYENMhWWoCffBXuTnSvmSVrMw3tXFA1YVtneCoVWF7bl5tIwx7tX9xsvJwOLrB1jWMqM2
-        xLKWRbqG7jDny+kkhAPPjYykLYJZpQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnPrint.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAM9JREFUOE9jQAf///+XB2JjIrE8VBtuAFQ0E4jXQml8GKwGqg03gCo2hnJxApCa
-        UQMhACjIA8RXgJhScAmIuUEGGoG51AFGMKeTCw4BsTQQvwbzQEEFIiBsssBzIG4E4t9gHhUMRAf0M5DY
-        ZIMOcBsIxPFAfAYHBsnhNFATwkYBIMXCUBoZa0AdiMshEHkgIxeIQTkEhK8BMUixD5IYDHeCNQABkA1S
-        A1ILk8uGSqECqCQuA2EYJAdSQ3xeBmJsXoZhmBzRBlK1gKWgCmBgAAAH9en54fm34AAAAABJRU5ErkJg
-        gg==
-</value>
-  </data>
 </root>

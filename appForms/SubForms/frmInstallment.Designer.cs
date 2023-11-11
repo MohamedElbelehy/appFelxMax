@@ -35,46 +35,46 @@ namespace appFelxMax.appForms.SubForms
             this.btnSave = new System.Windows.Forms.Button();
             this.lblHead = new System.Windows.Forms.Label();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.pnlChoose = new System.Windows.Forms.Panel();
-            this.rdbBill = new System.Windows.Forms.RadioButton();
-            this.rdbItem = new System.Windows.Forms.RadioButton();
-            this.cmbItem = new System.Windows.Forms.ComboBox();
-            this.pnlPrice = new System.Windows.Forms.Panel();
-            this.lblPrice = new System.Windows.Forms.Label();
-            this.txtPrice = new System.Windows.Forms.TextBox();
-            this.pnlPayed = new System.Windows.Forms.Panel();
-            this.lblPayed = new System.Windows.Forms.Label();
-            this.txtPayed = new System.Windows.Forms.TextBox();
-            this.pnlMonths = new System.Windows.Forms.Panel();
-            this.lblMonths = new System.Windows.Forms.Label();
-            this.txtMonths = new System.Windows.Forms.TextBox();
-            this.pnlPercent = new System.Windows.Forms.Panel();
-            this.lblPercent = new System.Windows.Forms.Label();
-            this.txtPercent = new System.Windows.Forms.TextBox();
+            this.pnlNotes = new System.Windows.Forms.Panel();
+            this.txtNotes = new System.Windows.Forms.TextBox();
+            this.lblNotes = new System.Windows.Forms.Label();
+            this.pnlFristDate = new System.Windows.Forms.Panel();
+            this.dtpDate = new System.Windows.Forms.DateTimePicker();
+            this.lblFirstDate = new System.Windows.Forms.Label();
             this.pnlMonthlyInstallment = new System.Windows.Forms.Panel();
             this.lblMonthlyInstallment = new System.Windows.Forms.Label();
             this.txtMonthlyInstallment = new System.Windows.Forms.TextBox();
-            this.pnlFristDate = new System.Windows.Forms.Panel();
-            this.lblFirstDate = new System.Windows.Forms.Label();
-            this.dtpDate = new System.Windows.Forms.DateTimePicker();
-            this.pnlNotes = new System.Windows.Forms.Panel();
-            this.lblNotes = new System.Windows.Forms.Label();
-            this.txtNotes = new System.Windows.Forms.TextBox();
+            this.pnlPercent = new System.Windows.Forms.Panel();
+            this.lblPercent = new System.Windows.Forms.Label();
+            this.txtPercent = new System.Windows.Forms.TextBox();
+            this.pnlMonths = new System.Windows.Forms.Panel();
+            this.lblMonths = new System.Windows.Forms.Label();
+            this.txtMonths = new System.Windows.Forms.TextBox();
+            this.pnlPayed = new System.Windows.Forms.Panel();
+            this.lblPayed = new System.Windows.Forms.Label();
+            this.txtPayed = new System.Windows.Forms.TextBox();
+            this.pnlPrice = new System.Windows.Forms.Panel();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.pnlChoose = new System.Windows.Forms.Panel();
+            this.cmbItem = new System.Windows.Forms.ComboBox();
+            this.rdbItem = new System.Windows.Forms.RadioButton();
+            this.rdbBill = new System.Windows.Forms.RadioButton();
             this.pnlOperations.SuspendLayout();
             this.pnlMain.SuspendLayout();
-            this.pnlChoose.SuspendLayout();
-            this.pnlPrice.SuspendLayout();
-            this.pnlPayed.SuspendLayout();
-            this.pnlMonths.SuspendLayout();
-            this.pnlPercent.SuspendLayout();
-            this.pnlMonthlyInstallment.SuspendLayout();
-            this.pnlFristDate.SuspendLayout();
             this.pnlNotes.SuspendLayout();
+            this.pnlFristDate.SuspendLayout();
+            this.pnlMonthlyInstallment.SuspendLayout();
+            this.pnlPercent.SuspendLayout();
+            this.pnlMonths.SuspendLayout();
+            this.pnlPayed.SuspendLayout();
+            this.pnlPrice.SuspendLayout();
+            this.pnlChoose.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlOperations
             // 
-            this.pnlOperations.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlOperations.BackColor = System.Drawing.Color.LightGray;
             this.pnlOperations.Controls.Add(this.btnExit);
             this.pnlOperations.Controls.Add(this.btnSave);
             this.pnlOperations.Dock = System.Windows.Forms.DockStyle.Top;
@@ -85,11 +85,11 @@ namespace appFelxMax.appForms.SubForms
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnExit.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.ForeColor = System.Drawing.Color.Black;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.Location = new System.Drawing.Point(366, 3);
             this.btnExit.Name = "btnExit";
@@ -101,11 +101,12 @@ namespace appFelxMax.appForms.SubForms
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnSave.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Image = global::appFelxMax.Properties.Resources.DoneColored;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.Location = new System.Drawing.Point(472, 3);
             this.btnSave.Name = "btnSave";
@@ -146,170 +147,67 @@ namespace appFelxMax.appForms.SubForms
             this.pnlMain.Size = new System.Drawing.Size(584, 181);
             this.pnlMain.TabIndex = 16;
             // 
-            // pnlChoose
+            // pnlNotes
             // 
-            this.pnlChoose.Controls.Add(this.cmbItem);
-            this.pnlChoose.Controls.Add(this.rdbItem);
-            this.pnlChoose.Controls.Add(this.rdbBill);
-            this.pnlChoose.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlChoose.Location = new System.Drawing.Point(0, 0);
-            this.pnlChoose.Name = "pnlChoose";
-            this.pnlChoose.Size = new System.Drawing.Size(584, 40);
-            this.pnlChoose.TabIndex = 0;
+            this.pnlNotes.Controls.Add(this.txtNotes);
+            this.pnlNotes.Controls.Add(this.lblNotes);
+            this.pnlNotes.Location = new System.Drawing.Point(6, 106);
+            this.pnlNotes.Name = "pnlNotes";
+            this.pnlNotes.Size = new System.Drawing.Size(362, 54);
+            this.pnlNotes.TabIndex = 6;
             // 
-            // rdbBill
+            // txtNotes
             // 
-            this.rdbBill.AutoSize = true;
-            this.rdbBill.Location = new System.Drawing.Point(446, 6);
-            this.rdbBill.Name = "rdbBill";
-            this.rdbBill.Size = new System.Drawing.Size(126, 26);
-            this.rdbBill.TabIndex = 0;
-            this.rdbBill.TabStop = true;
-            this.rdbBill.Text = "تقسيط الفاتورة بالكامل";
-            this.rdbBill.UseVisualStyleBackColor = true;
+            this.txtNotes.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txtNotes.Location = new System.Drawing.Point(0, 24);
+            this.txtNotes.Name = "txtNotes";
+            this.txtNotes.Size = new System.Drawing.Size(362, 30);
+            this.txtNotes.TabIndex = 3;
             // 
-            // rdbItem
+            // lblNotes
             // 
-            this.rdbItem.AutoSize = true;
-            this.rdbItem.Location = new System.Drawing.Point(354, 6);
-            this.rdbItem.Name = "rdbItem";
-            this.rdbItem.Size = new System.Drawing.Size(86, 26);
-            this.rdbItem.TabIndex = 0;
-            this.rdbItem.TabStop = true;
-            this.rdbItem.Text = "تقسيط صنف ";
-            this.rdbItem.UseVisualStyleBackColor = true;
+            this.lblNotes.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblNotes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblNotes.ForeColor = System.Drawing.Color.Black;
+            this.lblNotes.Location = new System.Drawing.Point(0, 0);
+            this.lblNotes.Name = "lblNotes";
+            this.lblNotes.Size = new System.Drawing.Size(362, 22);
+            this.lblNotes.TabIndex = 2;
+            this.lblNotes.Text = "ملاحظات";
+            this.lblNotes.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // cmbItem
+            // pnlFristDate
             // 
-            this.cmbItem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbItem.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbItem.FormattingEnabled = true;
-            this.cmbItem.Location = new System.Drawing.Point(6, 6);
-            this.cmbItem.Name = "cmbItem";
-            this.cmbItem.Size = new System.Drawing.Size(342, 30);
-            this.cmbItem.TabIndex = 13;
+            this.pnlFristDate.Controls.Add(this.dtpDate);
+            this.pnlFristDate.Controls.Add(this.lblFirstDate);
+            this.pnlFristDate.Location = new System.Drawing.Point(374, 106);
+            this.pnlFristDate.Name = "pnlFristDate";
+            this.pnlFristDate.Size = new System.Drawing.Size(198, 54);
+            this.pnlFristDate.TabIndex = 6;
             // 
-            // pnlPrice
+            // dtpDate
             // 
-            this.pnlPrice.Controls.Add(this.lblPrice);
-            this.pnlPrice.Controls.Add(this.txtPrice);
-            this.pnlPrice.Location = new System.Drawing.Point(476, 46);
-            this.pnlPrice.Name = "pnlPrice";
-            this.pnlPrice.Size = new System.Drawing.Size(96, 54);
-            this.pnlPrice.TabIndex = 6;
+            this.dtpDate.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDate.Location = new System.Drawing.Point(0, 24);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.RightToLeftLayout = true;
+            this.dtpDate.Size = new System.Drawing.Size(198, 30);
+            this.dtpDate.TabIndex = 3;
             // 
-            // lblPrice
+            // lblFirstDate
             // 
-            this.lblPrice.BackColor = System.Drawing.Color.Tan;
-            this.lblPrice.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblPrice.Location = new System.Drawing.Point(0, 0);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(96, 22);
-            this.lblPrice.TabIndex = 2;
-            this.lblPrice.Text = "السعر";
-            this.lblPrice.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtPrice.Location = new System.Drawing.Point(0, 24);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(96, 30);
-            this.txtPrice.TabIndex = 0;
-            // 
-            // pnlPayed
-            // 
-            this.pnlPayed.Controls.Add(this.lblPayed);
-            this.pnlPayed.Controls.Add(this.txtPayed);
-            this.pnlPayed.Location = new System.Drawing.Point(374, 46);
-            this.pnlPayed.Name = "pnlPayed";
-            this.pnlPayed.Size = new System.Drawing.Size(96, 54);
-            this.pnlPayed.TabIndex = 6;
-            // 
-            // lblPayed
-            // 
-            this.lblPayed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.lblPayed.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblPayed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblPayed.ForeColor = System.Drawing.Color.White;
-            this.lblPayed.Location = new System.Drawing.Point(0, 0);
-            this.lblPayed.Name = "lblPayed";
-            this.lblPayed.Size = new System.Drawing.Size(96, 22);
-            this.lblPayed.TabIndex = 2;
-            this.lblPayed.Text = "المقدم";
-            this.lblPayed.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txtPayed
-            // 
-            this.txtPayed.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtPayed.Location = new System.Drawing.Point(0, 24);
-            this.txtPayed.Name = "txtPayed";
-            this.txtPayed.Size = new System.Drawing.Size(96, 30);
-            this.txtPayed.TabIndex = 0;
-            // 
-            // pnlMonths
-            // 
-            this.pnlMonths.Controls.Add(this.lblMonths);
-            this.pnlMonths.Controls.Add(this.txtMonths);
-            this.pnlMonths.Location = new System.Drawing.Point(272, 46);
-            this.pnlMonths.Name = "pnlMonths";
-            this.pnlMonths.Size = new System.Drawing.Size(96, 54);
-            this.pnlMonths.TabIndex = 6;
-            // 
-            // lblMonths
-            // 
-            this.lblMonths.BackColor = System.Drawing.Color.DarkCyan;
-            this.lblMonths.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblMonths.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblMonths.ForeColor = System.Drawing.Color.White;
-            this.lblMonths.Location = new System.Drawing.Point(0, 0);
-            this.lblMonths.Name = "lblMonths";
-            this.lblMonths.Size = new System.Drawing.Size(96, 22);
-            this.lblMonths.TabIndex = 2;
-            this.lblMonths.Text = "المدة بالاشهر";
-            this.lblMonths.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txtMonths
-            // 
-            this.txtMonths.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtMonths.Location = new System.Drawing.Point(0, 24);
-            this.txtMonths.Name = "txtMonths";
-            this.txtMonths.Size = new System.Drawing.Size(96, 30);
-            this.txtMonths.TabIndex = 0;
-            // 
-            // pnlPercent
-            // 
-            this.pnlPercent.Controls.Add(this.lblPercent);
-            this.pnlPercent.Controls.Add(this.txtPercent);
-            this.pnlPercent.Location = new System.Drawing.Point(170, 46);
-            this.pnlPercent.Name = "pnlPercent";
-            this.pnlPercent.Size = new System.Drawing.Size(96, 54);
-            this.pnlPercent.TabIndex = 6;
-            // 
-            // lblPercent
-            // 
-            this.lblPercent.BackColor = System.Drawing.Color.DarkCyan;
-            this.lblPercent.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblPercent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblPercent.ForeColor = System.Drawing.Color.White;
-            this.lblPercent.Location = new System.Drawing.Point(0, 0);
-            this.lblPercent.Name = "lblPercent";
-            this.lblPercent.Size = new System.Drawing.Size(96, 22);
-            this.lblPercent.TabIndex = 2;
-            this.lblPercent.Text = "النسبة % ";
-            this.lblPercent.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txtPercent
-            // 
-            this.txtPercent.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtPercent.Location = new System.Drawing.Point(0, 24);
-            this.txtPercent.Name = "txtPercent";
-            this.txtPercent.Size = new System.Drawing.Size(96, 30);
-            this.txtPercent.TabIndex = 0;
+            this.lblFirstDate.BackColor = System.Drawing.Color.DarkCyan;
+            this.lblFirstDate.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblFirstDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblFirstDate.ForeColor = System.Drawing.Color.White;
+            this.lblFirstDate.Location = new System.Drawing.Point(0, 0);
+            this.lblFirstDate.Name = "lblFirstDate";
+            this.lblFirstDate.Size = new System.Drawing.Size(198, 22);
+            this.lblFirstDate.TabIndex = 2;
+            this.lblFirstDate.Text = "ميعاد استحقاق اول قسط";
+            this.lblFirstDate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pnlMonthlyInstallment
             // 
@@ -341,67 +239,170 @@ namespace appFelxMax.appForms.SubForms
             this.txtMonthlyInstallment.Size = new System.Drawing.Size(158, 30);
             this.txtMonthlyInstallment.TabIndex = 0;
             // 
-            // pnlFristDate
+            // pnlPercent
             // 
-            this.pnlFristDate.Controls.Add(this.dtpDate);
-            this.pnlFristDate.Controls.Add(this.lblFirstDate);
-            this.pnlFristDate.Location = new System.Drawing.Point(374, 106);
-            this.pnlFristDate.Name = "pnlFristDate";
-            this.pnlFristDate.Size = new System.Drawing.Size(198, 54);
-            this.pnlFristDate.TabIndex = 6;
+            this.pnlPercent.Controls.Add(this.lblPercent);
+            this.pnlPercent.Controls.Add(this.txtPercent);
+            this.pnlPercent.Location = new System.Drawing.Point(170, 46);
+            this.pnlPercent.Name = "pnlPercent";
+            this.pnlPercent.Size = new System.Drawing.Size(96, 54);
+            this.pnlPercent.TabIndex = 6;
             // 
-            // lblFirstDate
+            // lblPercent
             // 
-            this.lblFirstDate.BackColor = System.Drawing.Color.DarkCyan;
-            this.lblFirstDate.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblFirstDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblFirstDate.ForeColor = System.Drawing.Color.White;
-            this.lblFirstDate.Location = new System.Drawing.Point(0, 0);
-            this.lblFirstDate.Name = "lblFirstDate";
-            this.lblFirstDate.Size = new System.Drawing.Size(198, 22);
-            this.lblFirstDate.TabIndex = 2;
-            this.lblFirstDate.Text = "ميعاد استحقاق اول قسط";
-            this.lblFirstDate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblPercent.BackColor = System.Drawing.Color.DarkCyan;
+            this.lblPercent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblPercent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblPercent.ForeColor = System.Drawing.Color.White;
+            this.lblPercent.Location = new System.Drawing.Point(0, 0);
+            this.lblPercent.Name = "lblPercent";
+            this.lblPercent.Size = new System.Drawing.Size(96, 22);
+            this.lblPercent.TabIndex = 2;
+            this.lblPercent.Text = "النسبة % ";
+            this.lblPercent.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // dtpDate
+            // txtPercent
             // 
-            this.dtpDate.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDate.Location = new System.Drawing.Point(0, 24);
-            this.dtpDate.Name = "dtpDate";
-            this.dtpDate.RightToLeftLayout = true;
-            this.dtpDate.Size = new System.Drawing.Size(198, 30);
-            this.dtpDate.TabIndex = 3;
+            this.txtPercent.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txtPercent.Location = new System.Drawing.Point(0, 24);
+            this.txtPercent.Name = "txtPercent";
+            this.txtPercent.Size = new System.Drawing.Size(96, 30);
+            this.txtPercent.TabIndex = 0;
             // 
-            // pnlNotes
+            // pnlMonths
             // 
-            this.pnlNotes.Controls.Add(this.txtNotes);
-            this.pnlNotes.Controls.Add(this.lblNotes);
-            this.pnlNotes.Location = new System.Drawing.Point(6, 106);
-            this.pnlNotes.Name = "pnlNotes";
-            this.pnlNotes.Size = new System.Drawing.Size(362, 54);
-            this.pnlNotes.TabIndex = 6;
+            this.pnlMonths.Controls.Add(this.lblMonths);
+            this.pnlMonths.Controls.Add(this.txtMonths);
+            this.pnlMonths.Location = new System.Drawing.Point(272, 46);
+            this.pnlMonths.Name = "pnlMonths";
+            this.pnlMonths.Size = new System.Drawing.Size(96, 54);
+            this.pnlMonths.TabIndex = 6;
             // 
-            // lblNotes
+            // lblMonths
             // 
-            this.lblNotes.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblNotes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblNotes.ForeColor = System.Drawing.Color.Black;
-            this.lblNotes.Location = new System.Drawing.Point(0, 0);
-            this.lblNotes.Name = "lblNotes";
-            this.lblNotes.Size = new System.Drawing.Size(362, 22);
-            this.lblNotes.TabIndex = 2;
-            this.lblNotes.Text = "ملاحظات";
-            this.lblNotes.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblMonths.BackColor = System.Drawing.Color.DarkCyan;
+            this.lblMonths.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblMonths.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblMonths.ForeColor = System.Drawing.Color.White;
+            this.lblMonths.Location = new System.Drawing.Point(0, 0);
+            this.lblMonths.Name = "lblMonths";
+            this.lblMonths.Size = new System.Drawing.Size(96, 22);
+            this.lblMonths.TabIndex = 2;
+            this.lblMonths.Text = "المدة بالاشهر";
+            this.lblMonths.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // txtNotes
+            // txtMonths
             // 
-            this.txtNotes.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtNotes.Location = new System.Drawing.Point(0, 24);
-            this.txtNotes.Name = "txtNotes";
-            this.txtNotes.Size = new System.Drawing.Size(362, 30);
-            this.txtNotes.TabIndex = 3;
+            this.txtMonths.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txtMonths.Location = new System.Drawing.Point(0, 24);
+            this.txtMonths.Name = "txtMonths";
+            this.txtMonths.Size = new System.Drawing.Size(96, 30);
+            this.txtMonths.TabIndex = 0;
+            // 
+            // pnlPayed
+            // 
+            this.pnlPayed.Controls.Add(this.lblPayed);
+            this.pnlPayed.Controls.Add(this.txtPayed);
+            this.pnlPayed.Location = new System.Drawing.Point(374, 46);
+            this.pnlPayed.Name = "pnlPayed";
+            this.pnlPayed.Size = new System.Drawing.Size(96, 54);
+            this.pnlPayed.TabIndex = 6;
+            // 
+            // lblPayed
+            // 
+            this.lblPayed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.lblPayed.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblPayed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblPayed.ForeColor = System.Drawing.Color.White;
+            this.lblPayed.Location = new System.Drawing.Point(0, 0);
+            this.lblPayed.Name = "lblPayed";
+            this.lblPayed.Size = new System.Drawing.Size(96, 22);
+            this.lblPayed.TabIndex = 2;
+            this.lblPayed.Text = "المقدم";
+            this.lblPayed.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtPayed
+            // 
+            this.txtPayed.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txtPayed.Location = new System.Drawing.Point(0, 24);
+            this.txtPayed.Name = "txtPayed";
+            this.txtPayed.Size = new System.Drawing.Size(96, 30);
+            this.txtPayed.TabIndex = 0;
+            // 
+            // pnlPrice
+            // 
+            this.pnlPrice.Controls.Add(this.lblPrice);
+            this.pnlPrice.Controls.Add(this.txtPrice);
+            this.pnlPrice.Location = new System.Drawing.Point(476, 46);
+            this.pnlPrice.Name = "pnlPrice";
+            this.pnlPrice.Size = new System.Drawing.Size(96, 54);
+            this.pnlPrice.TabIndex = 6;
+            // 
+            // lblPrice
+            // 
+            this.lblPrice.BackColor = System.Drawing.Color.Tan;
+            this.lblPrice.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblPrice.ForeColor = System.Drawing.Color.Black;
+            this.lblPrice.Location = new System.Drawing.Point(0, 0);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(96, 22);
+            this.lblPrice.TabIndex = 2;
+            this.lblPrice.Text = "السعر";
+            this.lblPrice.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txtPrice.Location = new System.Drawing.Point(0, 24);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(96, 30);
+            this.txtPrice.TabIndex = 0;
+            // 
+            // pnlChoose
+            // 
+            this.pnlChoose.Controls.Add(this.cmbItem);
+            this.pnlChoose.Controls.Add(this.rdbItem);
+            this.pnlChoose.Controls.Add(this.rdbBill);
+            this.pnlChoose.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlChoose.Location = new System.Drawing.Point(0, 0);
+            this.pnlChoose.Name = "pnlChoose";
+            this.pnlChoose.Size = new System.Drawing.Size(584, 40);
+            this.pnlChoose.TabIndex = 0;
+            // 
+            // cmbItem
+            // 
+            this.cmbItem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbItem.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cmbItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbItem.FormattingEnabled = true;
+            this.cmbItem.Location = new System.Drawing.Point(6, 6);
+            this.cmbItem.Name = "cmbItem";
+            this.cmbItem.Size = new System.Drawing.Size(342, 30);
+            this.cmbItem.TabIndex = 13;
+            // 
+            // rdbItem
+            // 
+            this.rdbItem.AutoSize = true;
+            this.rdbItem.Location = new System.Drawing.Point(354, 6);
+            this.rdbItem.Name = "rdbItem";
+            this.rdbItem.Size = new System.Drawing.Size(86, 26);
+            this.rdbItem.TabIndex = 0;
+            this.rdbItem.TabStop = true;
+            this.rdbItem.Text = "تقسيط صنف ";
+            this.rdbItem.UseVisualStyleBackColor = true;
+            // 
+            // rdbBill
+            // 
+            this.rdbBill.AutoSize = true;
+            this.rdbBill.Location = new System.Drawing.Point(446, 6);
+            this.rdbBill.Name = "rdbBill";
+            this.rdbBill.Size = new System.Drawing.Size(126, 26);
+            this.rdbBill.TabIndex = 0;
+            this.rdbBill.TabStop = true;
+            this.rdbBill.Text = "تقسيط الفاتورة بالكامل";
+            this.rdbBill.UseVisualStyleBackColor = true;
             // 
             // frmInstallment
             // 
@@ -424,21 +425,21 @@ namespace appFelxMax.appForms.SubForms
             this.Text = "تقسيط المنتجات";
             this.pnlOperations.ResumeLayout(false);
             this.pnlMain.ResumeLayout(false);
-            this.pnlChoose.ResumeLayout(false);
-            this.pnlChoose.PerformLayout();
-            this.pnlPrice.ResumeLayout(false);
-            this.pnlPrice.PerformLayout();
-            this.pnlPayed.ResumeLayout(false);
-            this.pnlPayed.PerformLayout();
-            this.pnlMonths.ResumeLayout(false);
-            this.pnlMonths.PerformLayout();
-            this.pnlPercent.ResumeLayout(false);
-            this.pnlPercent.PerformLayout();
-            this.pnlMonthlyInstallment.ResumeLayout(false);
-            this.pnlMonthlyInstallment.PerformLayout();
-            this.pnlFristDate.ResumeLayout(false);
             this.pnlNotes.ResumeLayout(false);
             this.pnlNotes.PerformLayout();
+            this.pnlFristDate.ResumeLayout(false);
+            this.pnlMonthlyInstallment.ResumeLayout(false);
+            this.pnlMonthlyInstallment.PerformLayout();
+            this.pnlPercent.ResumeLayout(false);
+            this.pnlPercent.PerformLayout();
+            this.pnlMonths.ResumeLayout(false);
+            this.pnlMonths.PerformLayout();
+            this.pnlPayed.ResumeLayout(false);
+            this.pnlPayed.PerformLayout();
+            this.pnlPrice.ResumeLayout(false);
+            this.pnlPrice.PerformLayout();
+            this.pnlChoose.ResumeLayout(false);
+            this.pnlChoose.PerformLayout();
             this.ResumeLayout(false);
 
         }

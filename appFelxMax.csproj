@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AAJGen, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\AAJGen.0.0.3\lib\net40\AAJGen.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\FlexMax_db\bin\Debug\EntityFramework.dll</HintPath>
@@ -40,9 +43,16 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\FlexMax_db\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\MSTest.TestFramework.3.1.1\lib\net462\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\MSTest.TestFramework.3.1.1\lib\net462\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,6 +66,19 @@
   <ItemGroup>
     <Compile Include="appClass\clsDesign\clsUIDesign.cs" />
     <Compile Include="appClass\clsProgOptions\clsCopyDetails.cs" />
+    <Compile Include="appClass\clsProgOptions\clsGenerate.cs" />
+    <Compile Include="appForms\MenuForms\AccountForms\frmCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmCustomers.Designer.cs">
+      <DependentUpon>frmCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmSafe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmSafe.Designer.cs">
+      <DependentUpon>frmSafe.cs</DependentUpon>
+    </Compile>
     <Compile Include="appForms\MenuForms\AccountForms\frmTreasure_MainCash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +96,12 @@
     </Compile>
     <Compile Include="appForms\MenuForms\Program_initialization\frmBranch_Info.Designer.cs">
       <DependentUpon>frmBranch_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmProduct_Card.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmProduct_Card.Designer.cs">
+      <DependentUpon>frmProduct_Card.cs</DependentUpon>
     </Compile>
     <Compile Include="appForms\MenuForms\Program_initialization\frmProduct_Group.cs">
       <SubType>Form</SubType>
@@ -97,12 +126,6 @@
     </Compile>
     <Compile Include="appForms\MenuForms\Program_initialization\frmUnits.Designer.cs">
       <DependentUpon>frmUnits.cs</DependentUpon>
-    </Compile>
-    <Compile Include="appForms\MainForms\frmCustVend.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="appForms\MainForms\frmCustVend.Designer.cs">
-      <DependentUpon>frmCustVend.cs</DependentUpon>
     </Compile>
     <Compile Include="appForms\MainForms\frmLogin.cs">
       <SubType>Form</SubType>
@@ -196,6 +219,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmCustomers.resx">
+      <DependentUpon>frmCustomers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmTreasure_MainCash.resx">
       <DependentUpon>frmTreasure_MainCash.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmBranch_Info.resx">
       <DependentUpon>frmBranch_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmProduct_Card.resx">
+      <DependentUpon>frmProduct_Card.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmProduct_Group.resx">
       <DependentUpon>frmProduct_Group.cs</DependentUpon>
@@ -216,9 +245,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmUnits.resx">
       <DependentUpon>frmUnits.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="appForms\MainForms\frmCustVend.resx">
-      <DependentUpon>frmCustVend.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="appForms\MainForms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -270,6 +296,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -703,6 +730,177 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoneColored.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SynchronizeColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroupY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddItemsColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ItemsCardColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ItemsColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FilterW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FilterB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FilterS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WindowColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StoreColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrolleyColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddListColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SafeColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DueAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DueReport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DuesColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BankColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmpAccount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddUserColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AttendanceColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StoreMove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BranchTransferColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expired.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ItemLimitColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdminColored.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FeatureSettingsColored.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClientsW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VendorsW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoxB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoxS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoxW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScheduleB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScheduleS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ScheduleW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserCardB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserCardS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserCardW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SuccessW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WarrningW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ErrorW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExcelColor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FilterColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelivaryColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OffColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OnColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OwnerColor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

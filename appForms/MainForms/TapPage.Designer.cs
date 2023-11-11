@@ -52,6 +52,7 @@ namespace appFelxMax.appForms.MainForms
             this.lbl_Close.BackColor = System.Drawing.Color.White;
             this.lbl_Close.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbl_Close.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lbl_Close.Image = global::appFelxMax.Properties.Resources.CloseColor;
             this.lbl_Close.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lbl_Close.Location = new System.Drawing.Point(1, 1);
             this.lbl_Close.Name = "lbl_Close";
