@@ -1,7 +1,7 @@
 ﻿
 namespace appFelxMax.appForms.MenuForms.AccountForms
 {
-    partial class frmCustomers
+    partial class frmVendors
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,8 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomers));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVendors));
+            this.lblHead = new System.Windows.Forms.Label();
             this.pnlOperations = new System.Windows.Forms.Panel();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.lblSearch = new System.Windows.Forms.Label();
@@ -56,9 +57,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnlDoOperations = new System.Windows.Forms.Panel();
             this.cmbDoOperations = new System.Windows.Forms.ComboBox();
             this.lblDoOperations = new System.Windows.Forms.Label();
-            this.pnlData = new System.Windows.Forms.Panel();
             this.dgvData = new System.Windows.Forms.DataGridView();
-            this.lblHead = new System.Windows.Forms.Label();
             this.pnlOperations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNameList)).BeginInit();
             this.pnlFooter.SuspendLayout();
@@ -67,9 +66,24 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnlDescreption.SuspendLayout();
             this.pnlValue.SuspendLayout();
             this.pnlDoOperations.SuspendLayout();
-            this.pnlData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblHead
+            // 
+            this.lblHead.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblHead.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblHead.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.lblHead.Image = global::appFelxMax.Properties.Resources.UserGroup2Color;
+            this.lblHead.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblHead.Location = new System.Drawing.Point(0, 0);
+            this.lblHead.Name = "lblHead";
+            this.lblHead.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblHead.Size = new System.Drawing.Size(1212, 40);
+            this.lblHead.TabIndex = 13;
+            this.lblHead.Text = "الموردين";
+            this.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlOperations
             // 
@@ -84,8 +98,8 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnlOperations.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlOperations.Location = new System.Drawing.Point(0, 40);
             this.pnlOperations.Name = "pnlOperations";
-            this.pnlOperations.Size = new System.Drawing.Size(1226, 40);
-            this.pnlOperations.TabIndex = 13;
+            this.pnlOperations.Size = new System.Drawing.Size(1212, 40);
+            this.pnlOperations.TabIndex = 14;
             // 
             // txtSearch
             // 
@@ -93,7 +107,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtSearch.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSearch.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(446, 6);
+            this.txtSearch.Location = new System.Drawing.Point(432, 6);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(218, 27);
             this.txtSearch.TabIndex = 18;
@@ -103,7 +117,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSearch.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblSearch.Image = global::appFelxMax.Properties.Resources.SearchB;
-            this.lblSearch.Location = new System.Drawing.Point(670, 3);
+            this.lblSearch.Location = new System.Drawing.Point(656, 3);
             this.lblSearch.Name = "lblSearch";
             this.lblSearch.Size = new System.Drawing.Size(30, 30);
             this.lblSearch.TabIndex = 19;
@@ -120,7 +134,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             "الرصيد",
             "مدة التأخير",
             "اخر تعامل"});
-            this.cmbSort.Location = new System.Drawing.Point(706, 3);
+            this.cmbSort.Location = new System.Drawing.Point(692, 3);
             this.cmbSort.Name = "cmbSort";
             this.cmbSort.Size = new System.Drawing.Size(158, 30);
             this.cmbSort.TabIndex = 17;
@@ -130,7 +144,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFilter.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblFilter.Image = global::appFelxMax.Properties.Resources.FilterColor;
-            this.lblFilter.Location = new System.Drawing.Point(870, 3);
+            this.lblFilter.Location = new System.Drawing.Point(856, 3);
             this.lblFilter.Name = "lblFilter";
             this.lblFilter.Size = new System.Drawing.Size(35, 30);
             this.lblFilter.TabIndex = 16;
@@ -145,7 +159,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.btnPrint.ForeColor = System.Drawing.Color.Black;
             this.btnPrint.Image = global::appFelxMax.Properties.Resources.PrinterColor;
             this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrint.Location = new System.Drawing.Point(911, 3);
+            this.btnPrint.Location = new System.Drawing.Point(897, 3);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(100, 30);
             this.btnPrint.TabIndex = 15;
@@ -163,7 +177,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.btnExcel.ForeColor = System.Drawing.Color.Black;
             this.btnExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExcel.Image")));
             this.btnExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcel.Location = new System.Drawing.Point(1017, 3);
+            this.btnExcel.Location = new System.Drawing.Point(1003, 3);
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.Size = new System.Drawing.Size(100, 30);
             this.btnExcel.TabIndex = 14;
@@ -181,13 +195,14 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.btnNew.ForeColor = System.Drawing.Color.Black;
             this.btnNew.Image = global::appFelxMax.Properties.Resources.AddColor;
             this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNew.Location = new System.Drawing.Point(1123, 3);
+            this.btnNew.Location = new System.Drawing.Point(1109, 3);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(100, 30);
             this.btnNew.TabIndex = 12;
             this.btnNew.Text = "جديد - F1";
             this.btnNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNew.UseVisualStyleBackColor = false;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // dgvNameList
             // 
@@ -199,8 +214,8 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.dgvNameList.Name = "dgvNameList";
             this.dgvNameList.ReadOnly = true;
             this.dgvNameList.RowHeadersWidth = 51;
-            this.dgvNameList.Size = new System.Drawing.Size(315, 784);
-            this.dgvNameList.TabIndex = 14;
+            this.dgvNameList.Size = new System.Drawing.Size(315, 787);
+            this.dgvNameList.TabIndex = 15;
             // 
             // pnlFooter
             // 
@@ -212,10 +227,10 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnlFooter.Controls.Add(this.pnlValue);
             this.pnlFooter.Controls.Add(this.pnlDoOperations);
             this.pnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlFooter.Location = new System.Drawing.Point(315, 804);
+            this.pnlFooter.Location = new System.Drawing.Point(315, 807);
             this.pnlFooter.Name = "pnlFooter";
-            this.pnlFooter.Size = new System.Drawing.Size(911, 60);
-            this.pnlFooter.TabIndex = 17;
+            this.pnlFooter.Size = new System.Drawing.Size(897, 60);
+            this.pnlFooter.TabIndex = 18;
             // 
             // btnSave
             // 
@@ -229,7 +244,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.Location = new System.Drawing.Point(0, 0);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(91, 60);
+            this.btnSave.Size = new System.Drawing.Size(77, 60);
             this.btnSave.TabIndex = 19;
             this.btnSave.Text = "حفظ - F2";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -240,7 +255,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnlSafe.Controls.Add(this.cmbSafe);
             this.pnlSafe.Controls.Add(this.lblSafe);
             this.pnlSafe.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlSafe.Location = new System.Drawing.Point(91, 0);
+            this.pnlSafe.Location = new System.Drawing.Point(77, 0);
             this.pnlSafe.Name = "pnlSafe";
             this.pnlSafe.Size = new System.Drawing.Size(154, 60);
             this.pnlSafe.TabIndex = 9;
@@ -274,7 +289,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnlOperationDate.Controls.Add(this.dtpOperationDate);
             this.pnlOperationDate.Controls.Add(this.lblOperationDate);
             this.pnlOperationDate.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlOperationDate.Location = new System.Drawing.Point(245, 0);
+            this.pnlOperationDate.Location = new System.Drawing.Point(231, 0);
             this.pnlOperationDate.Name = "pnlOperationDate";
             this.pnlOperationDate.Size = new System.Drawing.Size(109, 60);
             this.pnlOperationDate.TabIndex = 8;
@@ -307,7 +322,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnlDescreption.Controls.Add(this.lblDescreption);
             this.pnlDescreption.Controls.Add(this.txtDescreption);
             this.pnlDescreption.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlDescreption.Location = new System.Drawing.Point(354, 0);
+            this.pnlDescreption.Location = new System.Drawing.Point(340, 0);
             this.pnlDescreption.Name = "pnlDescreption";
             this.pnlDescreption.Size = new System.Drawing.Size(308, 60);
             this.pnlDescreption.TabIndex = 7;
@@ -338,7 +353,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnlValue.Controls.Add(this.lblValue);
             this.pnlValue.Controls.Add(this.txtValue);
             this.pnlValue.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlValue.Location = new System.Drawing.Point(662, 0);
+            this.pnlValue.Location = new System.Drawing.Point(648, 0);
             this.pnlValue.Name = "pnlValue";
             this.pnlValue.Size = new System.Drawing.Size(115, 60);
             this.pnlValue.TabIndex = 6;
@@ -369,7 +384,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnlDoOperations.Controls.Add(this.cmbDoOperations);
             this.pnlDoOperations.Controls.Add(this.lblDoOperations);
             this.pnlDoOperations.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlDoOperations.Location = new System.Drawing.Point(777, 0);
+            this.pnlDoOperations.Location = new System.Drawing.Point(763, 0);
             this.pnlDoOperations.Name = "pnlDoOperations";
             this.pnlDoOperations.Size = new System.Drawing.Size(134, 60);
             this.pnlDoOperations.TabIndex = 6;
@@ -398,51 +413,25 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblDoOperations.Text = "العمليات";
             this.lblDoOperations.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pnlData
-            // 
-            this.pnlData.Controls.Add(this.dgvData);
-            this.pnlData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlData.Location = new System.Drawing.Point(315, 80);
-            this.pnlData.Name = "pnlData";
-            this.pnlData.Size = new System.Drawing.Size(911, 724);
-            this.pnlData.TabIndex = 18;
-            // 
             // dgvData
             // 
             this.dgvData.AllowUserToAddRows = false;
             this.dgvData.AllowUserToDeleteRows = false;
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvData.Location = new System.Drawing.Point(0, 0);
+            this.dgvData.Location = new System.Drawing.Point(315, 80);
             this.dgvData.Name = "dgvData";
             this.dgvData.ReadOnly = true;
             this.dgvData.RowHeadersWidth = 51;
-            this.dgvData.Size = new System.Drawing.Size(911, 724);
-            this.dgvData.TabIndex = 17;
+            this.dgvData.Size = new System.Drawing.Size(897, 727);
+            this.dgvData.TabIndex = 19;
             // 
-            // lblHead
-            // 
-            this.lblHead.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lblHead.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblHead.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.lblHead.Image = global::appFelxMax.Properties.Resources.UserGroup1Color;
-            this.lblHead.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblHead.Location = new System.Drawing.Point(0, 0);
-            this.lblHead.Name = "lblHead";
-            this.lblHead.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblHead.Size = new System.Drawing.Size(1226, 40);
-            this.lblHead.TabIndex = 12;
-            this.lblHead.Text = "العملاء ";
-            this.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // frmCustomers
+            // frmVendors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1226, 864);
-            this.Controls.Add(this.pnlData);
+            this.ClientSize = new System.Drawing.Size(1212, 867);
+            this.Controls.Add(this.dgvData);
             this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.dgvNameList);
             this.Controls.Add(this.pnlOperations);
@@ -452,10 +441,11 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmCustomers";
+            this.Name = "frmVendors";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.Text = "frmCustomers";
+            this.ShowIcon = false;
+            this.Text = "الموردين";
             this.pnlOperations.ResumeLayout(false);
             this.pnlOperations.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNameList)).EndInit();
@@ -467,7 +457,6 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnlValue.ResumeLayout(false);
             this.pnlValue.PerformLayout();
             this.pnlDoOperations.ResumeLayout(false);
-            this.pnlData.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             this.ResumeLayout(false);
 
@@ -502,7 +491,6 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
         private System.Windows.Forms.Panel pnlDoOperations;
         private System.Windows.Forms.ComboBox cmbDoOperations;
         private System.Windows.Forms.Label lblDoOperations;
-        private System.Windows.Forms.Panel pnlData;
         private System.Windows.Forms.DataGridView dgvData;
     }
 }

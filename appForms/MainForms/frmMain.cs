@@ -153,78 +153,53 @@ namespace appFelxMax.appForms.MainForms
 
         }
 
-
-
-
-        #endregion
-
-        private void btnCustomers_Click(object sender, EventArgs e)
-        {
-            //appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmCustVend(), pnlTools, pnlMiddle);
-        }
-
-        private void btnOperations_Click(object sender, EventArgs e)
-        {
-
-            frmNotifications frmNotifications = new frmNotifications();
-            frmNotifications.fnShowAlert("بحبق !", frmNotifications.enmType.vError);
-        }
-
+        // Company Info
         private void mnsCompanyInfo_Click(object sender, EventArgs e)
         {
             appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmCompanyInfo(), pnlTools, pnlMiddle);
         }
 
+
+        // Branch Info 
         private void mnsBranchInfo_Click(object sender, EventArgs e)
         {
             appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmBranch_Info(), pnlTools, pnlMiddle);
         }
 
-        private void mnuDues_Type_Click(object sender, EventArgs e)
+        // Customers 
+        private void mnuClinets_Click(object sender, EventArgs e)
         {
-            appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmDues_Type(), pnlTools, pnlMiddle);
+            appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmCustomers(), pnlTools, pnlMiddle);
         }
 
-        private void mnuTreasure_MainCash_Click(object sender, EventArgs e)
+        // Vendors 
+        private void mnuVendors_Click(object sender, EventArgs e)
         {
-            appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmTreasure_MainCash(), pnlTools, pnlMiddle);
+            appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmVendors(), pnlTools, pnlMiddle);
         }
 
-        private void mnsUnits_Click(object sender, EventArgs e)
+        // Safe 
+        private void mnuSafe_Click(object sender, EventArgs e)
         {
-            appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmUnits(), pnlTools, pnlMiddle);
-        }
-
-        private void mnsItemsCatagory_Click(object sender, EventArgs e)
-        {
-            //appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmProduct_Group(), pnlTools, pnlMiddle);
-        }
-
-        private void mnsProduct_Group_Click(object sender, EventArgs e)
-        {
-            appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmProduct_Group(), pnlTools, pnlMiddle);
-        }
-
-        private void mnsProduct_Sections_Click(object sender, EventArgs e)
-        {
-            appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmProduct_Section(), pnlTools, pnlMiddle);
-        }
-
-        private void mnsSotre_Init_Click(object sender, EventArgs e)
-        {
-            appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmStore_Init(), pnlTools, pnlMiddle);
+            appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmSafe(), pnlTools, pnlMiddle);
 
         }
 
+        // Items Card 
+        private void mnsItems_Click(object sender, EventArgs e)
+        {
+            appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmProduct_Card(), pnlTools, pnlMiddle);
+        }
+
+        // Copy Info 
         private void mnuCopyDetails_Click(object sender, EventArgs e)
         {
             frmCopyInfo frmCopyInfo = new frmCopyInfo();
             frmCopyInfo.ShowDialog();
         }
 
-        private void mnsItems_Click(object sender, EventArgs e)
-        {
-            appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmProduct_Card(), pnlTools, pnlMiddle);
-        }
+
+        #endregion
+
     }
 }

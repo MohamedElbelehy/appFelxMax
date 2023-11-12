@@ -30,6 +30,8 @@ namespace appFelxMax.appForms.SubForms
         private void InitializeComponent()
         {
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.txtCust_ID = new System.Windows.Forms.TextBox();
+            this.lblCustID = new System.Windows.Forms.Label();
             this.txtCust_Notes = new System.Windows.Forms.TextBox();
             this.pnl2 = new System.Windows.Forms.Panel();
             this.txtCust_Email = new System.Windows.Forms.TextBox();
@@ -52,13 +54,11 @@ namespace appFelxMax.appForms.SubForms
             this.lblBalance = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.lblCode = new System.Windows.Forms.Label();
-            this.txtCust_ID = new System.Windows.Forms.TextBox();
-            this.lblCustID = new System.Windows.Forms.Label();
             this.lblHead = new System.Windows.Forms.Label();
             this.pnlOperation = new System.Windows.Forms.Panel();
-            this.btnNew = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.btnESC = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
             this.p = new System.Windows.Forms.Panel();
             this.pnlMain.SuspendLayout();
             this.pnlOperation.SuspendLayout();
@@ -98,6 +98,26 @@ namespace appFelxMax.appForms.SubForms
             this.pnlMain.Size = new System.Drawing.Size(584, 212);
             this.pnlMain.TabIndex = 13;
             this.pnlMain.Click += new System.EventHandler(this.pnlMain_Click);
+            // 
+            // txtCust_ID
+            // 
+            this.txtCust_ID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCust_ID.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCust_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCust_ID.Location = new System.Drawing.Point(333, 6);
+            this.txtCust_ID.Name = "txtCust_ID";
+            this.txtCust_ID.Size = new System.Drawing.Size(171, 23);
+            this.txtCust_ID.TabIndex = 34;
+            // 
+            // lblCustID
+            // 
+            this.lblCustID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCustID.AutoSize = true;
+            this.lblCustID.Location = new System.Drawing.Point(510, 6);
+            this.lblCustID.Name = "lblCustID";
+            this.lblCustID.Size = new System.Drawing.Size(20, 22);
+            this.lblCustID.TabIndex = 33;
+            this.lblCustID.Text = "ID";
             // 
             // txtCust_Notes
             // 
@@ -320,26 +340,6 @@ namespace appFelxMax.appForms.SubForms
             this.lblCode.TabIndex = 3;
             this.lblCode.Text = "كود";
             // 
-            // txtCust_ID
-            // 
-            this.txtCust_ID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCust_ID.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtCust_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCust_ID.Location = new System.Drawing.Point(333, 6);
-            this.txtCust_ID.Name = "txtCust_ID";
-            this.txtCust_ID.Size = new System.Drawing.Size(171, 23);
-            this.txtCust_ID.TabIndex = 34;
-            // 
-            // lblCustID
-            // 
-            this.lblCustID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCustID.AutoSize = true;
-            this.lblCustID.Location = new System.Drawing.Point(510, 6);
-            this.lblCustID.Name = "lblCustID";
-            this.lblCustID.Size = new System.Drawing.Size(20, 22);
-            this.lblCustID.TabIndex = 33;
-            this.lblCustID.Text = "ID";
-            // 
             // lblHead
             // 
             this.lblHead.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -350,7 +350,6 @@ namespace appFelxMax.appForms.SubForms
             this.lblHead.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblHead.Location = new System.Drawing.Point(0, 0);
             this.lblHead.Name = "lblHead";
-            this.lblHead.Padding = new System.Windows.Forms.Padding(400, 0, 0, 0);
             this.lblHead.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblHead.Size = new System.Drawing.Size(584, 40);
             this.lblHead.TabIndex = 11;
@@ -369,23 +368,22 @@ namespace appFelxMax.appForms.SubForms
             this.pnlOperation.Size = new System.Drawing.Size(584, 40);
             this.pnlOperation.TabIndex = 16;
             // 
-            // btnNew
+            // btnESC
             // 
-            this.btnNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNew.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnNew.FlatAppearance.BorderSize = 0;
-            this.btnNew.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNew.ForeColor = System.Drawing.Color.Black;
-            this.btnNew.Image = global::appFelxMax.Properties.Resources.AddColor;
-            this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNew.Location = new System.Drawing.Point(492, 3);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(80, 30);
-            this.btnNew.TabIndex = 12;
-            this.btnNew.Text = "جديد - F1";
-            this.btnNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNew.UseVisualStyleBackColor = false;
+            this.btnESC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnESC.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnESC.FlatAppearance.BorderSize = 0;
+            this.btnESC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnESC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnESC.ForeColor = System.Drawing.Color.Black;
+            this.btnESC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnESC.Location = new System.Drawing.Point(310, 3);
+            this.btnESC.Name = "btnESC";
+            this.btnESC.Size = new System.Drawing.Size(90, 30);
+            this.btnESC.TabIndex = 14;
+            this.btnESC.Text = "خروج - ESC";
+            this.btnESC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnESC.UseVisualStyleBackColor = false;
             // 
             // btnSave
             // 
@@ -405,22 +403,23 @@ namespace appFelxMax.appForms.SubForms
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = false;
             // 
-            // btnESC
+            // btnNew
             // 
-            this.btnESC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnESC.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnESC.FlatAppearance.BorderSize = 0;
-            this.btnESC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnESC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnESC.ForeColor = System.Drawing.Color.Black;
-            this.btnESC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnESC.Location = new System.Drawing.Point(310, 3);
-            this.btnESC.Name = "btnESC";
-            this.btnESC.Size = new System.Drawing.Size(90, 30);
-            this.btnESC.TabIndex = 14;
-            this.btnESC.Text = "خروج - ESC";
-            this.btnESC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnESC.UseVisualStyleBackColor = false;
+            this.btnNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNew.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnNew.FlatAppearance.BorderSize = 0;
+            this.btnNew.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNew.ForeColor = System.Drawing.Color.Black;
+            this.btnNew.Image = global::appFelxMax.Properties.Resources.AddColor;
+            this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNew.Location = new System.Drawing.Point(492, 3);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(80, 30);
+            this.btnNew.TabIndex = 12;
+            this.btnNew.Text = "جديد - F1";
+            this.btnNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNew.UseVisualStyleBackColor = false;
             // 
             // p
             // 

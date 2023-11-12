@@ -411,7 +411,6 @@ namespace appFelxMax.appForms.SubForms
             this.lblHead.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblHead.Location = new System.Drawing.Point(0, 0);
             this.lblHead.Name = "lblHead";
-            this.lblHead.Padding = new System.Windows.Forms.Padding(400, 0, 0, 0);
             this.lblHead.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblHead.Size = new System.Drawing.Size(584, 40);
             this.lblHead.TabIndex = 12;

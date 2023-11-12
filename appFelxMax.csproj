@@ -67,6 +67,12 @@
     <Compile Include="appClass\clsDesign\clsUIDesign.cs" />
     <Compile Include="appClass\clsProgOptions\clsCopyDetails.cs" />
     <Compile Include="appClass\clsProgOptions\clsGenerate.cs" />
+    <Compile Include="appForms\MenuForms\AccountForms\frmAdd_Safe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmAdd_Safe.Designer.cs">
+      <DependentUpon>frmAdd_Safe.cs</DependentUpon>
+    </Compile>
     <Compile Include="appForms\MenuForms\AccountForms\frmCustomers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,11 +85,11 @@
     <Compile Include="appForms\MenuForms\AccountForms\frmSafe.Designer.cs">
       <DependentUpon>frmSafe.cs</DependentUpon>
     </Compile>
-    <Compile Include="appForms\MenuForms\AccountForms\frmTreasure_MainCash.cs">
+    <Compile Include="appForms\MenuForms\AccountForms\frmVendors.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="appForms\MenuForms\AccountForms\frmTreasure_MainCash.Designer.cs">
-      <DependentUpon>frmTreasure_MainCash.cs</DependentUpon>
+    <Compile Include="appForms\MenuForms\AccountForms\frmVendors.Designer.cs">
+      <DependentUpon>frmVendors.cs</DependentUpon>
     </Compile>
     <Compile Include="appForms\MenuForms\DuesForms\frmDues_Type.cs">
       <SubType>Form</SubType>
@@ -219,11 +225,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmAdd_Safe.resx">
+      <DependentUpon>frmAdd_Safe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmCustomers.resx">
       <DependentUpon>frmCustomers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmTreasure_MainCash.resx">
-      <DependentUpon>frmTreasure_MainCash.cs</DependentUpon>
+    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmSafe.resx">
+      <DependentUpon>frmSafe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmVendors.resx">
+      <DependentUpon>frmVendors.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="appForms\MenuForms\DuesForms\frmDues_Type.resx">
       <DependentUpon>frmDues_Type.cs</DependentUpon>
