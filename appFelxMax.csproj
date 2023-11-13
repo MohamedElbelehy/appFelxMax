@@ -79,6 +79,12 @@
     <Compile Include="appForms\MenuForms\AccountForms\frmCustomers.Designer.cs">
       <DependentUpon>frmCustomers.cs</DependentUpon>
     </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmExpenses.Designer.cs">
+      <DependentUpon>frmExpenses.cs</DependentUpon>
+    </Compile>
     <Compile Include="appForms\MenuForms\AccountForms\frmSafe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,12 +96,6 @@
     </Compile>
     <Compile Include="appForms\MenuForms\AccountForms\frmVendors.Designer.cs">
       <DependentUpon>frmVendors.cs</DependentUpon>
-    </Compile>
-    <Compile Include="appForms\MenuForms\DuesForms\frmDues_Type.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="appForms\MenuForms\DuesForms\frmDues_Type.Designer.cs">
-      <DependentUpon>frmDues_Type.cs</DependentUpon>
     </Compile>
     <Compile Include="appForms\MenuForms\Program_initialization\frmBranch_Info.cs">
       <SubType>Form</SubType>
@@ -231,14 +231,14 @@
     <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmCustomers.resx">
       <DependentUpon>frmCustomers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmExpenses.resx">
+      <DependentUpon>frmExpenses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmSafe.resx">
       <DependentUpon>frmSafe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmVendors.resx">
       <DependentUpon>frmVendors.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="appForms\MenuForms\DuesForms\frmDues_Type.resx">
-      <DependentUpon>frmDues_Type.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmBranch_Info.resx">
       <DependentUpon>frmBranch_Info.cs</DependentUpon>

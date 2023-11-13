@@ -35,10 +35,13 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.btnSave = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.cmbSafe_Branch = new System.Windows.Forms.ComboBox();
             this.txtSafe_ID = new System.Windows.Forms.TextBox();
             this.lblSafeID = new System.Windows.Forms.Label();
             this.txtSafe_Notes = new System.Windows.Forms.TextBox();
             this.pnl2 = new System.Windows.Forms.Panel();
+            this.txtSafe_Address = new System.Windows.Forms.TextBox();
+            this.lblAddress = new System.Windows.Forms.Label();
             this.lblNotes = new System.Windows.Forms.Label();
             this.chkSafe_State = new System.Windows.Forms.CheckBox();
             this.lblSafe_State = new System.Windows.Forms.Label();
@@ -48,13 +51,10 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtSafe_Name = new System.Windows.Forms.TextBox();
             this.txSafe_Code = new System.Windows.Forms.TextBox();
             this.pnl1 = new System.Windows.Forms.Panel();
+            this.lblPhone = new System.Windows.Forms.Label();
             this.lblBalance = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.lblCode = new System.Windows.Forms.Label();
-            this.lblPhone = new System.Windows.Forms.Label();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.txtSafe_Address = new System.Windows.Forms.TextBox();
-            this.cmbSafe_Branch = new System.Windows.Forms.ComboBox();
             this.pnlOperation.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.SuspendLayout();
@@ -169,6 +169,15 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnlMain.Size = new System.Drawing.Size(584, 211);
             this.pnlMain.TabIndex = 18;
             // 
+            // cmbSafe_Branch
+            // 
+            this.cmbSafe_Branch.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSafe_Branch.FormattingEnabled = true;
+            this.cmbSafe_Branch.Location = new System.Drawing.Point(333, 122);
+            this.cmbSafe_Branch.Name = "cmbSafe_Branch";
+            this.cmbSafe_Branch.Size = new System.Drawing.Size(171, 26);
+            this.cmbSafe_Branch.TabIndex = 3;
+            // 
             // txtSafe_ID
             // 
             this.txtSafe_ID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -176,6 +185,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtSafe_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSafe_ID.Location = new System.Drawing.Point(333, 6);
             this.txtSafe_ID.Name = "txtSafe_ID";
+            this.txtSafe_ID.ReadOnly = true;
             this.txtSafe_ID.Size = new System.Drawing.Size(171, 23);
             this.txtSafe_ID.TabIndex = 34;
             // 
@@ -197,7 +207,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtSafe_Notes.Location = new System.Drawing.Point(12, 6);
             this.txtSafe_Notes.Name = "txtSafe_Notes";
             this.txtSafe_Notes.Size = new System.Drawing.Size(171, 23);
-            this.txtSafe_Notes.TabIndex = 32;
+            this.txtSafe_Notes.TabIndex = 6;
             // 
             // pnl2
             // 
@@ -206,6 +216,26 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnl2.Name = "pnl2";
             this.pnl2.Size = new System.Drawing.Size(17, 171);
             this.pnl2.TabIndex = 31;
+            // 
+            // txtSafe_Address
+            // 
+            this.txtSafe_Address.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSafe_Address.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSafe_Address.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSafe_Address.Location = new System.Drawing.Point(333, 154);
+            this.txtSafe_Address.Name = "txtSafe_Address";
+            this.txtSafe_Address.Size = new System.Drawing.Size(171, 23);
+            this.txtSafe_Address.TabIndex = 5;
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Location = new System.Drawing.Point(510, 154);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(43, 22);
+            this.lblAddress.TabIndex = 25;
+            this.lblAddress.Text = "العنوان";
             // 
             // lblNotes
             // 
@@ -227,7 +257,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.chkSafe_State.Location = new System.Drawing.Point(132, 71);
             this.chkSafe_State.Name = "chkSafe_State";
             this.chkSafe_State.Size = new System.Drawing.Size(51, 26);
-            this.chkSafe_State.TabIndex = 22;
+            this.chkSafe_State.TabIndex = 8;
             this.chkSafe_State.Text = "نشط";
             this.chkSafe_State.UseVisualStyleBackColor = true;
             // 
@@ -249,7 +279,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.dtpSafe_S_Date.Location = new System.Drawing.Point(12, 35);
             this.dtpSafe_S_Date.Name = "dtpSafe_S_Date";
             this.dtpSafe_S_Date.Size = new System.Drawing.Size(171, 30);
-            this.dtpSafe_S_Date.TabIndex = 12;
+            this.dtpSafe_S_Date.TabIndex = 7;
             // 
             // lblStartDate
             // 
@@ -269,7 +299,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtSafe_Balance.Location = new System.Drawing.Point(333, 93);
             this.txtSafe_Balance.Name = "txtSafe_Balance";
             this.txtSafe_Balance.Size = new System.Drawing.Size(171, 23);
-            this.txtSafe_Balance.TabIndex = 8;
+            this.txtSafe_Balance.TabIndex = 2;
             // 
             // txtSafe_Name
             // 
@@ -279,7 +309,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtSafe_Name.Location = new System.Drawing.Point(333, 64);
             this.txtSafe_Name.Name = "txtSafe_Name";
             this.txtSafe_Name.Size = new System.Drawing.Size(171, 23);
-            this.txtSafe_Name.TabIndex = 6;
+            this.txtSafe_Name.TabIndex = 1;
             // 
             // txSafe_Code
             // 
@@ -288,6 +318,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txSafe_Code.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txSafe_Code.Location = new System.Drawing.Point(333, 35);
             this.txSafe_Code.Name = "txSafe_Code";
+            this.txSafe_Code.ReadOnly = true;
             this.txSafe_Code.Size = new System.Drawing.Size(171, 23);
             this.txSafe_Code.TabIndex = 4;
             // 
@@ -298,6 +329,16 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(17, 171);
             this.pnl1.TabIndex = 0;
+            // 
+            // lblPhone
+            // 
+            this.lblPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.Location = new System.Drawing.Point(510, 122);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(31, 22);
+            this.lblPhone.TabIndex = 9;
+            this.lblPhone.Text = "الفرع";
             // 
             // lblBalance
             // 
@@ -329,47 +370,9 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblCode.TabIndex = 3;
             this.lblCode.Text = "كود";
             // 
-            // lblPhone
-            // 
-            this.lblPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(510, 122);
-            this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(31, 22);
-            this.lblPhone.TabIndex = 9;
-            this.lblPhone.Text = "الفرع";
-            // 
-            // lblAddress
-            // 
-            this.lblAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(510, 154);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(43, 22);
-            this.lblAddress.TabIndex = 25;
-            this.lblAddress.Text = "العنوان";
-            // 
-            // txtSafe_Address
-            // 
-            this.txtSafe_Address.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSafe_Address.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtSafe_Address.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSafe_Address.Location = new System.Drawing.Point(333, 154);
-            this.txtSafe_Address.Name = "txtSafe_Address";
-            this.txtSafe_Address.Size = new System.Drawing.Size(171, 23);
-            this.txtSafe_Address.TabIndex = 26;
-            // 
-            // cmbSafe_Branch
-            // 
-            this.cmbSafe_Branch.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbSafe_Branch.FormattingEnabled = true;
-            this.cmbSafe_Branch.Location = new System.Drawing.Point(333, 122);
-            this.cmbSafe_Branch.Name = "cmbSafe_Branch";
-            this.cmbSafe_Branch.Size = new System.Drawing.Size(171, 26);
-            this.cmbSafe_Branch.TabIndex = 35;
-            // 
             // frmAdd_Safe
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;

@@ -138,7 +138,7 @@
         Ub8AdylHLSfsncAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="mnsItems.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="mnsItemsInfo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAhlJREFUSEvt
         0UdPVFEYBuD5FcJchpmhSLEgSLMgKIplR4x9CTHRyMqCioIDqCBFGbCAqHMFXese4TewZXov/AOIyet7
@@ -225,7 +225,7 @@
         na0PeP9/QOPOnw1oRUaGHWlERoYdaURGhh1pREbm9Wj8jch0hTFPyF9GwV3RsoAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="mnuItems.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="mnuInvItems.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAp5JREFUSEvt
         0dtPknEcBnD/BK9SUEHTPGR5CjxleSiLrRvaKs3bplld2DrYQQtNS8sDUJmSJC8qdWX6D8Bm6VUWm3ci

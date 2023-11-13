@@ -106,6 +106,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtCust_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCust_ID.Location = new System.Drawing.Point(333, 6);
             this.txtCust_ID.Name = "txtCust_ID";
+            this.txtCust_ID.ReadOnly = true;
             this.txtCust_ID.Size = new System.Drawing.Size(171, 23);
             this.txtCust_ID.TabIndex = 34;
             // 
@@ -127,7 +128,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtCust_Notes.Location = new System.Drawing.Point(4, 65);
             this.txtCust_Notes.Name = "txtCust_Notes";
             this.txtCust_Notes.Size = new System.Drawing.Size(171, 23);
-            this.txtCust_Notes.TabIndex = 32;
+            this.txtCust_Notes.TabIndex = 7;
             // 
             // pnl2
             // 
@@ -145,7 +146,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtCust_Email.Location = new System.Drawing.Point(4, 36);
             this.txtCust_Email.Name = "txtCust_Email";
             this.txtCust_Email.Size = new System.Drawing.Size(171, 23);
-            this.txtCust_Email.TabIndex = 30;
+            this.txtCust_Email.TabIndex = 6;
             // 
             // txtCust_RegNumber
             // 
@@ -155,7 +156,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtCust_RegNumber.Location = new System.Drawing.Point(4, 7);
             this.txtCust_RegNumber.Name = "txtCust_RegNumber";
             this.txtCust_RegNumber.Size = new System.Drawing.Size(171, 23);
-            this.txtCust_RegNumber.TabIndex = 28;
+            this.txtCust_RegNumber.TabIndex = 5;
             // 
             // lblEmail
             // 
@@ -185,7 +186,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtCust_Address.Location = new System.Drawing.Point(333, 151);
             this.txtCust_Address.Name = "txtCust_Address";
             this.txtCust_Address.Size = new System.Drawing.Size(171, 23);
-            this.txtCust_Address.TabIndex = 26;
+            this.txtCust_Address.TabIndex = 4;
             // 
             // lblAddress
             // 
@@ -217,7 +218,7 @@ namespace appFelxMax.appForms.SubForms
             this.chkCust_State.Location = new System.Drawing.Point(124, 130);
             this.chkCust_State.Name = "chkCust_State";
             this.chkCust_State.Size = new System.Drawing.Size(51, 26);
-            this.chkCust_State.TabIndex = 22;
+            this.chkCust_State.TabIndex = 9;
             this.chkCust_State.Text = "نشط";
             this.chkCust_State.UseVisualStyleBackColor = true;
             this.chkCust_State.CheckedChanged += new System.EventHandler(this.chkCust_State_CheckedChanged);
@@ -240,7 +241,7 @@ namespace appFelxMax.appForms.SubForms
             this.dtpCust_S_Date.Location = new System.Drawing.Point(6, 94);
             this.dtpCust_S_Date.Name = "dtpCust_S_Date";
             this.dtpCust_S_Date.Size = new System.Drawing.Size(169, 30);
-            this.dtpCust_S_Date.TabIndex = 12;
+            this.dtpCust_S_Date.TabIndex = 8;
             // 
             // lblStartDate
             // 
@@ -260,7 +261,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtCust_Phone.Location = new System.Drawing.Point(333, 122);
             this.txtCust_Phone.Name = "txtCust_Phone";
             this.txtCust_Phone.Size = new System.Drawing.Size(171, 23);
-            this.txtCust_Phone.TabIndex = 10;
+            this.txtCust_Phone.TabIndex = 3;
             // 
             // txtCust_Balance
             // 
@@ -270,7 +271,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtCust_Balance.Location = new System.Drawing.Point(333, 93);
             this.txtCust_Balance.Name = "txtCust_Balance";
             this.txtCust_Balance.Size = new System.Drawing.Size(171, 23);
-            this.txtCust_Balance.TabIndex = 8;
+            this.txtCust_Balance.TabIndex = 2;
             // 
             // txtCust_Name
             // 
@@ -280,7 +281,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtCust_Name.Location = new System.Drawing.Point(333, 64);
             this.txtCust_Name.Name = "txtCust_Name";
             this.txtCust_Name.Size = new System.Drawing.Size(171, 23);
-            this.txtCust_Name.TabIndex = 6;
+            this.txtCust_Name.TabIndex = 1;
             // 
             // txtCust_Code
             // 
@@ -289,6 +290,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtCust_Code.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCust_Code.Location = new System.Drawing.Point(333, 35);
             this.txtCust_Code.Name = "txtCust_Code";
+            this.txtCust_Code.ReadOnly = true;
             this.txtCust_Code.Size = new System.Drawing.Size(171, 23);
             this.txtCust_Code.TabIndex = 4;
             // 
@@ -433,6 +435,7 @@ namespace appFelxMax.appForms.SubForms
             // 
             // frmAdd_Cust
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 291);

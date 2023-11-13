@@ -168,6 +168,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtVend_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtVend_ID.Location = new System.Drawing.Point(333, 6);
             this.txtVend_ID.Name = "txtVend_ID";
+            this.txtVend_ID.ReadOnly = true;
             this.txtVend_ID.Size = new System.Drawing.Size(171, 23);
             this.txtVend_ID.TabIndex = 34;
             // 
@@ -180,6 +181,7 @@ namespace appFelxMax.appForms.SubForms
             this.lblID.Size = new System.Drawing.Size(20, 22);
             this.lblID.TabIndex = 33;
             this.lblID.Text = "ID";
+            this.lblID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtVend_Notes
             // 
@@ -189,7 +191,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtVend_Notes.Location = new System.Drawing.Point(4, 64);
             this.txtVend_Notes.Name = "txtVend_Notes";
             this.txtVend_Notes.Size = new System.Drawing.Size(171, 23);
-            this.txtVend_Notes.TabIndex = 32;
+            this.txtVend_Notes.TabIndex = 7;
             // 
             // pnl2
             // 
@@ -207,7 +209,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtVend_Email.Location = new System.Drawing.Point(4, 35);
             this.txtVend_Email.Name = "txtVend_Email";
             this.txtVend_Email.Size = new System.Drawing.Size(171, 23);
-            this.txtVend_Email.TabIndex = 30;
+            this.txtVend_Email.TabIndex = 6;
             // 
             // txtVend_RegNumber
             // 
@@ -217,7 +219,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtVend_RegNumber.Location = new System.Drawing.Point(4, 6);
             this.txtVend_RegNumber.Name = "txtVend_RegNumber";
             this.txtVend_RegNumber.Size = new System.Drawing.Size(171, 23);
-            this.txtVend_RegNumber.TabIndex = 28;
+            this.txtVend_RegNumber.TabIndex = 5;
             // 
             // lblEmail
             // 
@@ -247,7 +249,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtVend_Address.Location = new System.Drawing.Point(333, 151);
             this.txtVend_Address.Name = "txtVend_Address";
             this.txtVend_Address.Size = new System.Drawing.Size(171, 23);
-            this.txtVend_Address.TabIndex = 26;
+            this.txtVend_Address.TabIndex = 4;
             // 
             // lblAddress
             // 
@@ -258,6 +260,7 @@ namespace appFelxMax.appForms.SubForms
             this.lblAddress.Size = new System.Drawing.Size(43, 22);
             this.lblAddress.TabIndex = 25;
             this.lblAddress.Text = "العنوان";
+            this.lblAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblNotes
             // 
@@ -279,7 +282,7 @@ namespace appFelxMax.appForms.SubForms
             this.chkVend_State.Location = new System.Drawing.Point(124, 129);
             this.chkVend_State.Name = "chkVend_State";
             this.chkVend_State.Size = new System.Drawing.Size(51, 26);
-            this.chkVend_State.TabIndex = 22;
+            this.chkVend_State.TabIndex = 9;
             this.chkVend_State.Text = "نشط";
             this.chkVend_State.UseVisualStyleBackColor = true;
             // 
@@ -301,7 +304,7 @@ namespace appFelxMax.appForms.SubForms
             this.dtpVend_S_Date.Location = new System.Drawing.Point(6, 93);
             this.dtpVend_S_Date.Name = "dtpVend_S_Date";
             this.dtpVend_S_Date.Size = new System.Drawing.Size(169, 30);
-            this.dtpVend_S_Date.TabIndex = 12;
+            this.dtpVend_S_Date.TabIndex = 8;
             // 
             // lblStartDate
             // 
@@ -321,7 +324,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtVend_Mobile.Location = new System.Drawing.Point(333, 122);
             this.txtVend_Mobile.Name = "txtVend_Mobile";
             this.txtVend_Mobile.Size = new System.Drawing.Size(171, 23);
-            this.txtVend_Mobile.TabIndex = 10;
+            this.txtVend_Mobile.TabIndex = 3;
             // 
             // txtVend_Balance
             // 
@@ -331,7 +334,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtVend_Balance.Location = new System.Drawing.Point(333, 93);
             this.txtVend_Balance.Name = "txtVend_Balance";
             this.txtVend_Balance.Size = new System.Drawing.Size(171, 23);
-            this.txtVend_Balance.TabIndex = 8;
+            this.txtVend_Balance.TabIndex = 2;
             // 
             // txtVend_Name
             // 
@@ -341,7 +344,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtVend_Name.Location = new System.Drawing.Point(333, 64);
             this.txtVend_Name.Name = "txtVend_Name";
             this.txtVend_Name.Size = new System.Drawing.Size(171, 23);
-            this.txtVend_Name.TabIndex = 6;
+            this.txtVend_Name.TabIndex = 1;
             // 
             // txtVend_Code
             // 
@@ -350,6 +353,7 @@ namespace appFelxMax.appForms.SubForms
             this.txtVend_Code.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtVend_Code.Location = new System.Drawing.Point(333, 35);
             this.txtVend_Code.Name = "txtVend_Code";
+            this.txtVend_Code.ReadOnly = true;
             this.txtVend_Code.Size = new System.Drawing.Size(171, 23);
             this.txtVend_Code.TabIndex = 4;
             // 
@@ -370,6 +374,7 @@ namespace appFelxMax.appForms.SubForms
             this.lblPhone.Size = new System.Drawing.Size(39, 22);
             this.lblPhone.TabIndex = 9;
             this.lblPhone.Text = "الهاتف";
+            this.lblPhone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblBalance
             // 
@@ -380,6 +385,7 @@ namespace appFelxMax.appForms.SubForms
             this.lblBalance.Size = new System.Drawing.Size(36, 22);
             this.lblBalance.TabIndex = 7;
             this.lblBalance.Text = "الرصيد";
+            this.lblBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblName
             // 
@@ -390,6 +396,7 @@ namespace appFelxMax.appForms.SubForms
             this.lblName.Size = new System.Drawing.Size(30, 22);
             this.lblName.TabIndex = 5;
             this.lblName.Text = "اسم";
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblCode
             // 
@@ -400,6 +407,7 @@ namespace appFelxMax.appForms.SubForms
             this.lblCode.Size = new System.Drawing.Size(27, 22);
             this.lblCode.TabIndex = 3;
             this.lblCode.Text = "كود";
+            this.lblCode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblHead
             // 
@@ -419,6 +427,7 @@ namespace appFelxMax.appForms.SubForms
             // 
             // frmAdd_Vendor
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 291);

@@ -34,19 +34,19 @@ namespace appFelxMax.appForms.MainForms
             this.cmbUser = new System.Windows.Forms.ComboBox();
             this.lblConnection = new System.Windows.Forms.Label();
             this.pnlHead = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.cmsMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.cmbStores = new System.Windows.Forms.ComboBox();
-            this.pnlSide = new System.Windows.Forms.Panel();
-            this.lblIPV4 = new System.Windows.Forms.Label();
-            this.picLogo = new System.Windows.Forms.PictureBox();
-            this.btnClose = new System.Windows.Forms.Button();
             this.cmsServer = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsAtivation = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsSYNC = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsRefSYNC = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.cmbStores = new System.Windows.Forms.ComboBox();
+            this.pnlSide = new System.Windows.Forms.Panel();
+            this.lblIPV4 = new System.Windows.Forms.Label();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.iPassword = new System.Windows.Forms.Label();
             this.iStores = new System.Windows.Forms.Label();
             this.iUser = new System.Windows.Forms.Label();
@@ -67,7 +67,7 @@ namespace appFelxMax.appForms.MainForms
             this.cmbUser.Name = "cmbUser";
             this.cmbUser.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cmbUser.Size = new System.Drawing.Size(267, 26);
-            this.cmbUser.TabIndex = 1;
+            this.cmbUser.TabIndex = 2;
             // 
             // lblConnection
             // 
@@ -90,6 +90,19 @@ namespace appFelxMax.appForms.MainForms
             this.pnlHead.Name = "pnlHead";
             this.pnlHead.Size = new System.Drawing.Size(400, 30);
             this.pnlHead.TabIndex = 3;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Image = global::appFelxMax.Properties.Resources.CloseColor;
+            this.btnClose.Location = new System.Drawing.Point(374, 5);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(20, 20);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblTitle
             // 
@@ -114,72 +127,6 @@ namespace appFelxMax.appForms.MainForms
             this.cmsMenu.Name = "cmsMenu";
             this.cmsMenu.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cmsMenu.Size = new System.Drawing.Size(152, 108);
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtPassword.Location = new System.Drawing.Point(59, 352);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '•';
-            this.txtPassword.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtPassword.Size = new System.Drawing.Size(267, 26);
-            this.txtPassword.TabIndex = 5;
-            // 
-            // cmbStores
-            // 
-            this.cmbStores.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbStores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbStores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbStores.FormattingEnabled = true;
-            this.cmbStores.Location = new System.Drawing.Point(59, 288);
-            this.cmbStores.Name = "cmbStores";
-            this.cmbStores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cmbStores.Size = new System.Drawing.Size(267, 26);
-            this.cmbStores.TabIndex = 0;
-            // 
-            // pnlSide
-            // 
-            this.pnlSide.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlSide.Controls.Add(this.lblIPV4);
-            this.pnlSide.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlSide.Location = new System.Drawing.Point(0, 30);
-            this.pnlSide.Name = "pnlSide";
-            this.pnlSide.Size = new System.Drawing.Size(20, 520);
-            this.pnlSide.TabIndex = 6;
-            this.pnlSide.DoubleClick += new System.EventHandler(this.pnlSide_DoubleClick);
-            // 
-            // lblIPV4
-            // 
-            this.lblIPV4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblIPV4.Location = new System.Drawing.Point(0, 0);
-            this.lblIPV4.Name = "lblIPV4";
-            this.lblIPV4.Size = new System.Drawing.Size(20, 30);
-            this.lblIPV4.TabIndex = 0;
-            this.lblIPV4.Text = "IP";
-            this.lblIPV4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // picLogo
-            // 
-            this.picLogo.Image = global::appFelxMax.Properties.Resources.Icon;
-            this.picLogo.Location = new System.Drawing.Point(123, 145);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(150, 100);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogo.TabIndex = 4;
-            this.picLogo.TabStop = false;
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Image = global::appFelxMax.Properties.Resources.CloseColor;
-            this.btnClose.Location = new System.Drawing.Point(374, 5);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(20, 20);
-            this.btnClose.TabIndex = 0;
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // cmsServer
             // 
@@ -220,6 +167,59 @@ namespace appFelxMax.appForms.MainForms
             this.cmsExit.Size = new System.Drawing.Size(151, 26);
             this.cmsExit.Text = "خروج";
             // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPassword.Location = new System.Drawing.Point(59, 352);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '•';
+            this.txtPassword.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtPassword.Size = new System.Drawing.Size(267, 26);
+            this.txtPassword.TabIndex = 3;
+            // 
+            // cmbStores
+            // 
+            this.cmbStores.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cmbStores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbStores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbStores.FormattingEnabled = true;
+            this.cmbStores.Location = new System.Drawing.Point(59, 288);
+            this.cmbStores.Name = "cmbStores";
+            this.cmbStores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cmbStores.Size = new System.Drawing.Size(267, 26);
+            this.cmbStores.TabIndex = 1;
+            // 
+            // pnlSide
+            // 
+            this.pnlSide.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlSide.Controls.Add(this.lblIPV4);
+            this.pnlSide.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlSide.Location = new System.Drawing.Point(0, 30);
+            this.pnlSide.Name = "pnlSide";
+            this.pnlSide.Size = new System.Drawing.Size(20, 520);
+            this.pnlSide.TabIndex = 6;
+            this.pnlSide.DoubleClick += new System.EventHandler(this.pnlSide_DoubleClick);
+            // 
+            // lblIPV4
+            // 
+            this.lblIPV4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblIPV4.Location = new System.Drawing.Point(0, 0);
+            this.lblIPV4.Name = "lblIPV4";
+            this.lblIPV4.Size = new System.Drawing.Size(20, 30);
+            this.lblIPV4.TabIndex = 0;
+            this.lblIPV4.Text = "IP";
+            this.lblIPV4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picLogo
+            // 
+            this.picLogo.Image = global::appFelxMax.Properties.Resources.Icon;
+            this.picLogo.Location = new System.Drawing.Point(123, 145);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(150, 100);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 4;
+            this.picLogo.TabStop = false;
+            // 
             // iPassword
             // 
             this.iPassword.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -259,13 +259,14 @@ namespace appFelxMax.appForms.MainForms
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Padding = new System.Windows.Forms.Padding(80, 0, 80, 0);
             this.btnLogin.Size = new System.Drawing.Size(267, 30);
-            this.btnLogin.TabIndex = 3;
+            this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "تسجيل دخول";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // frmLogin
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));

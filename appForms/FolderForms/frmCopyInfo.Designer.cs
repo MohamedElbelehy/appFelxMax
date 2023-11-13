@@ -292,7 +292,7 @@ namespace appFelxMax.appForms.OtherForms
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Image = global::appFelxMax.Properties.Resources.DoneW;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.Location = new System.Drawing.Point(0, 74);
             this.btnSave.Name = "btnSave";
             this.btnSave.Padding = new System.Windows.Forms.Padding(180, 0, 180, 0);
@@ -326,7 +326,7 @@ namespace appFelxMax.appForms.OtherForms
             this.btnChangeSig.Name = "btnChangeSig";
             this.btnChangeSig.Padding = new System.Windows.Forms.Padding(150, 0, 180, 0);
             this.btnChangeSig.Size = new System.Drawing.Size(647, 31);
-            this.btnChangeSig.TabIndex = 28;
+            this.btnChangeSig.TabIndex = 1;
             this.btnChangeSig.Text = "تغيير البصمة ";
             this.btnChangeSig.UseVisualStyleBackColor = false;
             this.btnChangeSig.Click += new System.EventHandler(this.btnChangeSig_Click);
@@ -371,6 +371,8 @@ namespace appFelxMax.appForms.OtherForms
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmCopyInfo";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "معلومات النسخة";
             this.Load += new System.EventHandler(this.frmCopyInfo_Load);
