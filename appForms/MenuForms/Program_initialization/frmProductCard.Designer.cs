@@ -1,7 +1,7 @@
 ﻿
 namespace appFelxMax.appForms.MenuForms.Program_initialization
 {
-    partial class frmProduct_Card
+    partial class frmProductCard
     {
         /// <summary>
         /// Required designer variable.

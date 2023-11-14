@@ -1,7 +1,7 @@
 ﻿
 namespace appFelxMax.appForms.MenuForms.AccountForms
 {
-    partial class frmSafe
+    partial class frmBank
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSafe));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBank));
             this.lblHead = new System.Windows.Forms.Label();
             this.pnlOperations = new System.Windows.Forms.Panel();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -81,7 +81,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblHead.Name = "lblHead";
             this.lblHead.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblHead.Size = new System.Drawing.Size(1215, 40);
-            this.lblHead.TabIndex = 12;
+            this.lblHead.TabIndex = 13;
             this.lblHead.Text = "الخزن";
             this.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -99,7 +99,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnlOperations.Location = new System.Drawing.Point(0, 40);
             this.pnlOperations.Name = "pnlOperations";
             this.pnlOperations.Size = new System.Drawing.Size(1215, 40);
-            this.pnlOperations.TabIndex = 14;
+            this.pnlOperations.TabIndex = 15;
             // 
             // txtSearch
             // 
@@ -202,7 +202,6 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.btnNew.Text = "جديد - F1";
             this.btnNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNew.UseVisualStyleBackColor = false;
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // dgvNameList
             // 
@@ -215,7 +214,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.dgvNameList.ReadOnly = true;
             this.dgvNameList.RowHeadersWidth = 51;
             this.dgvNameList.Size = new System.Drawing.Size(315, 750);
-            this.dgvNameList.TabIndex = 15;
+            this.dgvNameList.TabIndex = 16;
             // 
             // pnlFooter
             // 
@@ -230,7 +229,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnlFooter.Location = new System.Drawing.Point(315, 770);
             this.pnlFooter.Name = "pnlFooter";
             this.pnlFooter.Size = new System.Drawing.Size(900, 60);
-            this.pnlFooter.TabIndex = 18;
+            this.pnlFooter.TabIndex = 19;
             // 
             // btnSave
             // 
@@ -426,9 +425,9 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.dgvData.ReadOnly = true;
             this.dgvData.RowHeadersWidth = 51;
             this.dgvData.Size = new System.Drawing.Size(900, 690);
-            this.dgvData.TabIndex = 19;
+            this.dgvData.TabIndex = 20;
             // 
-            // frmSafe
+            // frmBank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -441,14 +440,11 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.Controls.Add(this.lblHead);
             this.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "frmSafe";
+            this.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.Name = "frmBank";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.ShowIcon = false;
-            this.Text = "الخزن";
+            this.Text = "frmBank";
             this.pnlOperations.ResumeLayout(false);
             this.pnlOperations.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNameList)).EndInit();

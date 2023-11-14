@@ -37,7 +37,7 @@ namespace appFelxMax.appForms.MenuForms
         #region FormLoad
         private void frmBranch_Info_Load(object sender, EventArgs e)
         {
-            clsUIDesign.fnDGVConfig(dgvBranch);
+            clsUIDesign.fnDGVConfig(dgvBranches);
             fnClear_Data();
 
         }
@@ -49,7 +49,7 @@ namespace appFelxMax.appForms.MenuForms
             try
             {
 
-                dgvBranch.DataSource = (from vBranch in cmdBranch.GetAll().Where(state=>state.Branch_State == true)
+                dgvBranches.DataSource = (from vBranch in cmdBranch.GetAll().Where(state=>state.Branch_State == true)
                                         select new
                                         {
                                             Branch_ID = vBranch.Branch_ID,
@@ -62,15 +62,15 @@ namespace appFelxMax.appForms.MenuForms
                                             Branch_Note = vBranch.Branch_Note,
                                             Com_Name = vBranch.TBL_Company.Com_Name
                                         }).ToList();
-                dgvBranch.Columns["Branch_ID"].HeaderText = "رقم";
-                dgvBranch.Columns["Branch_Name"].HeaderText = "اسم";
-                dgvBranch.Columns["Branch_Address"].HeaderText = "العنوان";
-                dgvBranch.Columns["Branch_Mobile"].HeaderText = "الهاتف";
-                dgvBranch.Columns["Branch_Mobile2"].HeaderText = "الهاتف2";
-                dgvBranch.Columns["Branch_Open_Date"].HeaderText = "تاريخ الافتتاح";
-                dgvBranch.Columns["Branch_State"].HeaderText = "حالة الفرع";
-                dgvBranch.Columns["Branch_Note"].HeaderText = "ملاحظات";
-                dgvBranch.Columns["Com_Name"].HeaderText = "المؤسسة التابع لها";
+                dgvBranches.Columns["Branch_ID"].HeaderText = "رقم";
+                dgvBranches.Columns["Branch_Name"].HeaderText = "اسم";
+                dgvBranches.Columns["Branch_Address"].HeaderText = "العنوان";
+                dgvBranches.Columns["Branch_Mobile"].HeaderText = "الهاتف";
+                dgvBranches.Columns["Branch_Mobile2"].HeaderText = "الهاتف2";
+                dgvBranches.Columns["Branch_Open_Date"].HeaderText = "تاريخ الافتتاح";
+                dgvBranches.Columns["Branch_State"].HeaderText = "حالة الفرع";
+                dgvBranches.Columns["Branch_Note"].HeaderText = "ملاحظات";
+                dgvBranches.Columns["Com_Name"].HeaderText = "المؤسسة التابع لها";
 
             }
             catch(Exception ex)
@@ -93,31 +93,25 @@ namespace appFelxMax.appForms.MenuForms
             else return 1;
         }
 
-        public void fnGet_Company()
-        {
-            var data = (from vCom in cmdCompany.GetAll()
-                        select new
-                        { 
-                            ID = vCom.Com_ID,
-                            Name = vCom.Com_Name
-                        }).ToList();
-            cmbCompany.DataSource = data;
-            cmbCompany.DisplayMember = "Name";
-            cmbCompany.ValueMember = "ID";
-        }
+        //public void fnGet_Company()
+        //{
+        //    var data = (from vCom in cmdCompany.GetAll()
+        //                select new
+        //                { 
+        //                    ID = vCom.Com_ID,
+        //                    Name = vCom.Com_Name
+        //                }).ToList();
+        //    cmbCompany.DataSource = data;
+        //    cmbCompany.DisplayMember = "Name";
+        //    cmbCompany.ValueMember = "ID";
+        //}
         public void fnClear_Data()
         {
             vTblBranch = new TBL_Branch();
             vTblCompany = new TBL_Company();
 
-            fnGet_Company();
             txtBranch_ID.Text = fnMax_ID().ToString();
-            txtBranch_Address.Text = "";
-            txtBranch_Mobile1.Text = "";
-            txtBranch_Mobile2.Text = "";
             txtBranch_Name.Text = "";
-            txtBranch_Notes.Text = "";
-            cmbCompany.SelectedIndex = 0;
             chkBranch_State.Checked = false;
 
             fnFill_GV();
@@ -127,13 +121,8 @@ namespace appFelxMax.appForms.MenuForms
         {
             if (txtBranch_ID.Text == "") return false;
             else if (System.Text.RegularExpressions.Regex.IsMatch(txtBranch_ID.Text, "[^0-9]")) return false;
-            else if (txtBranch_Address.Text == "") return false;
-            else if (txtBranch_Mobile1.Text == "") return false;
             else if (txtBranch_Name.Text == "") return false;
-            else if (txtBranch_Notes.Text == "") return false;
-            else if (cmbCompany.SelectedIndex == -1) return false;
             else return true;
-
         }
 
         public void fnSave()
@@ -143,15 +132,9 @@ namespace appFelxMax.appForms.MenuForms
                 if (fnValidation())
                 {
                     vTblBranch = cmdBranch.GetAll().Where(id => id.Branch_ID == Convert.ToInt32(txtBranch_ID.Text)).FirstOrDefault();
-                    vTblCompany = cmdCompany.GetAll().Where(id => id.Com_Name == cmbCompany.Text).FirstOrDefault();
-
                     if (vTblBranch != null)
                     {
                         vTblBranch.Branch_Name = txtBranch_Name.Text;
-                        vTblBranch.Branch_Address = txtBranch_Address.Text;
-                        vTblBranch.Branch_Mobile = txtBranch_Mobile1.Text;
-                        vTblBranch.Branch_Mobile2 = txtBranch_Mobile2.Text;
-                        vTblBranch.Branch_Note = txtBranch_Notes.Text;
                         vTblBranch.Branch_Open_Date = dtpBranch_S_Date.Value;
                         vTblBranch.Branch_State = chkBranch_State.Checked;
                         vTblBranch.Com_ID = vTblCompany.Com_ID;
@@ -163,10 +146,6 @@ namespace appFelxMax.appForms.MenuForms
                         {
                             Branch_ID = Convert.ToInt32(txtBranch_ID.Text),
                             Branch_Name = txtBranch_Name.Text,
-                            Branch_Address = txtBranch_Address.Text,
-                            Branch_Mobile = txtBranch_Mobile1.Text,
-                            Branch_Mobile2 = txtBranch_Mobile2.Text,
-                            Branch_Note = txtBranch_Notes.Text,
                             Branch_Open_Date = dtpBranch_S_Date.Value,
                             Branch_State = chkBranch_State.Checked,
                             Com_ID = vTblCompany.Com_ID
@@ -251,30 +230,25 @@ namespace appFelxMax.appForms.MenuForms
             }
         }
 
-        private void dgvBranch_DoubleClick(object sender, EventArgs e)
+        private void dgvBranches_DoubleClick(object sender, EventArgs e)
         {
             
         }
 
-        private void dgvBranch_Click(object sender, EventArgs e)
+        private void dgvBranches_Click(object sender, EventArgs e)
         {
-            if (dgvBranch.RowCount > 0)
+            if (dgvBranches.RowCount > 0)
             {
                 try
                 {
-                    int vID = Convert.ToInt32(dgvBranch.CurrentRow.Cells[0].Value);
+                    int vID = Convert.ToInt32(dgvBranches.CurrentRow.Cells[0].Value);
 
                     vTblBranch = cmdBranch.GetAll().Where(id => id.Branch_ID == vID).FirstOrDefault();
 
-                    txtBranch_Address.Text = vTblBranch.Branch_Address;
                     txtBranch_ID.Text = vTblBranch.Branch_ID.ToString();
-                    txtBranch_Mobile1.Text = vTblBranch.Branch_Mobile;
-                    txtBranch_Mobile2.Text = vTblBranch.Branch_Mobile2;
                     txtBranch_Name.Text = vTblBranch.Branch_Name;
-                    txtBranch_Notes.Text = vTblBranch.Branch_Note;
                     dtpBranch_S_Date.Value = (DateTime)vTblBranch.Branch_Open_Date;
                     chkBranch_State.Checked = (bool)vTblBranch.Branch_State;
-                    cmbCompany.SelectedIndex = cmbCompany.FindString(vTblBranch.TBL_Company.Com_Name);
                 }
                 catch
                 {

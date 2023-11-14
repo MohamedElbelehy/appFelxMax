@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace appFelxMax.appForms.MenuForms.Program_initialization
+namespace appFelxMax.appForms.MenuForms.AccountForms
 {
-    public partial class frmProduct_Card : Form
+    public partial class frmAddSafe : Form
     {
-        public frmProduct_Card()
+        public frmAddSafe()
         {
             InitializeComponent();
-        }
-
-        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

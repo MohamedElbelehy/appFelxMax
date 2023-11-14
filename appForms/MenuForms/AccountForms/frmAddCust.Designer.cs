@@ -55,14 +55,14 @@ namespace appFelxMax.appForms.SubForms
             this.lblName = new System.Windows.Forms.Label();
             this.lblCode = new System.Windows.Forms.Label();
             this.lblHead = new System.Windows.Forms.Label();
-            this.pnlOperation = new System.Windows.Forms.Panel();
-            this.btnESC = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnNew = new System.Windows.Forms.Button();
             this.p = new System.Windows.Forms.Panel();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnESC = new System.Windows.Forms.Button();
+            this.pnlOperation = new System.Windows.Forms.Panel();
             this.pnlMain.SuspendLayout();
-            this.pnlOperation.SuspendLayout();
             this.p.SuspendLayout();
+            this.pnlOperation.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMain
@@ -358,52 +358,15 @@ namespace appFelxMax.appForms.SubForms
             this.lblHead.Text = "إضافة عميل";
             this.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnlOperation
+            // p
             // 
-            this.pnlOperation.BackColor = System.Drawing.Color.LightGray;
-            this.pnlOperation.Controls.Add(this.btnESC);
-            this.pnlOperation.Controls.Add(this.btnSave);
-            this.pnlOperation.Controls.Add(this.btnNew);
-            this.pnlOperation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlOperation.Location = new System.Drawing.Point(0, 0);
-            this.pnlOperation.Name = "pnlOperation";
-            this.pnlOperation.Size = new System.Drawing.Size(584, 40);
-            this.pnlOperation.TabIndex = 16;
-            // 
-            // btnESC
-            // 
-            this.btnESC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnESC.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnESC.FlatAppearance.BorderSize = 0;
-            this.btnESC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnESC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnESC.ForeColor = System.Drawing.Color.Black;
-            this.btnESC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnESC.Location = new System.Drawing.Point(310, 3);
-            this.btnESC.Name = "btnESC";
-            this.btnESC.Size = new System.Drawing.Size(90, 30);
-            this.btnESC.TabIndex = 14;
-            this.btnESC.Text = "خروج - ESC";
-            this.btnESC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnESC.UseVisualStyleBackColor = false;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Image = global::appFelxMax.Properties.Resources.DoneColored;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnSave.Location = new System.Drawing.Point(406, 3);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(80, 30);
-            this.btnSave.TabIndex = 13;
-            this.btnSave.Text = "حفظ - F2";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.UseVisualStyleBackColor = false;
+            this.p.BackColor = System.Drawing.Color.Gainsboro;
+            this.p.Controls.Add(this.pnlOperation);
+            this.p.Dock = System.Windows.Forms.DockStyle.Top;
+            this.p.Location = new System.Drawing.Point(0, 40);
+            this.p.Name = "p";
+            this.p.Size = new System.Drawing.Size(584, 39);
+            this.p.TabIndex = 12;
             // 
             // btnNew
             // 
@@ -423,15 +386,52 @@ namespace appFelxMax.appForms.SubForms
             this.btnNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNew.UseVisualStyleBackColor = false;
             // 
-            // p
+            // btnSave
             // 
-            this.p.BackColor = System.Drawing.Color.Gainsboro;
-            this.p.Controls.Add(this.pnlOperation);
-            this.p.Dock = System.Windows.Forms.DockStyle.Top;
-            this.p.Location = new System.Drawing.Point(0, 40);
-            this.p.Name = "p";
-            this.p.Size = new System.Drawing.Size(584, 39);
-            this.p.TabIndex = 12;
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Image = global::appFelxMax.Properties.Resources.DoneColored;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.btnSave.Location = new System.Drawing.Point(406, 3);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(80, 30);
+            this.btnSave.TabIndex = 13;
+            this.btnSave.Text = "حفظ - F2";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.UseVisualStyleBackColor = false;
+            // 
+            // btnESC
+            // 
+            this.btnESC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnESC.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnESC.FlatAppearance.BorderSize = 0;
+            this.btnESC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnESC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnESC.ForeColor = System.Drawing.Color.Black;
+            this.btnESC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnESC.Location = new System.Drawing.Point(310, 3);
+            this.btnESC.Name = "btnESC";
+            this.btnESC.Size = new System.Drawing.Size(90, 30);
+            this.btnESC.TabIndex = 14;
+            this.btnESC.Text = "خروج - ESC";
+            this.btnESC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnESC.UseVisualStyleBackColor = false;
+            // 
+            // pnlOperation
+            // 
+            this.pnlOperation.BackColor = System.Drawing.Color.LightGray;
+            this.pnlOperation.Controls.Add(this.btnESC);
+            this.pnlOperation.Controls.Add(this.btnSave);
+            this.pnlOperation.Controls.Add(this.btnNew);
+            this.pnlOperation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlOperation.Location = new System.Drawing.Point(0, 0);
+            this.pnlOperation.Name = "pnlOperation";
+            this.pnlOperation.Size = new System.Drawing.Size(584, 40);
+            this.pnlOperation.TabIndex = 16;
             // 
             // frmAdd_Cust
             // 
@@ -457,8 +457,8 @@ namespace appFelxMax.appForms.SubForms
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmAdd_Cust_KeyDown);
             this.pnlMain.ResumeLayout(false);
             this.pnlMain.PerformLayout();
-            this.pnlOperation.ResumeLayout(false);
             this.p.ResumeLayout(false);
+            this.pnlOperation.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -490,10 +490,10 @@ namespace appFelxMax.appForms.SubForms
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.TextBox txtCust_ID;
         private System.Windows.Forms.Label lblCustID;
+        private System.Windows.Forms.Panel p;
         private System.Windows.Forms.Panel pnlOperation;
         private System.Windows.Forms.Button btnESC;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnNew;
-        private System.Windows.Forms.Panel p;
     }
 }

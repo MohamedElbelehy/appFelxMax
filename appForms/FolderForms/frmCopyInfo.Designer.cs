@@ -318,10 +318,9 @@ namespace appFelxMax.appForms.OtherForms
             this.btnChangeSig.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnChangeSig.FlatAppearance.BorderSize = 0;
             this.btnChangeSig.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnChangeSig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChangeSig.ForeColor = System.Drawing.Color.Black;
             this.btnChangeSig.Image = global::appFelxMax.Properties.Resources.FingerprintColor;
-            this.btnChangeSig.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnChangeSig.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnChangeSig.Location = new System.Drawing.Point(0, 43);
             this.btnChangeSig.Name = "btnChangeSig";
             this.btnChangeSig.Padding = new System.Windows.Forms.Padding(150, 0, 180, 0);

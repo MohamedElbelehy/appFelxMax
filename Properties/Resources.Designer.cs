@@ -793,6 +793,16 @@ namespace appFelxMax.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EditImageColor {
+            get {
+                object obj = ResourceManager.GetObject("EditImageColor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Emp {
             get {
                 object obj = ResourceManager.GetObject("Emp", resourceCulture);
@@ -1166,6 +1176,16 @@ namespace appFelxMax.Properties {
         internal static System.Drawing.Bitmap FolderW {
             get {
                 object obj = ResourceManager.GetObject("FolderW", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FullImageColor {
+            get {
+                object obj = ResourceManager.GetObject("FullImageColor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1553,6 +1573,16 @@ namespace appFelxMax.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap RemoveImageColor {
+            get {
+                object obj = ResourceManager.GetObject("RemoveImageColor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SafeColor {
             get {
                 object obj = ResourceManager.GetObject("SafeColor", resourceCulture);
@@ -1816,6 +1846,16 @@ namespace appFelxMax.Properties {
         internal static System.Drawing.Bitmap SyncW {
             get {
                 object obj = ResourceManager.GetObject("SyncW", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TestConnectionColor {
+            get {
+                object obj = ResourceManager.GetObject("TestConnectionColor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

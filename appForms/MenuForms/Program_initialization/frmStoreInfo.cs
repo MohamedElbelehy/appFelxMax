@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace appFelxMax.appForms.MenuForms.Program_initialization
 {
-    public partial class frmStore_Init : Form
+    public partial class frmStoreInfo : Form
     {
 
         #region Variable
@@ -31,7 +31,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
 
 
         #region Constructor
-        public frmStore_Init()
+        public frmStoreInfo()
         {
             InitializeComponent();
         }
@@ -41,7 +41,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
         #region FormLoad
         private void frmStore_Init_Load(object sender, EventArgs e)
         {
-            clsUIDesign.fnDGVConfig(dgv);
+            clsUIDesign.fnDGVConfig(dgvStores);
             fnGrt_Branch();
             fnClear_Data();
         }
@@ -79,7 +79,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             {
                 
 
-                dgv.DataSource = (from vStore_Branch in cmdStore_Branch.GetAll().Where(id => id.Store_Branch_State == true) 
+                dgvStores.DataSource = (from vStore_Branch in cmdStore_Branch.GetAll().Where(id => id.Store_Branch_State == true) 
                                   join vStore in cmdStore.GetAll() on vStore_Branch.Store_ID equals vStore.Store_ID
                                   select new
                                   {
@@ -91,23 +91,23 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
                                       Note = vStore.Store_Notes,
                                   }).ToList();
 
-                dgv.Columns["ID"].HeaderText = "رقم";
-                dgv.Columns["ID"].DisplayIndex = 0;
+                dgvStores.Columns["ID"].HeaderText = "رقم";
+                dgvStores.Columns["ID"].DisplayIndex = 0;
 
-                dgv.Columns["Name"].HeaderText = "اسم";
-                dgv.Columns["Name"].DisplayIndex = 1;
+                dgvStores.Columns["Name"].HeaderText = "اسم";
+                dgvStores.Columns["Name"].DisplayIndex = 1;
 
-                dgv.Columns["Location"].HeaderText = "مكان المخزن";
-                dgv.Columns["Location"].DisplayIndex = 2;
+                dgvStores.Columns["Location"].HeaderText = "مكان المخزن";
+                dgvStores.Columns["Location"].DisplayIndex = 2;
 
-                dgv.Columns["Date"].HeaderText = "تاريخ الانشاء";
-                dgv.Columns["Date"].DisplayIndex = 4;
+                dgvStores.Columns["Date"].HeaderText = "تاريخ الانشاء";
+                dgvStores.Columns["Date"].DisplayIndex = 4;
 
-                dgv.Columns["Branch"].HeaderText = "تابع للفرع";
-                dgv.Columns["Branch"].DisplayIndex = 3;
+                dgvStores.Columns["Branch"].HeaderText = "تابع للفرع";
+                dgvStores.Columns["Branch"].DisplayIndex = 3;
 
-                dgv.Columns["Note"].HeaderText = "ملاحظات";
-                dgv.Columns["Note"].DisplayIndex = 5;
+                dgvStores.Columns["Note"].HeaderText = "ملاحظات";
+                dgvStores.Columns["Note"].DisplayIndex = 5;
 
 
             }
@@ -141,24 +141,20 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
         public void fnClear_Data()
         {
 
-            txt_ID.Text = Convert.ToString(fnMax_ID_Store());
-            txtStore_Branch_ID.Text = fnMax_ID_Store_Branch().ToString();
-            txt_Name.Text = "";
-            txt_Notes.Text = "";
-            txtLocation.Text = "";
-            chk_State.Checked = true;
+            txtStoreID.Text = Convert.ToString(fnMax_ID_Store());
+            txtStoreName.Text = "";
+            chkStoreState.Checked = true;
             cmbBranch.SelectedIndex = -1;
-            dtp_S_Date.Value = DateTime.Now;
+            dtpStore_S_Date.Value = DateTime.Now;
 
             fnFill_GV();
         }
         public bool fnValidation()
         {
-            if (txt_ID.Text == "") return false;
-            else if (System.Text.RegularExpressions.Regex.IsMatch(txt_ID.Text, "[^0-9]")) return false;
-            else if (txt_Name.Text == "") return false;
+            if (txtStoreID.Text == "") return false;
+            else if (System.Text.RegularExpressions.Regex.IsMatch(txtStoreID.Text, "[^0-9]")) return false;
+            else if (txtStoreName.Text == "") return false;
             else if (cmbBranch.SelectedIndex == -1) return false;
-            else if (txtLocation.Text == "") return false;
             else return true;
 
         }
@@ -168,21 +164,18 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             {
                 if (fnValidation())
                 {
-                    vTblStore = cmdStore.GetAll().FirstOrDefault(id => id.Store_ID == Convert.ToInt32(txt_ID.Text));
-                    vTblStore_Branch = cmdStore_Branch.GetAll().FirstOrDefault(id=>id.Store_Branch_ID == Convert.ToInt32(txtStore_Branch_ID.Text));
+                    vTblStore = cmdStore.GetAll().FirstOrDefault(id => id.Store_ID == Convert.ToInt32(txtStoreID.Text));
                     vTblBranch = cmdBranch.GetAll().FirstOrDefault(id => id.Branch_Name == cmbBranch.Text);
                     if(vTblStore != null && vTblStore_Branch!=null)
                     {
-                        vTblStore.Store_Name = txt_Name.Text;
-                        vTblStore.Store_Location = txtLocation.Text;
-                        vTblStore.Store_Notes = txt_Notes.Text;
-                        vTblStore.Store_S_Date = Convert.ToDateTime(string.Format(dtp_S_Date.Value.ToShortDateString(), "MM/dd/yyyy"));
-                        vTblStore.Store_State = chk_State.Checked;
+                        vTblStore.Store_Name = txtStoreName.Text;
+                        vTblStore.Store_S_Date = Convert.ToDateTime(string.Format(dtpStore_S_Date.Value.ToShortDateString(), "MM/dd/yyyy"));
+                        vTblStore.Store_State = chkStoreState.Checked;
                         cmdStore.Update_Data(vTblStore);
 
-                        vTblStore_Branch.Store_ID = Convert.ToInt32(txt_ID.Text);
+                        vTblStore_Branch.Store_ID = Convert.ToInt32(txtStoreID.Text);
                         vTblStore_Branch.Branch_ID = vTblBranch.Branch_ID;
-                        vTblStore_Branch.Store_Branch_State = chk_State.Checked;
+                        vTblStore_Branch.Store_Branch_State = chkStoreState.Checked;
                         cmdStore_Branch.Update_Data(vTblStore_Branch);
 
                         fnClear_Data();
@@ -194,22 +187,19 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
 
                         vTblStore = new TBL_Store
                         {
-                            Store_ID = Convert.ToInt32(txt_ID.Text),
-                            Store_Name = txt_Name.Text,
-                            Store_Location = txtLocation.Text,
-                            Store_Notes = txt_Notes.Text,
-                            Store_S_Date = Convert.ToDateTime(string.Format(dtp_S_Date.Value.ToShortDateString(), "MM/dd/yyyy")),
-                            Store_State = chk_State.Checked
+                            Store_ID = Convert.ToInt32(txtStoreID.Text),
+                            Store_Name = txtStoreName.Text,
+                            Store_S_Date = Convert.ToDateTime(string.Format(dtpStore_S_Date.Value.ToShortDateString(), "MM/dd/yyyy")),
+                            Store_State = chkStoreState.Checked
                         };
                         cmdStore.Insert_Data(vTblStore);
 
 
                         vTblStore_Branch = new TBL_Store_Branch
                         {
-                            Store_Branch_ID = Convert.ToInt32(txtStore_Branch_ID.Text),
                             Branch_ID = vTblBranch.Branch_ID,
-                            Store_ID = Convert.ToInt32(txt_ID.Text),
-                            Store_Branch_State = chk_State.Checked
+                            Store_ID = Convert.ToInt32(txtStoreID.Text),
+                            Store_Branch_State = chkStoreState.Checked
                         };
                         cmdStore_Branch.Insert_Data(vTblStore_Branch);
 
@@ -298,29 +288,23 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             fnDelete();
         }
 
-        private void dgv_Click(object sender, EventArgs e)
+        private void dgvStores_Click(object sender, EventArgs e)
         {
             try
             {
-                if (dgv.RowCount > 0)
+                if (dgvStores.RowCount > 0)
                 {
-                    int vID = Convert.ToInt32(dgv.CurrentRow.Cells[0].Value);
-                    string vName = (dgv.CurrentRow.Cells[1].Value).ToString();
+                    int vID = Convert.ToInt32(dgvStores.CurrentRow.Cells[0].Value);
+                    string vName = (dgvStores.CurrentRow.Cells[1].Value).ToString();
 
                     vTblStore_Branch = cmdStore_Branch.GetAll().FirstOrDefault(id => id.Store_Branch_ID == vID);
                     vTblStore = cmdStore.GetAll().FirstOrDefault(name => name.Store_Name == vName);
 
-                    txt_ID.Text = vTblStore_Branch.Store_ID.ToString();
-                    txt_Name.Text = vTblStore.Store_Name;
-                    txtLocation.Text = vTblStore.Store_Location;
-                    txt_Notes.Text = vTblStore.Store_Notes;
-                    chk_State.Checked = (bool)vTblStore.Store_State;
-                    dtp_S_Date.Value = (DateTime)vTblStore.Store_S_Date;
-
+                    txtStoreID.Text = vTblStore_Branch.Store_ID.ToString();
+                    txtStoreName.Text = vTblStore.Store_Name;
+                    chkStoreState.Checked = (bool)vTblStore.Store_State;
+                    dtpStore_S_Date.Value = (DateTime)vTblStore.Store_S_Date;
                     cmbBranch.SelectedIndex = cmbBranch.FindString(vTblStore_Branch.TBL_Branch.Branch_Name);
-                    txtStore_Branch_ID.Text = vTblStore_Branch.Store_Branch_ID.ToString();
-
-
                 }
             }
             catch
@@ -329,17 +313,17 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             }
         }
 
-        private void chk_State_CheckedChanged(object sender, EventArgs e)
+        private void chkStoreState_CheckedChanged(object sender, EventArgs e)
         {
-            if (chk_State.Checked == true)
+            if (chkStoreState.Checked == true)
             {
-                chk_State.ForeColor = Color.Green;
-                chk_State.Text = "نشط";
+                chkStoreState.ForeColor = Color.Green;
+                chkStoreState.Text = "نشط";
             }
             else
             {
-                chk_State.ForeColor = Color.Red;
-                chk_State.Text = "غير نشط";
+                chkStoreState.ForeColor = Color.Red;
+                chkStoreState.Text = "غير نشط";
             }
         }
     }

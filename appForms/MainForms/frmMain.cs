@@ -3,7 +3,6 @@ using System;
 using System.Windows.Forms;
 using appFelxMax.appClass.clsDesign;
 using appFelxMax.appForms.OtherForms;
-using appFelxMax.appForms.MenuForms.DuesForms;
 using appFelxMax.appForms.MenuForms.AccountForms;
 using appFelxMax.appForms.MenuForms.Program_initialization;
 
@@ -188,7 +187,7 @@ namespace appFelxMax.appForms.MainForms
         // Items Card 
         private void mnsItems_Click(object sender, EventArgs e)
         {
-            appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmProduct_Card(), pnlTools, pnlMiddle);
+            appClass.clsDesign.clsUIDesign.OpenFormInTap(new frmProductCard(), pnlTools, pnlMiddle);
         }
 
         // Copy Info 

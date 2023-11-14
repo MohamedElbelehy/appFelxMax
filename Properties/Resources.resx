@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Scroll" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Scroll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="StoreS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\StoreS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -129,9 +126,6 @@
   </data>
   <data name="FileColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FileColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User1Color" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\User1Color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ExpireW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ExpireW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,6 +157,9 @@
   <data name="BarcodeB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BarcodeB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FullImageColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FullImageColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="UserGroup2Color" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UserGroup2Color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -180,9 +177,6 @@
   </data>
   <data name="ShortfallsS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShortfallsS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ScheduleW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ScheduleW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FilterColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FilterColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,17 +208,14 @@
   <data name="SettingsW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SettingsW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ItemsColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ItemsColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NoSyncB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NoSyncB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BankW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BankW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BankColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BankColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DoneW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DoneW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DeleteS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DeleteS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -246,6 +237,9 @@
   </data>
   <data name="AttachColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AttachColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FolderW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FolderW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ESC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ESC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -274,6 +268,9 @@
   <data name="DownloadBackupB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DownloadBackupB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DoneB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DoneB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ItemsCardColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ItemsCardColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -292,8 +289,8 @@
   <data name="ClockB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ClockB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SyncB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SyncB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VendorsW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VendorsW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BankB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BankB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -303,6 +300,9 @@
   </data>
   <data name="ItemLimitColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ItemLimitColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoneS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DoneS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SynchronizeColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SynchronizeColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -322,8 +322,8 @@
   <data name="AddB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AddB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NoSyncB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NoSyncB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DeliveryS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeliveryS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PrinterS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PrinterS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -333,9 +333,6 @@
   </data>
   <data name="CopyColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CopyColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PauseW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PauseW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CalendarColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CalendarColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,6 +349,9 @@
   <data name="LogoutColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoutColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ExcelW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExcelW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ExcelB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ExcelB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -361,11 +361,17 @@
   <data name="UserCardB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UserCardB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LedgerColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LedgerColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="EmptyBoxS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EmptyBoxS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="StoreB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\StoreB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="File2S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\File2S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OffColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OffColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FolderS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FolderS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -400,14 +406,8 @@
   <data name="CardW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ErrorW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ErrorW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="DueReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DueReport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SyncS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SyncS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FilterB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FilterB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -418,8 +418,8 @@
   <data name="SafeColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SafeColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ContactW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ContactW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ErrorW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ErrorW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PasswordS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PasswordS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -433,11 +433,17 @@
   <data name="DeleteW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DeleteW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FilterW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FilterW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="WarrningW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WarrningW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SyncW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SyncW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditImageColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditImageColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ReloadW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ReloadW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -451,8 +457,17 @@
   <data name="CardColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PauseB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PauseB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContactW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ContactW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DuesColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DuesColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OwnerColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OwnerColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UserNameB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UserNameB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -466,17 +481,11 @@
   <data name="FeatureSettingsColored" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FeatureSettingsColored.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DeliveryW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DeliveryW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="UserNameS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UserNameS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AddGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AddGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DeliveryS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DeliveryS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AttachW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AttachW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -487,17 +496,17 @@
   <data name="CardS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AttachS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AttachS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PDFB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PDFB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DoneB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DoneB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DeliveryB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeliveryB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BankS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BankS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DeliveryB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DeliveryB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AddColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AddColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -529,6 +538,9 @@
   <data name="SignautreResetColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SignautreResetColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="File2B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\File2B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="StoreColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\StoreColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -540,6 +552,9 @@
   </data>
   <data name="EuroS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EuroS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoveImageColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RemoveImageColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CloseB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CloseB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -556,8 +571,8 @@
   <data name="AddW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AddW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VendorsW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VendorsW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ItemsColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ItemsColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -565,14 +580,17 @@
   <data name="UnitColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UnitColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="File2B" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\File2B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="StoreB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StoreB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GroupY" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GroupY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AttachS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AttachS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PauseW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PauseW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OnColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OnColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SettingsColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SettingsColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -586,8 +604,8 @@
   <data name="FilterS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FilterS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LedgerColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LedgerColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DeliveryW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeliveryW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BranchTransferColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BranchTransferColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -610,8 +628,8 @@
   <data name="UserCardW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UserCardW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FilterW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FilterW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ScheduleW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScheduleW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AddProductColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AddProductColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -628,11 +646,11 @@
   <data name="MotherboardColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MotherboardColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="File2S" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\File2S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="User1Color" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User1Color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FolderW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FolderW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Key" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CloseW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CloseW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -643,8 +661,8 @@
   <data name="PDFW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PDFW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DoneS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DoneS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DoneW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DoneW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DownloadBackupS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DownloadBackupS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -655,8 +673,8 @@
   <data name="FolderColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FolderColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ExcelW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ExcelW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Scroll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scroll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AttendanceColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AttendanceColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -664,8 +682,8 @@
   <data name="SearchW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SearchW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PauseB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PauseB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SyncB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SyncB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Emp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Emp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -676,8 +694,8 @@
   <data name="BarcodeS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BarcodeS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Key" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SyncS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SyncS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AlarmW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AlarmW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -685,13 +703,7 @@
   <data name="DelivaryColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DelivaryColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="OffColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OffColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OnColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OnColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OwnerColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OwnerColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TestConnectionColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestConnectionColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

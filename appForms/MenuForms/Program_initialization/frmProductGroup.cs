@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace appFelxMax.appForms.MenuForms.Program_initialization
 {
-    public partial class frmProduct_Group : Form
+    public partial class frmProductGroup : Form
     {
         #region Variable
         clsCommander<TBL_Product_Group> cmdProduct_Group = new clsCommander<TBL_Product_Group>();
@@ -23,7 +23,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
 
 
         #region Constructor
-        public frmProduct_Group()
+        public frmProductGroup()
         {
             InitializeComponent();
         }

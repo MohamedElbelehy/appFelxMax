@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace appFelxMax.appForms.MenuForms.AccountForms
 {
-    public partial class frmSafe : Form
+    public partial class frmAddBank : Form
     {
-        public frmSafe()
+        public frmAddBank()
         {
             InitializeComponent();
-        }
-
-        private void btnNew_Click(object sender, EventArgs e)
-        {
-            frmAddSafe frmAdd_Safe = new frmAddSafe();
-            frmAdd_Safe.ShowDialog();
         }
     }
 }

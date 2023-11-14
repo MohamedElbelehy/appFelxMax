@@ -67,11 +67,29 @@
     <Compile Include="appClass\clsDesign\clsUIDesign.cs" />
     <Compile Include="appClass\clsProgOptions\clsCopyDetails.cs" />
     <Compile Include="appClass\clsProgOptions\clsGenerate.cs" />
-    <Compile Include="appForms\MenuForms\AccountForms\frmAdd_Safe.cs">
+    <Compile Include="appForms\MenuForms\AccountForms\frmAddBank.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="appForms\MenuForms\AccountForms\frmAdd_Safe.Designer.cs">
-      <DependentUpon>frmAdd_Safe.cs</DependentUpon>
+    <Compile Include="appForms\MenuForms\AccountForms\frmAddBank.Designer.cs">
+      <DependentUpon>frmAddBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmAddEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmAddEmp.Designer.cs">
+      <DependentUpon>frmAddEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmAddSafe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmAddSafe.Designer.cs">
+      <DependentUpon>frmAddSafe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\AccountForms\frmBank.Designer.cs">
+      <DependentUpon>frmBank.cs</DependentUpon>
     </Compile>
     <Compile Include="appForms\MenuForms\AccountForms\frmCustomers.cs">
       <SubType>Form</SubType>
@@ -97,35 +115,41 @@
     <Compile Include="appForms\MenuForms\AccountForms\frmVendors.Designer.cs">
       <DependentUpon>frmVendors.cs</DependentUpon>
     </Compile>
-    <Compile Include="appForms\MenuForms\Program_initialization\frmBranch_Info.cs">
+    <Compile Include="appForms\MenuForms\EmpForms\frmAttendanceDeparture.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="appForms\MenuForms\Program_initialization\frmBranch_Info.Designer.cs">
-      <DependentUpon>frmBranch_Info.cs</DependentUpon>
+    <Compile Include="appForms\MenuForms\EmpForms\frmAttendanceDeparture.Designer.cs">
+      <DependentUpon>frmAttendanceDeparture.cs</DependentUpon>
     </Compile>
-    <Compile Include="appForms\MenuForms\Program_initialization\frmProduct_Card.cs">
+    <Compile Include="appForms\MenuForms\Program_initialization\frmBranchInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="appForms\MenuForms\Program_initialization\frmProduct_Card.Designer.cs">
-      <DependentUpon>frmProduct_Card.cs</DependentUpon>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmBranchInfo.Designer.cs">
+      <DependentUpon>frmBranchInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="appForms\MenuForms\Program_initialization\frmProduct_Group.cs">
+    <Compile Include="appForms\MenuForms\Program_initialization\frmProductCard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="appForms\MenuForms\Program_initialization\frmProduct_Group.Designer.cs">
-      <DependentUpon>frmProduct_Group.cs</DependentUpon>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmProductCard.Designer.cs">
+      <DependentUpon>frmProductCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="appForms\MenuForms\Program_initialization\frmProduct_Section.cs">
+    <Compile Include="appForms\MenuForms\Program_initialization\frmProductGroup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="appForms\MenuForms\Program_initialization\frmProduct_Section.Designer.cs">
-      <DependentUpon>frmProduct_Section.cs</DependentUpon>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmProductGroup.Designer.cs">
+      <DependentUpon>frmProductGroup.cs</DependentUpon>
     </Compile>
-    <Compile Include="appForms\MenuForms\Program_initialization\frmStore_Init.cs">
+    <Compile Include="appForms\MenuForms\Program_initialization\frmProductSection.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="appForms\MenuForms\Program_initialization\frmStore_Init.Designer.cs">
-      <DependentUpon>frmStore_Init.cs</DependentUpon>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmProductSection.Designer.cs">
+      <DependentUpon>frmProductSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmStoreInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\Program_initialization\frmStoreInfo.Designer.cs">
+      <DependentUpon>frmStoreInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="appForms\MenuForms\Program_initialization\frmUnits.cs">
       <SubType>Form</SubType>
@@ -193,17 +217,17 @@
     <Compile Include="appForms\ServerForms\frmServerSettings.Designer.cs">
       <DependentUpon>frmServerSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="appForms\MenuForms\AccountForms\frmAdd_Cust.cs">
+    <Compile Include="appForms\MenuForms\AccountForms\frmAddCust.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="appForms\MenuForms\AccountForms\frmAdd_Cust.Designer.cs">
-      <DependentUpon>frmAdd_Cust.cs</DependentUpon>
+    <Compile Include="appForms\MenuForms\AccountForms\frmAddCust.Designer.cs">
+      <DependentUpon>frmAddCust.cs</DependentUpon>
     </Compile>
-    <Compile Include="appForms\MenuForms\AccountForms\frmAdd_Vendor.cs">
+    <Compile Include="appForms\MenuForms\AccountForms\frmAddVendor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="appForms\MenuForms\AccountForms\frmAdd_Vendor.Designer.cs">
-      <DependentUpon>frmAdd_Vendor.cs</DependentUpon>
+    <Compile Include="appForms\MenuForms\AccountForms\frmAddVendor.Designer.cs">
+      <DependentUpon>frmAddVendor.cs</DependentUpon>
     </Compile>
     <Compile Include="appForms\SubForms\frmDeliveryInfo.cs">
       <SubType>Form</SubType>
@@ -225,8 +249,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmAdd_Safe.resx">
-      <DependentUpon>frmAdd_Safe.cs</DependentUpon>
+    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmAddBank.resx">
+      <DependentUpon>frmAddBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmAddEmp.resx">
+      <DependentUpon>frmAddEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmAddSafe.resx">
+      <DependentUpon>frmAddSafe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmBank.resx">
+      <DependentUpon>frmBank.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmCustomers.resx">
       <DependentUpon>frmCustomers.cs</DependentUpon>
@@ -240,20 +273,23 @@
     <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmVendors.resx">
       <DependentUpon>frmVendors.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmBranch_Info.resx">
-      <DependentUpon>frmBranch_Info.cs</DependentUpon>
+    <EmbeddedResource Include="appForms\MenuForms\EmpForms\frmAttendanceDeparture.resx">
+      <DependentUpon>frmAttendanceDeparture.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmProduct_Card.resx">
-      <DependentUpon>frmProduct_Card.cs</DependentUpon>
+    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmBranchInfo.resx">
+      <DependentUpon>frmBranchInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmProduct_Group.resx">
-      <DependentUpon>frmProduct_Group.cs</DependentUpon>
+    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmProductCard.resx">
+      <DependentUpon>frmProductCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmProduct_Section.resx">
-      <DependentUpon>frmProduct_Section.cs</DependentUpon>
+    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmProductGroup.resx">
+      <DependentUpon>frmProductGroup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmStore_Init.resx">
-      <DependentUpon>frmStore_Init.cs</DependentUpon>
+    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmProductSection.resx">
+      <DependentUpon>frmProductSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmStoreInfo.resx">
+      <DependentUpon>frmStoreInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="appForms\MenuForms\Program_initialization\frmUnits.resx">
       <DependentUpon>frmUnits.cs</DependentUpon>
@@ -288,11 +324,11 @@
     <EmbeddedResource Include="appForms\ServerForms\frmServerSettings.resx">
       <DependentUpon>frmServerSettings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmAdd_Cust.resx">
-      <DependentUpon>frmAdd_Cust.cs</DependentUpon>
+    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmAddCust.resx">
+      <DependentUpon>frmAddCust.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmAdd_Vendor.resx">
-      <DependentUpon>frmAdd_Vendor.cs</DependentUpon>
+    <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmAddVendor.resx">
+      <DependentUpon>frmAddVendor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="appForms\SubForms\frmDeliveryInfo.resx">
       <DependentUpon>frmDeliveryInfo.cs</DependentUpon>
@@ -913,6 +949,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\OwnerColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FullImageColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditImageColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveImageColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestConnectionColor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
