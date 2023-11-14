@@ -61,17 +61,17 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             else return 1;
         }
         
-        public int fnMax_ID_Store_Branch()
-        {
-            var x = cmdStore_Branch.GetAll().ToList();
-            if (x.Count != 0)
-            {
-                var vLastRow = cmdStore_Branch.GetAll().FirstOrDefault(id => id.Store_Branch_ID == cmdStore_Branch.GetAll().Max(mID => mID.Store_Branch_ID));
-                var vLastID = vLastRow.Store_Branch_ID;
-                return vLastID + 1;
-            }
-            else return 1;
-        }
+        //public int fnMax_ID_Store_Branch()
+        //{
+        //    var x = cmdStore_Branch.GetAll().ToList();
+        //    if (x.Count != 0)
+        //    {
+        //        var vLastRow = cmdStore_Branch.GetAll().FirstOrDefault(id => id.Store_Branch_ID == cmdStore_Branch.GetAll().Max(mID => mID.Store_Branch_ID));
+        //        var vLastID = vLastRow.Store_Branch_ID;
+        //        return vLastID + 1;
+        //    }
+        //    else return 1;
+        //}
 
         public void fnFill_GV()
         {
@@ -273,58 +273,43 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
 
         #endregion
 
-        private void btnNew_Click(object sender, EventArgs e)
-        {
-            fnClear_Data();
-        }
+        //private void dgvStores_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        if (dgvStores.RowCount > 0)
+        //        {
+        //            int vID = Convert.ToInt32(dgvStores.CurrentRow.Cells[0].Value);
+        //            string vName = (dgvStores.CurrentRow.Cells[1].Value).ToString();
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            fnSave();
-        }
+        //            vTblStore_Branch = cmdStore_Branch.GetAll().FirstOrDefault(id => id.Store_Branch_ID == vID);
+        //            vTblStore = cmdStore.GetAll().FirstOrDefault(name => name.Store_Name == vName);
 
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            fnDelete();
-        }
+        //            txtStoreID.Text = vTblStore_Branch.Store_ID.ToString();
+        //            txtStoreName.Text = vTblStore.Store_Name;
+        //            chkStoreState.Checked = (bool)vTblStore.Store_State;
+        //            dtpStore_S_Date.Value = (DateTime)vTblStore.Store_S_Date;
+        //            cmbBranch.SelectedIndex = cmbBranch.FindString(vTblStore_Branch.TBL_Branch.Branch_Name);
+        //        }
+        //    }
+        //    catch
+        //    {
 
-        private void dgvStores_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (dgvStores.RowCount > 0)
-                {
-                    int vID = Convert.ToInt32(dgvStores.CurrentRow.Cells[0].Value);
-                    string vName = (dgvStores.CurrentRow.Cells[1].Value).ToString();
+        //    }
+        //}
 
-                    vTblStore_Branch = cmdStore_Branch.GetAll().FirstOrDefault(id => id.Store_Branch_ID == vID);
-                    vTblStore = cmdStore.GetAll().FirstOrDefault(name => name.Store_Name == vName);
-
-                    txtStoreID.Text = vTblStore_Branch.Store_ID.ToString();
-                    txtStoreName.Text = vTblStore.Store_Name;
-                    chkStoreState.Checked = (bool)vTblStore.Store_State;
-                    dtpStore_S_Date.Value = (DateTime)vTblStore.Store_S_Date;
-                    cmbBranch.SelectedIndex = cmbBranch.FindString(vTblStore_Branch.TBL_Branch.Branch_Name);
-                }
-            }
-            catch
-            {
-
-            }
-        }
-
-        private void chkStoreState_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkStoreState.Checked == true)
-            {
-                chkStoreState.ForeColor = Color.Green;
-                chkStoreState.Text = "نشط";
-            }
-            else
-            {
-                chkStoreState.ForeColor = Color.Red;
-                chkStoreState.Text = "غير نشط";
-            }
-        }
+        //private void chkStoreState_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    if (chkStoreState.Checked == true)
+        //    {
+        //        chkStoreState.ForeColor = Color.Green;
+        //        chkStoreState.Text = "نشط";
+        //    }
+        //    else
+        //    {
+        //        chkStoreState.ForeColor = Color.Red;
+        //        chkStoreState.Text = "غير نشط";
+        //    }
+        //}
     }
 }

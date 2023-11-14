@@ -136,17 +136,6 @@ namespace appFelxMax.appForms.SubForms
         #region Events
 
         #endregion
-
-        private void btnNew_Click(object sender, EventArgs e)
-        {
-            fnClear_Data();
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            fnSave();
-        }
-
         private void frmAdd_Cust_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyData == Keys.F2)

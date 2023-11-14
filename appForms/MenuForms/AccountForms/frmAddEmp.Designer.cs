@@ -185,7 +185,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtEmp_ID.Location = new System.Drawing.Point(333, 6);
             this.txtEmp_ID.Name = "txtEmp_ID";
             this.txtEmp_ID.ReadOnly = true;
-            this.txtEmp_ID.Size = new System.Drawing.Size(171, 23);
+            this.txtEmp_ID.Size = new System.Drawing.Size(171, 29);
             this.txtEmp_ID.TabIndex = 34;
             // 
             // lblEmpID
@@ -194,7 +194,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblEmpID.AutoSize = true;
             this.lblEmpID.Location = new System.Drawing.Point(510, 6);
             this.lblEmpID.Name = "lblEmpID";
-            this.lblEmpID.Size = new System.Drawing.Size(20, 22);
+            this.lblEmpID.Size = new System.Drawing.Size(25, 29);
             this.lblEmpID.TabIndex = 33;
             this.lblEmpID.Text = "ID";
             // 
@@ -205,7 +205,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtEmp_Notes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmp_Notes.Location = new System.Drawing.Point(12, 93);
             this.txtEmp_Notes.Name = "txtEmp_Notes";
-            this.txtEmp_Notes.Size = new System.Drawing.Size(171, 23);
+            this.txtEmp_Notes.Size = new System.Drawing.Size(171, 29);
             this.txtEmp_Notes.TabIndex = 7;
             // 
             // pnl2
@@ -223,7 +223,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtEmp_Email.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmp_Email.Location = new System.Drawing.Point(12, 64);
             this.txtEmp_Email.Name = "txtEmp_Email";
-            this.txtEmp_Email.Size = new System.Drawing.Size(171, 23);
+            this.txtEmp_Email.Size = new System.Drawing.Size(171, 29);
             this.txtEmp_Email.TabIndex = 6;
             // 
             // txtPeriod
@@ -233,7 +233,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtPeriod.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPeriod.Location = new System.Drawing.Point(333, 122);
             this.txtPeriod.Name = "txtPeriod";
-            this.txtPeriod.Size = new System.Drawing.Size(171, 23);
+            this.txtPeriod.Size = new System.Drawing.Size(171, 29);
             this.txtPeriod.TabIndex = 5;
             // 
             // lblEmail
@@ -242,7 +242,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblEmail.AutoSize = true;
             this.lblEmail.Location = new System.Drawing.Point(189, 64);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(41, 22);
+            this.lblEmail.Size = new System.Drawing.Size(50, 29);
             this.lblEmail.TabIndex = 29;
             this.lblEmail.Text = "E-Mail";
             // 
@@ -252,7 +252,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblRegNumber.AutoSize = true;
             this.lblRegNumber.Location = new System.Drawing.Point(510, 122);
             this.lblRegNumber.Name = "lblRegNumber";
-            this.lblRegNumber.Size = new System.Drawing.Size(32, 22);
+            this.lblRegNumber.Size = new System.Drawing.Size(41, 29);
             this.lblRegNumber.TabIndex = 27;
             this.lblRegNumber.Text = "المدة";
             // 
@@ -263,7 +263,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtEmp_Address.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmp_Address.Location = new System.Drawing.Point(11, 35);
             this.txtEmp_Address.Name = "txtEmp_Address";
-            this.txtEmp_Address.Size = new System.Drawing.Size(171, 23);
+            this.txtEmp_Address.Size = new System.Drawing.Size(171, 29);
             this.txtEmp_Address.TabIndex = 4;
             // 
             // lblAddress
@@ -272,7 +272,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblAddress.AutoSize = true;
             this.lblAddress.Location = new System.Drawing.Point(188, 35);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(43, 22);
+            this.lblAddress.Size = new System.Drawing.Size(52, 29);
             this.lblAddress.TabIndex = 25;
             this.lblAddress.Text = "العنوان";
             // 
@@ -282,7 +282,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblNotes.AutoSize = true;
             this.lblNotes.Location = new System.Drawing.Point(189, 93);
             this.lblNotes.Name = "lblNotes";
-            this.lblNotes.Size = new System.Drawing.Size(48, 22);
+            this.lblNotes.Size = new System.Drawing.Size(59, 29);
             this.lblNotes.TabIndex = 23;
             this.lblNotes.Text = "ملاحظات";
             // 
@@ -293,9 +293,9 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.chkEmp_State.Checked = true;
             this.chkEmp_State.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkEmp_State.ForeColor = System.Drawing.Color.Green;
-            this.chkEmp_State.Location = new System.Drawing.Point(132, 158);
+            this.chkEmp_State.Location = new System.Drawing.Point(120, 158);
             this.chkEmp_State.Name = "chkEmp_State";
-            this.chkEmp_State.Size = new System.Drawing.Size(51, 26);
+            this.chkEmp_State.Size = new System.Drawing.Size(63, 33);
             this.chkEmp_State.TabIndex = 9;
             this.chkEmp_State.Text = "نشط";
             this.chkEmp_State.UseVisualStyleBackColor = true;
@@ -307,7 +307,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblEmp_State.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F);
             this.lblEmp_State.Location = new System.Drawing.Point(189, 158);
             this.lblEmp_State.Name = "lblEmp_State";
-            this.lblEmp_State.Size = new System.Drawing.Size(63, 22);
+            this.lblEmp_State.Size = new System.Drawing.Size(78, 29);
             this.lblEmp_State.TabIndex = 21;
             this.lblEmp_State.Text = "حالة الموظف";
             // 
@@ -317,7 +317,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.dtpEmp_S_Date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpEmp_S_Date.Location = new System.Drawing.Point(14, 122);
             this.dtpEmp_S_Date.Name = "dtpEmp_S_Date";
-            this.dtpEmp_S_Date.Size = new System.Drawing.Size(169, 30);
+            this.dtpEmp_S_Date.Size = new System.Drawing.Size(169, 36);
             this.dtpEmp_S_Date.TabIndex = 8;
             // 
             // lblStartDate
@@ -326,7 +326,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblStartDate.AutoSize = true;
             this.lblStartDate.Location = new System.Drawing.Point(189, 122);
             this.lblStartDate.Name = "lblStartDate";
-            this.lblStartDate.Size = new System.Drawing.Size(52, 22);
+            this.lblStartDate.Size = new System.Drawing.Size(67, 29);
             this.lblStartDate.TabIndex = 11;
             this.lblStartDate.Text = "تاريخ البدء";
             // 
@@ -337,7 +337,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtEmp_Phone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmp_Phone.Location = new System.Drawing.Point(11, 6);
             this.txtEmp_Phone.Name = "txtEmp_Phone";
-            this.txtEmp_Phone.Size = new System.Drawing.Size(171, 23);
+            this.txtEmp_Phone.Size = new System.Drawing.Size(171, 29);
             this.txtEmp_Phone.TabIndex = 3;
             // 
             // txtEmp_Balance
@@ -347,7 +347,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtEmp_Balance.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmp_Balance.Location = new System.Drawing.Point(333, 93);
             this.txtEmp_Balance.Name = "txtEmp_Balance";
-            this.txtEmp_Balance.Size = new System.Drawing.Size(171, 23);
+            this.txtEmp_Balance.Size = new System.Drawing.Size(171, 29);
             this.txtEmp_Balance.TabIndex = 2;
             // 
             // txtEmp_Name
@@ -357,7 +357,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtEmp_Name.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmp_Name.Location = new System.Drawing.Point(333, 64);
             this.txtEmp_Name.Name = "txtEmp_Name";
-            this.txtEmp_Name.Size = new System.Drawing.Size(171, 23);
+            this.txtEmp_Name.Size = new System.Drawing.Size(171, 29);
             this.txtEmp_Name.TabIndex = 1;
             // 
             // txtEmp_Code
@@ -368,7 +368,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtEmp_Code.Location = new System.Drawing.Point(333, 35);
             this.txtEmp_Code.Name = "txtEmp_Code";
             this.txtEmp_Code.ReadOnly = true;
-            this.txtEmp_Code.Size = new System.Drawing.Size(171, 23);
+            this.txtEmp_Code.Size = new System.Drawing.Size(171, 29);
             this.txtEmp_Code.TabIndex = 4;
             // 
             // pnl1
@@ -385,7 +385,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblPhone.AutoSize = true;
             this.lblPhone.Location = new System.Drawing.Point(188, 6);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(39, 22);
+            this.lblPhone.Size = new System.Drawing.Size(48, 29);
             this.lblPhone.TabIndex = 9;
             this.lblPhone.Text = "الهاتف";
             // 
@@ -395,7 +395,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblBalance.AutoSize = true;
             this.lblBalance.Location = new System.Drawing.Point(510, 93);
             this.lblBalance.Name = "lblBalance";
-            this.lblBalance.Size = new System.Drawing.Size(36, 22);
+            this.lblBalance.Size = new System.Drawing.Size(44, 29);
             this.lblBalance.TabIndex = 7;
             this.lblBalance.Text = "الراتب";
             // 
@@ -405,7 +405,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblName.AutoSize = true;
             this.lblName.Location = new System.Drawing.Point(510, 64);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(30, 22);
+            this.lblName.Size = new System.Drawing.Size(37, 29);
             this.lblName.TabIndex = 5;
             this.lblName.Text = "اسم";
             // 
@@ -415,13 +415,13 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblCode.AutoSize = true;
             this.lblCode.Location = new System.Drawing.Point(510, 35);
             this.lblCode.Name = "lblCode";
-            this.lblCode.Size = new System.Drawing.Size(27, 22);
+            this.lblCode.Size = new System.Drawing.Size(34, 29);
             this.lblCode.TabIndex = 3;
             this.lblCode.Text = "كود";
             // 
             // frmAddEmp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(584, 291);
@@ -437,6 +437,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.RightToLeftLayout = true;
             this.ShowIcon = false;
             this.Text = "اضافة موظف";
+            this.Load += new System.EventHandler(this.frmAddEmp_Load);
             this.pnlOperation.ResumeLayout(false);
             this.pnlMain.ResumeLayout(false);
             this.pnlMain.PerformLayout();

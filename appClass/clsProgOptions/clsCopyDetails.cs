@@ -15,16 +15,24 @@ namespace appFelxMax.appClass.clsProgOptions
 
         public static PhysicalAddress fnGetMacAddress()
         {
-            foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
+            try
             {
-                // Only consider Ethernet network interfaces
-                if (nic.NetworkInterfaceType == NetworkInterfaceType.Ethernet &&
-                    nic.OperationalStatus == OperationalStatus.Up)
+                foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
                 {
-                    return nic.GetPhysicalAddress();
+                    // Only consider Ethernet network interfaces
+                    if (nic.NetworkInterfaceType == NetworkInterfaceType.Ethernet &&
+                        nic.OperationalStatus == OperationalStatus.Up)
+                    {
+                        return nic.GetPhysicalAddress();
+                    }
                 }
+                return null;
             }
-            return null;
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
         }
 
         #endregion

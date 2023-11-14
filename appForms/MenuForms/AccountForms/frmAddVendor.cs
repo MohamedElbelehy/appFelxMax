@@ -161,18 +161,18 @@ namespace appFelxMax.appForms.SubForms
             }
         }
 
-        private void chkVend_State_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkVend_State.Checked)
-            {
-                chkVend_State.Text = "نشط";
-                chkVend_State.ForeColor = Color.Green;
-            }
-            else
-            {
-                chkVend_State.Text = "غير نشط";
-                chkVend_State.ForeColor = Color.Red;
-            }
-        }
+        //private void chkVend_State_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    if (chkVend_State.Checked)
+        //    {
+        //        chkVend_State.Text = "نشط";
+        //        chkVend_State.ForeColor = Color.Green;
+        //    }
+        //    else
+        //    {
+        //        chkVend_State.Text = "غير نشط";
+        //        chkVend_State.ForeColor = Color.Red;
+        //    }
+        //}
     }
 }

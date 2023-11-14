@@ -33,7 +33,7 @@ namespace appFelxMax.appForms.OtherForms
             vclsCopyDetails.fnMotherboardInfo(txtCMotherboard);
 
             // get mac address
-            txtCMAC.Text = clsCopyDetails.fnGetMacAddress().ToString();
+            txtCMAC.Text = clsCopyDetails.fnGetMacAddress().ToString() ?? "";
 
 
         }

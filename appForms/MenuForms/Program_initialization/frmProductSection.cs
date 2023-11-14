@@ -198,22 +198,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
 
         #endregion
 
-        private void btnNew_Click(object sender, EventArgs e)
-        {
-            fnClear_Data();
-
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            fnSave();
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            fnDelet();
-
-        }
+      
 
         private void chk_State_CheckedChanged(object sender, EventArgs e)
         {
@@ -229,24 +214,24 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             }
         }
 
-        private void dgv_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (dgv.RowCount > 0)
-                {
-                    int vID = Convert.ToInt32(dgv.CurrentRow.Cells[0].Value);
-                    vTblProduct_Sections = cmdProduct_Sections.GetAll().FirstOrDefault(id => id.Pro_Section_ID == vID);
-                    txt_ID.Text = vTblProduct_Group.Pro_Group_ID.ToString();
-                    txt_Name.Text = vTblProduct_Group.Pro_Group_Name;
-                    cmbProductGroup.SelectedIndex = cmbProductGroup.FindString(vTblProduct_Sections.TBL_Product_Group.Pro_Group_Name);
-                    chk_State.Checked = (bool)vTblProduct_Group.Pro_Group_State;
-                }
-            }
-            catch
-            {
+        //private void dgv_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        if (dgv.RowCount > 0)
+        //        {
+        //            int vID = Convert.ToInt32(dgv.CurrentRow.Cells[0].Value);
+        //            vTblProduct_Sections = cmdProduct_Sections.GetAll().FirstOrDefault(id => id.Pro_Section_ID == vID);
+        //            txt_ID.Text = vTblProduct_Group.Pro_Group_ID.ToString();
+        //            txt_Name.Text = vTblProduct_Group.Pro_Group_Name;
+        //            cmbProductGroup.SelectedIndex = cmbProductGroup.FindString(vTblProduct_Sections.TBL_Product_Group.Pro_Group_Name);
+        //            chk_State.Checked = (bool)vTblProduct_Group.Pro_Group_State;
+        //        }
+        //    }
+        //    catch
+        //    {
 
-            }
-        }
+        //    }
+        //}
     }
 }

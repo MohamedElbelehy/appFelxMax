@@ -203,13 +203,7 @@ namespace appFelxMax.appForms.MenuForms
             }
         }
 
-        #endregion
-
-        #region Events
-
-        #endregion
-
-        private void btnUpload_Click(object sender, System.EventArgs e)
+        public void fnUpload_Image()
         {
             OpenFileDialog open = new OpenFileDialog();
             open.Filter = "All Files (*.*) | *.*";
@@ -220,17 +214,18 @@ namespace appFelxMax.appForms.MenuForms
             }
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        public void fnDelete_Image()
         {
             picLogo.BackgroundImage = null;
             picLogo.Image = null;
             vSourcePath = "";
         }
+        #endregion
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            fnSave();
-        }
+        #region Events
+
+        #endregion
+
 
         private void txtCompanyID_KeyDown(object sender, KeyEventArgs e)
         {

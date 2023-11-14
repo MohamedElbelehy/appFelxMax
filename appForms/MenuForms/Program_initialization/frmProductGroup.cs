@@ -188,23 +188,6 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
                 chk_State.Text = "غير نشط";
             }
         }
-
-        private void btnNew_Click(object sender, EventArgs e)
-        {
-            fnClear_Data();
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            fnSave();
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            fnDelet();
-
-        }
-
         private void dgv_Click(object sender, EventArgs e)
         {
             try

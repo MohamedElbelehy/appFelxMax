@@ -194,42 +194,6 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
                 chk_State.Text = "غير نشط";
             }
         }
-
-        private void dgv_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if(dgv.RowCount > 0)
-                {
-                    int vID = Convert.ToInt32(dgv.CurrentRow.Cells[0].Value);
-                    vTblUnit = cmdUnit.GetAll().FirstOrDefault(id => id.Unit_ID == vID);
-                    txt_ID.Text = vTblUnit.Unit_ID.ToString();
-                    txt_Name.Text = vTblUnit.Unit_Name;
-                    cmbType.Text = vTblUnit.Unit_Type;
-                    chk_State.Checked = (bool)vTblUnit.Unit_State;
-                }
-            }
-            catch
-            {
-                    
-            }
-        }
-
-        private void btnNew_Click(object sender, EventArgs e)
-        {
-            fnClear_Data();
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            fnSave();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            fnDelet();
-        }
-
         private void frmUnits_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyData == Keys.F1) fnClear_Data();

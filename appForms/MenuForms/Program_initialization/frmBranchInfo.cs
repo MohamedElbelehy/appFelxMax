@@ -230,33 +230,29 @@ namespace appFelxMax.appForms.MenuForms
             }
         }
 
-        private void dgvBranches_DoubleClick(object sender, EventArgs e)
-        {
-            
-        }
 
-        private void dgvBranches_Click(object sender, EventArgs e)
-        {
-            if (dgvBranches.RowCount > 0)
-            {
-                try
-                {
-                    int vID = Convert.ToInt32(dgvBranches.CurrentRow.Cells[0].Value);
+        //private void dgvBranches_Click(object sender, EventArgs e)
+        //{
+        //    if (dgvBranches.RowCount > 0)
+        //    {
+        //        try
+        //        {
+        //            int vID = Convert.ToInt32(dgvBranches.CurrentRow.Cells[0].Value);
 
-                    vTblBranch = cmdBranch.GetAll().Where(id => id.Branch_ID == vID).FirstOrDefault();
+        //            vTblBranch = cmdBranch.GetAll().Where(id => id.Branch_ID == vID).FirstOrDefault();
 
-                    txtBranch_ID.Text = vTblBranch.Branch_ID.ToString();
-                    txtBranch_Name.Text = vTblBranch.Branch_Name;
-                    dtpBranch_S_Date.Value = (DateTime)vTblBranch.Branch_Open_Date;
-                    chkBranch_State.Checked = (bool)vTblBranch.Branch_State;
-                }
-                catch
-                {
-                    frmNotifications nfrm = new frmNotifications();
-                    nfrm.fnShowAlert("خطأ في اختيار البيانات", frmNotifications.enmType.vError);
-                }
-            }
-        }
+        //            txtBranch_ID.Text = vTblBranch.Branch_ID.ToString();
+        //            txtBranch_Name.Text = vTblBranch.Branch_Name;
+        //            dtpBranch_S_Date.Value = (DateTime)vTblBranch.Branch_Open_Date;
+        //            chkBranch_State.Checked = (bool)vTblBranch.Branch_State;
+        //        }
+        //        catch
+        //        {
+        //            frmNotifications nfrm = new frmNotifications();
+        //            nfrm.fnShowAlert("خطأ في اختيار البيانات", frmNotifications.enmType.vError);
+        //        }
+        //    }
+        //}
 
         private void frmBranch_Info_KeyDown(object sender, KeyEventArgs e)
         {
@@ -281,19 +277,5 @@ namespace appFelxMax.appForms.MenuForms
             }
         }
 
-        private void btnNew_Click(object sender, EventArgs e)
-        {
-            fnClear_Data();
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            fnSave();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            fnDelete();
-        }
     }
 }
