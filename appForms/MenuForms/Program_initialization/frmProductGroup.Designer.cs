@@ -90,7 +90,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.chk_State.ForeColor = System.Drawing.Color.Green;
             this.chk_State.Location = new System.Drawing.Point(549, 39);
             this.chk_State.Name = "chk_State";
-            this.chk_State.Size = new System.Drawing.Size(63, 33);
+            this.chk_State.Size = new System.Drawing.Size(51, 26);
             this.chk_State.TabIndex = 26;
             this.chk_State.Text = "نشط";
             this.chk_State.UseVisualStyleBackColor = true;
@@ -104,7 +104,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.lblGroup_State.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F);
             this.lblGroup_State.Location = new System.Drawing.Point(604, 41);
             this.lblGroup_State.Name = "lblGroup_State";
-            this.lblGroup_State.Size = new System.Drawing.Size(40, 29);
+            this.lblGroup_State.Size = new System.Drawing.Size(32, 22);
             this.lblGroup_State.TabIndex = 25;
             this.lblGroup_State.Text = "الحالة";
             // 
@@ -114,9 +114,9 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Name.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txt_Name.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Name.Location = new System.Drawing.Point(56, 10);
+            this.txt_Name.Location = new System.Drawing.Point(12, 10);
             this.txt_Name.Name = "txt_Name";
-            this.txt_Name.Size = new System.Drawing.Size(245, 29);
+            this.txt_Name.Size = new System.Drawing.Size(289, 23);
             this.txt_Name.TabIndex = 24;
             this.txt_Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -128,7 +128,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.lblName.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F);
             this.lblName.Location = new System.Drawing.Point(305, 10);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(88, 29);
+            this.lblName.Size = new System.Drawing.Size(73, 22);
             this.lblName.TabIndex = 23;
             this.lblName.Text = "اسم المجموعة";
             // 
@@ -138,10 +138,10 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_ID.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txt_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_ID.Location = new System.Drawing.Point(405, 10);
+            this.txt_ID.Location = new System.Drawing.Point(384, 10);
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.ReadOnly = true;
-            this.txt_ID.Size = new System.Drawing.Size(195, 29);
+            this.txt_ID.Size = new System.Drawing.Size(216, 23);
             this.txt_ID.TabIndex = 21;
             this.txt_ID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -153,7 +153,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.lblID.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F);
             this.lblID.Location = new System.Drawing.Point(606, 10);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(32, 29);
+            this.lblID.Size = new System.Drawing.Size(26, 22);
             this.lblID.TabIndex = 19;
             this.lblID.Text = "رقم";
             // 
@@ -179,7 +179,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.btnESC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnESC.ForeColor = System.Drawing.Color.Black;
             this.btnESC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnESC.Location = new System.Drawing.Point(194, 4);
+            this.btnESC.Location = new System.Drawing.Point(385, 4);
             this.btnESC.Name = "btnESC";
             this.btnESC.Size = new System.Drawing.Size(90, 30);
             this.btnESC.TabIndex = 17;
@@ -198,7 +198,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.btnSave.ForeColor = System.Drawing.Color.Black;
             this.btnSave.Image = global::appFelxMax.Properties.Resources.DoneColored;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnSave.Location = new System.Drawing.Point(290, 4);
+            this.btnSave.Location = new System.Drawing.Point(481, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(80, 30);
             this.btnSave.TabIndex = 16;
@@ -217,7 +217,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.btnNew.ForeColor = System.Drawing.Color.Black;
             this.btnNew.Image = global::appFelxMax.Properties.Resources.AddColor;
             this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNew.Location = new System.Drawing.Point(376, 4);
+            this.btnNew.Location = new System.Drawing.Point(567, 4);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(80, 30);
             this.btnNew.TabIndex = 15;
@@ -252,7 +252,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // frmProductGroup
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(650, 400);
             this.Controls.Add(this.pnlDGV);

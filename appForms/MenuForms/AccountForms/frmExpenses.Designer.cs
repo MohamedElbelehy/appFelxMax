@@ -31,13 +31,13 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
         {
             this.lblHead = new System.Windows.Forms.Label();
             this.pnlOperations = new System.Windows.Forms.Panel();
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.lblValue = new System.Windows.Forms.Label();
             this.numValue = new System.Windows.Forms.NumericUpDown();
             this.lblAddress = new System.Windows.Forms.Label();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.cmbPilot = new System.Windows.Forms.ComboBox();
+            this.btnESC = new System.Windows.Forms.Button();
             this.pnlOperations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numValue)).BeginInit();
             this.SuspendLayout();
@@ -61,29 +61,13 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             // pnlOperations
             // 
             this.pnlOperations.BackColor = System.Drawing.Color.LightGray;
-            this.pnlOperations.Controls.Add(this.btnExit);
+            this.pnlOperations.Controls.Add(this.btnESC);
             this.pnlOperations.Controls.Add(this.btnSave);
             this.pnlOperations.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlOperations.Location = new System.Drawing.Point(0, 40);
             this.pnlOperations.Name = "pnlOperations";
             this.pnlOperations.Size = new System.Drawing.Size(304, 40);
             this.pnlOperations.TabIndex = 14;
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.ForeColor = System.Drawing.Color.Black;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(91, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(100, 30);
-            this.btnExit.TabIndex = 14;
-            this.btnExit.Text = "خروج - ESC";
-            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.UseVisualStyleBackColor = false;
             // 
             // btnSave
             // 
@@ -163,6 +147,24 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.cmbPilot.Size = new System.Drawing.Size(304, 30);
             this.cmbPilot.TabIndex = 19;
             // 
+            // btnESC
+            // 
+            this.btnESC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnESC.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnESC.FlatAppearance.BorderSize = 0;
+            this.btnESC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnESC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnESC.ForeColor = System.Drawing.Color.Black;
+            this.btnESC.Image = global::appFelxMax.Properties.Resources.EscColor;
+            this.btnESC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnESC.Location = new System.Drawing.Point(91, 3);
+            this.btnESC.Name = "btnESC";
+            this.btnESC.Size = new System.Drawing.Size(100, 30);
+            this.btnESC.TabIndex = 15;
+            this.btnESC.Text = "خروج";
+            this.btnESC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnESC.UseVisualStyleBackColor = false;
+            // 
             // frmExpenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
@@ -184,7 +186,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "المصروفات";
             this.pnlOperations.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numValue)).EndInit();
@@ -197,12 +199,12 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
 
         private System.Windows.Forms.Label lblHead;
         private System.Windows.Forms.Panel pnlOperations;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label lblValue;
         private System.Windows.Forms.NumericUpDown numValue;
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.ComboBox cmbPilot;
+        private System.Windows.Forms.Button btnESC;
     }
 }

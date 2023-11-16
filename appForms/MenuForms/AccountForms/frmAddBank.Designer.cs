@@ -31,7 +31,6 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
         {
             this.lblHead = new System.Windows.Forms.Label();
             this.pnlOperation = new System.Windows.Forms.Panel();
-            this.btnESC = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
             this.pnlMain = new System.Windows.Forms.Panel();
@@ -55,6 +54,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblBalance = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.lblCode = new System.Windows.Forms.Label();
+            this.btnESC = new System.Windows.Forms.Button();
             this.pnlOperation.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.SuspendLayout();
@@ -86,23 +86,6 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnlOperation.Name = "pnlOperation";
             this.pnlOperation.Size = new System.Drawing.Size(584, 40);
             this.pnlOperation.TabIndex = 18;
-            // 
-            // btnESC
-            // 
-            this.btnESC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnESC.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnESC.FlatAppearance.BorderSize = 0;
-            this.btnESC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnESC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnESC.ForeColor = System.Drawing.Color.Black;
-            this.btnESC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnESC.Location = new System.Drawing.Point(310, 3);
-            this.btnESC.Name = "btnESC";
-            this.btnESC.Size = new System.Drawing.Size(90, 30);
-            this.btnESC.TabIndex = 14;
-            this.btnESC.Text = "خروج - ESC";
-            this.btnESC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnESC.UseVisualStyleBackColor = false;
             // 
             // btnSave
             // 
@@ -370,6 +353,24 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblCode.TabIndex = 3;
             this.lblCode.Text = "كود";
             // 
+            // btnESC
+            // 
+            this.btnESC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnESC.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnESC.FlatAppearance.BorderSize = 0;
+            this.btnESC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnESC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnESC.ForeColor = System.Drawing.Color.Black;
+            this.btnESC.Image = global::appFelxMax.Properties.Resources.EscColor;
+            this.btnESC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnESC.Location = new System.Drawing.Point(310, 3);
+            this.btnESC.Name = "btnESC";
+            this.btnESC.Size = new System.Drawing.Size(90, 30);
+            this.btnESC.TabIndex = 14;
+            this.btnESC.Text = "خروج";
+            this.btnESC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnESC.UseVisualStyleBackColor = false;
+            // 
             // frmAddBank
             // 
             this.AcceptButton = this.btnSave;
@@ -388,6 +389,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "اضافة بنك";
             this.pnlOperation.ResumeLayout(false);
             this.pnlMain.ResumeLayout(false);
@@ -400,7 +402,6 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
 
         private System.Windows.Forms.Label lblHead;
         private System.Windows.Forms.Panel pnlOperation;
-        private System.Windows.Forms.Button btnESC;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Panel pnlMain;
@@ -424,5 +425,6 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
         private System.Windows.Forms.Label lblBalance;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblCode;
+        private System.Windows.Forms.Button btnESC;
     }
 }

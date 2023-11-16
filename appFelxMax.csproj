@@ -115,6 +115,12 @@
     <Compile Include="appForms\MenuForms\AccountForms\frmVendors.Designer.cs">
       <DependentUpon>frmVendors.cs</DependentUpon>
     </Compile>
+    <Compile Include="appForms\MenuForms\BillForms\frmPruchasesBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appForms\MenuForms\BillForms\frmPruchasesBill.Designer.cs">
+      <DependentUpon>frmPruchasesBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="appForms\MenuForms\EmpForms\frmAttendanceDeparture.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="appForms\MenuForms\AccountForms\frmVendors.resx">
       <DependentUpon>frmVendors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appForms\MenuForms\BillForms\frmPruchasesBill.resx">
+      <DependentUpon>frmPruchasesBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="appForms\MenuForms\EmpForms\frmAttendanceDeparture.resx">
       <DependentUpon>frmAttendanceDeparture.cs</DependentUpon>
@@ -961,6 +970,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TestConnectionColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HoldColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EscColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DownloadColor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

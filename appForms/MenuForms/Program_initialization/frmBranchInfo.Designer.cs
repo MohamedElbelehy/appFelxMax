@@ -44,6 +44,8 @@ namespace appFelxMax.appForms.MenuForms
             this.btnSave = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
             this.pnlData = new System.Windows.Forms.Panel();
+            this.txtEnName = new System.Windows.Forms.TextBox();
+            this.lblENName = new System.Windows.Forms.Label();
             this.pnl2 = new System.Windows.Forms.Panel();
             this.dgvBranches = new System.Windows.Forms.DataGridView();
             this.pnlOperations.SuspendLayout();
@@ -56,9 +58,9 @@ namespace appFelxMax.appForms.MenuForms
             this.dtpBranch_S_Date.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpBranch_S_Date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpBranch_S_Date.Location = new System.Drawing.Point(356, 63);
+            this.dtpBranch_S_Date.Location = new System.Drawing.Point(12, 6);
             this.dtpBranch_S_Date.Name = "dtpBranch_S_Date";
-            this.dtpBranch_S_Date.Size = new System.Drawing.Size(246, 30);
+            this.dtpBranch_S_Date.Size = new System.Drawing.Size(253, 30);
             this.dtpBranch_S_Date.TabIndex = 23;
             // 
             // lblStartedDate
@@ -66,7 +68,7 @@ namespace appFelxMax.appForms.MenuForms
             this.lblStartedDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStartedDate.AutoSize = true;
-            this.lblStartedDate.Location = new System.Drawing.Point(608, 68);
+            this.lblStartedDate.Location = new System.Drawing.Point(271, 12);
             this.lblStartedDate.Name = "lblStartedDate";
             this.lblStartedDate.Size = new System.Drawing.Size(52, 22);
             this.lblStartedDate.TabIndex = 22;
@@ -80,7 +82,7 @@ namespace appFelxMax.appForms.MenuForms
             this.chkBranch_State.Checked = true;
             this.chkBranch_State.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkBranch_State.ForeColor = System.Drawing.Color.Green;
-            this.chkBranch_State.Location = new System.Drawing.Point(217, 5);
+            this.chkBranch_State.Location = new System.Drawing.Point(214, 42);
             this.chkBranch_State.Name = "chkBranch_State";
             this.chkBranch_State.Size = new System.Drawing.Size(51, 26);
             this.chkBranch_State.TabIndex = 20;
@@ -94,7 +96,7 @@ namespace appFelxMax.appForms.MenuForms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBranch_Name.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtBranch_Name.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBranch_Name.Location = new System.Drawing.Point(356, 34);
+            this.txtBranch_Name.Location = new System.Drawing.Point(355, 35);
             this.txtBranch_Name.Name = "txtBranch_Name";
             this.txtBranch_Name.Size = new System.Drawing.Size(250, 23);
             this.txtBranch_Name.TabIndex = 13;
@@ -105,7 +107,7 @@ namespace appFelxMax.appForms.MenuForms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBranch_ID.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtBranch_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBranch_ID.Location = new System.Drawing.Point(356, 5);
+            this.txtBranch_ID.Location = new System.Drawing.Point(355, 6);
             this.txtBranch_ID.Name = "txtBranch_ID";
             this.txtBranch_ID.ReadOnly = true;
             this.txtBranch_ID.Size = new System.Drawing.Size(250, 23);
@@ -118,7 +120,7 @@ namespace appFelxMax.appForms.MenuForms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBranch_State.AutoSize = true;
             this.lblBranch_State.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F);
-            this.lblBranch_State.Location = new System.Drawing.Point(274, 7);
+            this.lblBranch_State.Location = new System.Drawing.Point(271, 44);
             this.lblBranch_State.Name = "lblBranch_State";
             this.lblBranch_State.Size = new System.Drawing.Size(49, 22);
             this.lblBranch_State.TabIndex = 5;
@@ -130,7 +132,7 @@ namespace appFelxMax.appForms.MenuForms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBranch_Name.AutoSize = true;
             this.lblBranch_Name.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F);
-            this.lblBranch_Name.Location = new System.Drawing.Point(609, 35);
+            this.lblBranch_Name.Location = new System.Drawing.Point(608, 36);
             this.lblBranch_Name.Name = "lblBranch_Name";
             this.lblBranch_Name.Size = new System.Drawing.Size(53, 22);
             this.lblBranch_Name.TabIndex = 1;
@@ -142,7 +144,7 @@ namespace appFelxMax.appForms.MenuForms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBranch_ID.AutoSize = true;
             this.lblBranch_ID.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F);
-            this.lblBranch_ID.Location = new System.Drawing.Point(609, 4);
+            this.lblBranch_ID.Location = new System.Drawing.Point(608, 5);
             this.lblBranch_ID.Name = "lblBranch_ID";
             this.lblBranch_ID.Size = new System.Drawing.Size(49, 22);
             this.lblBranch_ID.TabIndex = 0;
@@ -241,6 +243,8 @@ namespace appFelxMax.appForms.MenuForms
             // 
             // pnlData
             // 
+            this.pnlData.Controls.Add(this.txtEnName);
+            this.pnlData.Controls.Add(this.lblENName);
             this.pnlData.Controls.Add(this.pnl2);
             this.pnlData.Controls.Add(this.txtBranch_ID);
             this.pnlData.Controls.Add(this.lblBranch_ID);
@@ -256,6 +260,29 @@ namespace appFelxMax.appForms.MenuForms
             this.pnlData.Name = "pnlData";
             this.pnlData.Size = new System.Drawing.Size(700, 100);
             this.pnlData.TabIndex = 26;
+            // 
+            // txtEnName
+            // 
+            this.txtEnName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEnName.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtEnName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEnName.Location = new System.Drawing.Point(355, 64);
+            this.txtEnName.Name = "txtEnName";
+            this.txtEnName.Size = new System.Drawing.Size(250, 23);
+            this.txtEnName.TabIndex = 29;
+            // 
+            // lblENName
+            // 
+            this.lblENName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblENName.AutoSize = true;
+            this.lblENName.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F);
+            this.lblENName.Location = new System.Drawing.Point(608, 65);
+            this.lblENName.Name = "lblENName";
+            this.lblENName.Size = new System.Drawing.Size(52, 22);
+            this.lblENName.TabIndex = 28;
+            this.lblENName.Text = "EN Name";
             // 
             // pnl2
             // 
@@ -296,6 +323,7 @@ namespace appFelxMax.appForms.MenuForms
             this.Name = "frmBranch_Info";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "بيانات الفروع ";
             this.Load += new System.EventHandler(this.frmBranch_Info_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmBranch_Info_KeyDown);
@@ -325,5 +353,7 @@ namespace appFelxMax.appForms.MenuForms
         private System.Windows.Forms.Panel pnlData;
         private System.Windows.Forms.Panel pnl2;
         private System.Windows.Forms.DataGridView dgvBranches;
+        private System.Windows.Forms.TextBox txtEnName;
+        private System.Windows.Forms.Label lblENName;
     }
 }

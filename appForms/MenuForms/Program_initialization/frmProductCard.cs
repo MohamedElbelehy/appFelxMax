@@ -169,10 +169,17 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             cmbSmallUnit.DisplayMember = "Name";
             cmbSmallUnit.ValueMember = "ID";
         }
+
+
         #endregion
 
-
         #region Events
+
+        // Close Button
+        private void btnESC_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
         #endregion
 

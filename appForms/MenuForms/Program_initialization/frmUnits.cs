@@ -74,7 +74,6 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
         {
             txt_ID.Text = fnMax_ID().ToString();
             txt_Name.Text = "";
-            cmbType.Text = "";
             chk_State.Checked = true;
             fnFill_GV();
         }
@@ -84,7 +83,6 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             if (txt_ID.Text == "") return false;
             else if (System.Text.RegularExpressions.Regex.IsMatch(txt_ID.Text, "[^0-9]")) return false;
             else if (txt_Name.Text == "") return false;
-            else if (cmbType.Text == "") return false;
             else return true;
         }
         public void fnSave()
@@ -97,7 +95,6 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
                     if(vTblUnit != null)
                     {
                         vTblUnit.Unit_Name = txt_Name.Text;
-                        vTblUnit.Unit_Type = cmbType.Text;
                         vTblUnit.Unit_State = chk_State.Checked;
                         cmdUnit.Update_Data(vTblUnit);
                         fnClear_Data();
@@ -110,7 +107,6 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
                         {
                             Unit_ID = fnMax_ID(),
                             Unit_Name = txt_Name.Text,
-                            Unit_Type = cmbType.Text,
                             Unit_State = chk_State.Checked
                         };
                         cmdUnit.Insert_Data(vTblUnit);

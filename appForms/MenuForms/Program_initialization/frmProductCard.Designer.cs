@@ -176,6 +176,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.btnESC.Text = "خروج - ESC";
             this.btnESC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnESC.UseVisualStyleBackColor = false;
+            this.btnESC.Click += new System.EventHandler(this.btnESC_Click);
             // 
             // btnSave
             // 
@@ -212,11 +213,11 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.dgvUnits.AllowUserToDeleteRows = false;
             this.dgvUnits.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUnits.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUnits.Location = new System.Drawing.Point(0, 294);
+            this.dgvUnits.Location = new System.Drawing.Point(0, 282);
             this.dgvUnits.Name = "dgvUnits";
             this.dgvUnits.ReadOnly = true;
             this.dgvUnits.RowHeadersWidth = 51;
-            this.dgvUnits.Size = new System.Drawing.Size(1220, 153);
+            this.dgvUnits.Size = new System.Drawing.Size(1220, 165);
             this.dgvUnits.TabIndex = 5;
             // 
             // gbUnits
@@ -264,7 +265,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.gbUnits.Dock = System.Windows.Forms.DockStyle.Top;
             this.gbUnits.Location = new System.Drawing.Point(0, 25);
             this.gbUnits.Name = "gbUnits";
-            this.gbUnits.Size = new System.Drawing.Size(1220, 269);
+            this.gbUnits.Size = new System.Drawing.Size(1220, 257);
             this.gbUnits.TabIndex = 4;
             this.gbUnits.TabStop = false;
             this.gbUnits.Text = "الوحدات";
@@ -274,7 +275,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtBigUnitBarcode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBigUnitBarcode.Location = new System.Drawing.Point(12, 134);
             this.txtBigUnitBarcode.Name = "txtBigUnitBarcode";
-            this.txtBigUnitBarcode.Size = new System.Drawing.Size(468, 36);
+            this.txtBigUnitBarcode.Size = new System.Drawing.Size(468, 30);
             this.txtBigUnitBarcode.TabIndex = 56;
             this.txtBigUnitBarcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -283,7 +284,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtSmallUnitBarcode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSmallUnitBarcode.Location = new System.Drawing.Point(12, 26);
             this.txtSmallUnitBarcode.Name = "txtSmallUnitBarcode";
-            this.txtSmallUnitBarcode.Size = new System.Drawing.Size(468, 36);
+            this.txtSmallUnitBarcode.Size = new System.Drawing.Size(468, 30);
             this.txtSmallUnitBarcode.TabIndex = 55;
             this.txtSmallUnitBarcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -303,7 +304,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtBigUnitTaxValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBigUnitTaxValue.Location = new System.Drawing.Point(12, 206);
             this.txtBigUnitTaxValue.Name = "txtBigUnitTaxValue";
-            this.txtBigUnitTaxValue.Size = new System.Drawing.Size(169, 36);
+            this.txtBigUnitTaxValue.Size = new System.Drawing.Size(169, 30);
             this.txtBigUnitTaxValue.TabIndex = 53;
             this.txtBigUnitTaxValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -323,7 +324,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtBigUnitLastWholesale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBigUnitLastWholesale.Location = new System.Drawing.Point(12, 170);
             this.txtBigUnitLastWholesale.Name = "txtBigUnitLastWholesale";
-            this.txtBigUnitLastWholesale.Size = new System.Drawing.Size(169, 36);
+            this.txtBigUnitLastWholesale.Size = new System.Drawing.Size(169, 30);
             this.txtBigUnitLastWholesale.TabIndex = 51;
             this.txtBigUnitLastWholesale.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -343,7 +344,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtBigUnitTaxPircent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBigUnitTaxPircent.Location = new System.Drawing.Point(300, 206);
             this.txtBigUnitTaxPircent.Name = "txtBigUnitTaxPircent";
-            this.txtBigUnitTaxPircent.Size = new System.Drawing.Size(180, 36);
+            this.txtBigUnitTaxPircent.Size = new System.Drawing.Size(180, 30);
             this.txtBigUnitTaxPircent.TabIndex = 49;
             this.txtBigUnitTaxPircent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -363,7 +364,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtBigUnitDiscountValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBigUnitDiscountValue.Location = new System.Drawing.Point(605, 206);
             this.txtBigUnitDiscountValue.Name = "txtBigUnitDiscountValue";
-            this.txtBigUnitDiscountValue.Size = new System.Drawing.Size(191, 36);
+            this.txtBigUnitDiscountValue.Size = new System.Drawing.Size(191, 30);
             this.txtBigUnitDiscountValue.TabIndex = 47;
             this.txtBigUnitDiscountValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -383,7 +384,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtBigUnitDiscountPircent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBigUnitDiscountPircent.Location = new System.Drawing.Point(915, 206);
             this.txtBigUnitDiscountPircent.Name = "txtBigUnitDiscountPircent";
-            this.txtBigUnitDiscountPircent.Size = new System.Drawing.Size(180, 36);
+            this.txtBigUnitDiscountPircent.Size = new System.Drawing.Size(180, 30);
             this.txtBigUnitDiscountPircent.TabIndex = 45;
             this.txtBigUnitDiscountPircent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -403,7 +404,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtBigUnitWholesale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBigUnitWholesale.Location = new System.Drawing.Point(300, 170);
             this.txtBigUnitWholesale.Name = "txtBigUnitWholesale";
-            this.txtBigUnitWholesale.Size = new System.Drawing.Size(180, 36);
+            this.txtBigUnitWholesale.Size = new System.Drawing.Size(180, 30);
             this.txtBigUnitWholesale.TabIndex = 43;
             this.txtBigUnitWholesale.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -423,7 +424,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtBigUnitHalfWholesale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBigUnitHalfWholesale.Location = new System.Drawing.Point(605, 170);
             this.txtBigUnitHalfWholesale.Name = "txtBigUnitHalfWholesale";
-            this.txtBigUnitHalfWholesale.Size = new System.Drawing.Size(191, 36);
+            this.txtBigUnitHalfWholesale.Size = new System.Drawing.Size(191, 30);
             this.txtBigUnitHalfWholesale.TabIndex = 41;
             this.txtBigUnitHalfWholesale.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -443,7 +444,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtBigUnitSectional.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBigUnitSectional.Location = new System.Drawing.Point(915, 170);
             this.txtBigUnitSectional.Name = "txtBigUnitSectional";
-            this.txtBigUnitSectional.Size = new System.Drawing.Size(180, 36);
+            this.txtBigUnitSectional.Size = new System.Drawing.Size(180, 30);
             this.txtBigUnitSectional.TabIndex = 39;
             this.txtBigUnitSectional.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -464,7 +465,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.cmbBigUnit.FormattingEnabled = true;
             this.cmbBigUnit.Location = new System.Drawing.Point(605, 134);
             this.cmbBigUnit.Name = "cmbBigUnit";
-            this.cmbBigUnit.Size = new System.Drawing.Size(490, 37);
+            this.cmbBigUnit.Size = new System.Drawing.Size(490, 30);
             this.cmbBigUnit.TabIndex = 36;
             // 
             // lblBigUnit
@@ -494,7 +495,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtSmallUnitTaxValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSmallUnitTaxValue.Location = new System.Drawing.Point(12, 98);
             this.txtSmallUnitTaxValue.Name = "txtSmallUnitTaxValue";
-            this.txtSmallUnitTaxValue.Size = new System.Drawing.Size(169, 36);
+            this.txtSmallUnitTaxValue.Size = new System.Drawing.Size(169, 30);
             this.txtSmallUnitTaxValue.TabIndex = 33;
             this.txtSmallUnitTaxValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -514,7 +515,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtSmallUnitTaxPircent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSmallUnitTaxPircent.Location = new System.Drawing.Point(300, 98);
             this.txtSmallUnitTaxPircent.Name = "txtSmallUnitTaxPircent";
-            this.txtSmallUnitTaxPircent.Size = new System.Drawing.Size(180, 36);
+            this.txtSmallUnitTaxPircent.Size = new System.Drawing.Size(180, 30);
             this.txtSmallUnitTaxPircent.TabIndex = 31;
             this.txtSmallUnitTaxPircent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -534,7 +535,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtSmallUnitDiscountValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSmallUnitDiscountValue.Location = new System.Drawing.Point(605, 98);
             this.txtSmallUnitDiscountValue.Name = "txtSmallUnitDiscountValue";
-            this.txtSmallUnitDiscountValue.Size = new System.Drawing.Size(191, 36);
+            this.txtSmallUnitDiscountValue.Size = new System.Drawing.Size(191, 30);
             this.txtSmallUnitDiscountValue.TabIndex = 29;
             this.txtSmallUnitDiscountValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -554,7 +555,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtSmallUnitDiscountPircent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSmallUnitDiscountPircent.Location = new System.Drawing.Point(915, 98);
             this.txtSmallUnitDiscountPircent.Name = "txtSmallUnitDiscountPircent";
-            this.txtSmallUnitDiscountPircent.Size = new System.Drawing.Size(180, 36);
+            this.txtSmallUnitDiscountPircent.Size = new System.Drawing.Size(180, 30);
             this.txtSmallUnitDiscountPircent.TabIndex = 27;
             this.txtSmallUnitDiscountPircent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -574,7 +575,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtSmallUnitLastWholesale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSmallUnitLastWholesale.Location = new System.Drawing.Point(12, 62);
             this.txtSmallUnitLastWholesale.Name = "txtSmallUnitLastWholesale";
-            this.txtSmallUnitLastWholesale.Size = new System.Drawing.Size(169, 36);
+            this.txtSmallUnitLastWholesale.Size = new System.Drawing.Size(169, 30);
             this.txtSmallUnitLastWholesale.TabIndex = 25;
             this.txtSmallUnitLastWholesale.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -594,7 +595,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtSmallUnitWholesale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSmallUnitWholesale.Location = new System.Drawing.Point(300, 62);
             this.txtSmallUnitWholesale.Name = "txtSmallUnitWholesale";
-            this.txtSmallUnitWholesale.Size = new System.Drawing.Size(180, 36);
+            this.txtSmallUnitWholesale.Size = new System.Drawing.Size(180, 30);
             this.txtSmallUnitWholesale.TabIndex = 23;
             this.txtSmallUnitWholesale.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -614,7 +615,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtSmallUnitHalfWholesale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSmallUnitHalfWholesale.Location = new System.Drawing.Point(605, 62);
             this.txtSmallUnitHalfWholesale.Name = "txtSmallUnitHalfWholesale";
-            this.txtSmallUnitHalfWholesale.Size = new System.Drawing.Size(191, 36);
+            this.txtSmallUnitHalfWholesale.Size = new System.Drawing.Size(191, 30);
             this.txtSmallUnitHalfWholesale.TabIndex = 21;
             this.txtSmallUnitHalfWholesale.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -634,7 +635,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtSmallUnitSectional.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSmallUnitSectional.Location = new System.Drawing.Point(915, 62);
             this.txtSmallUnitSectional.Name = "txtSmallUnitSectional";
-            this.txtSmallUnitSectional.Size = new System.Drawing.Size(180, 36);
+            this.txtSmallUnitSectional.Size = new System.Drawing.Size(180, 30);
             this.txtSmallUnitSectional.TabIndex = 16;
             this.txtSmallUnitSectional.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -655,7 +656,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.cmbSmallUnit.FormattingEnabled = true;
             this.cmbSmallUnit.Location = new System.Drawing.Point(605, 26);
             this.cmbSmallUnit.Name = "cmbSmallUnit";
-            this.cmbSmallUnit.Size = new System.Drawing.Size(490, 37);
+            this.cmbSmallUnit.Size = new System.Drawing.Size(490, 30);
             this.cmbSmallUnit.TabIndex = 12;
             // 
             // lblSmallUnit
@@ -723,7 +724,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtTaxValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTaxValue.Location = new System.Drawing.Point(12, 276);
             this.txtTaxValue.Name = "txtTaxValue";
-            this.txtTaxValue.Size = new System.Drawing.Size(468, 36);
+            this.txtTaxValue.Size = new System.Drawing.Size(468, 30);
             this.txtTaxValue.TabIndex = 22;
             this.txtTaxValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -743,7 +744,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtTaxPircent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTaxPircent.Location = new System.Drawing.Point(12, 240);
             this.txtTaxPircent.Name = "txtTaxPircent";
-            this.txtTaxPircent.Size = new System.Drawing.Size(468, 36);
+            this.txtTaxPircent.Size = new System.Drawing.Size(468, 30);
             this.txtTaxPircent.TabIndex = 20;
             this.txtTaxPircent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -763,7 +764,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtDiscountValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDiscountValue.Location = new System.Drawing.Point(12, 204);
             this.txtDiscountValue.Name = "txtDiscountValue";
-            this.txtDiscountValue.Size = new System.Drawing.Size(468, 36);
+            this.txtDiscountValue.Size = new System.Drawing.Size(468, 30);
             this.txtDiscountValue.TabIndex = 18;
             this.txtDiscountValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -783,7 +784,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtDiscountPircent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDiscountPircent.Location = new System.Drawing.Point(12, 168);
             this.txtDiscountPircent.Name = "txtDiscountPircent";
-            this.txtDiscountPircent.Size = new System.Drawing.Size(468, 36);
+            this.txtDiscountPircent.Size = new System.Drawing.Size(468, 30);
             this.txtDiscountPircent.TabIndex = 16;
             this.txtDiscountPircent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -803,7 +804,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtLastWholesale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLastWholesale.Location = new System.Drawing.Point(12, 132);
             this.txtLastWholesale.Name = "txtLastWholesale";
-            this.txtLastWholesale.Size = new System.Drawing.Size(468, 36);
+            this.txtLastWholesale.Size = new System.Drawing.Size(468, 30);
             this.txtLastWholesale.TabIndex = 14;
             this.txtLastWholesale.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -823,7 +824,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtWholesale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtWholesale.Location = new System.Drawing.Point(12, 96);
             this.txtWholesale.Name = "txtWholesale";
-            this.txtWholesale.Size = new System.Drawing.Size(468, 36);
+            this.txtWholesale.Size = new System.Drawing.Size(468, 30);
             this.txtWholesale.TabIndex = 12;
             this.txtWholesale.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -843,7 +844,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtHalfWholesale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHalfWholesale.Location = new System.Drawing.Point(12, 63);
             this.txtHalfWholesale.Name = "txtHalfWholesale";
-            this.txtHalfWholesale.Size = new System.Drawing.Size(468, 36);
+            this.txtHalfWholesale.Size = new System.Drawing.Size(468, 30);
             this.txtHalfWholesale.TabIndex = 10;
             this.txtHalfWholesale.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -863,7 +864,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtSectional.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSectional.Location = new System.Drawing.Point(12, 27);
             this.txtSectional.Name = "txtSectional";
-            this.txtSectional.Size = new System.Drawing.Size(468, 36);
+            this.txtSectional.Size = new System.Drawing.Size(468, 30);
             this.txtSectional.TabIndex = 8;
             this.txtSectional.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -909,7 +910,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.cmbItemState.FormattingEnabled = true;
             this.cmbItemState.Location = new System.Drawing.Point(6, 240);
             this.cmbItemState.Name = "cmbItemState";
-            this.cmbItemState.Size = new System.Drawing.Size(490, 37);
+            this.cmbItemState.Size = new System.Drawing.Size(490, 30);
             this.cmbItemState.TabIndex = 18;
             // 
             // chkItemState
@@ -928,7 +929,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtStartedBalance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtStartedBalance.Location = new System.Drawing.Point(6, 204);
             this.txtStartedBalance.Name = "txtStartedBalance";
-            this.txtStartedBalance.Size = new System.Drawing.Size(490, 36);
+            this.txtStartedBalance.Size = new System.Drawing.Size(490, 30);
             this.txtStartedBalance.TabIndex = 16;
             this.txtStartedBalance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -948,7 +949,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtItemName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtItemName.Location = new System.Drawing.Point(6, 168);
             this.txtItemName.Name = "txtItemName";
-            this.txtItemName.Size = new System.Drawing.Size(490, 36);
+            this.txtItemName.Size = new System.Drawing.Size(490, 30);
             this.txtItemName.TabIndex = 14;
             this.txtItemName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -969,7 +970,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.cmbItemSection.FormattingEnabled = true;
             this.cmbItemSection.Location = new System.Drawing.Point(6, 132);
             this.cmbItemSection.Name = "cmbItemSection";
-            this.cmbItemSection.Size = new System.Drawing.Size(490, 37);
+            this.cmbItemSection.Size = new System.Drawing.Size(490, 30);
             this.cmbItemSection.TabIndex = 12;
             // 
             // lblSection
@@ -989,7 +990,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.cmbItemGroup.FormattingEnabled = true;
             this.cmbItemGroup.Location = new System.Drawing.Point(6, 96);
             this.cmbItemGroup.Name = "cmbItemGroup";
-            this.cmbItemGroup.Size = new System.Drawing.Size(490, 37);
+            this.cmbItemGroup.Size = new System.Drawing.Size(490, 30);
             this.cmbItemGroup.TabIndex = 10;
             // 
             // lblGroup
@@ -1009,7 +1010,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.cmbSerialNum.FormattingEnabled = true;
             this.cmbSerialNum.Location = new System.Drawing.Point(6, 63);
             this.cmbSerialNum.Name = "cmbSerialNum";
-            this.cmbSerialNum.Size = new System.Drawing.Size(490, 37);
+            this.cmbSerialNum.Size = new System.Drawing.Size(490, 30);
             this.cmbSerialNum.TabIndex = 8;
             // 
             // txtItemBarcode
@@ -1017,7 +1018,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txtItemBarcode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtItemBarcode.Location = new System.Drawing.Point(6, 27);
             this.txtItemBarcode.Name = "txtItemBarcode";
-            this.txtItemBarcode.Size = new System.Drawing.Size(490, 36);
+            this.txtItemBarcode.Size = new System.Drawing.Size(490, 30);
             this.txtItemBarcode.TabIndex = 6;
             this.txtItemBarcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1056,7 +1057,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             // frmProductCard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1220, 831);
@@ -1068,6 +1069,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.Name = "frmProductCard";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "كارت الصنف";
             this.Load += new System.EventHandler(this.frmProductCard_Load);
             this.pnlMain.ResumeLayout(false);

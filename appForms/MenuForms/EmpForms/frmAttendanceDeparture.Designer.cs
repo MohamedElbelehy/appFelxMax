@@ -123,7 +123,7 @@ namespace appFelxMax.appForms.MenuForms.EmpForms
             this.cmbOperate.FormattingEnabled = true;
             this.cmbOperate.Location = new System.Drawing.Point(0, 110);
             this.cmbOperate.Name = "cmbOperate";
-            this.cmbOperate.Size = new System.Drawing.Size(304, 37);
+            this.cmbOperate.Size = new System.Drawing.Size(304, 30);
             this.cmbOperate.TabIndex = 16;
             // 
             // cmbEmpName
@@ -133,9 +133,9 @@ namespace appFelxMax.appForms.MenuForms.EmpForms
             this.cmbEmpName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEmpName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbEmpName.FormattingEnabled = true;
-            this.cmbEmpName.Location = new System.Drawing.Point(0, 147);
+            this.cmbEmpName.Location = new System.Drawing.Point(0, 140);
             this.cmbEmpName.Name = "cmbEmpName";
-            this.cmbEmpName.Size = new System.Drawing.Size(304, 37);
+            this.cmbEmpName.Size = new System.Drawing.Size(304, 30);
             this.cmbEmpName.TabIndex = 17;
             // 
             // lblInfo
@@ -143,7 +143,7 @@ namespace appFelxMax.appForms.MenuForms.EmpForms
             this.lblInfo.BackColor = System.Drawing.Color.Gray;
             this.lblInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblInfo.ForeColor = System.Drawing.Color.White;
-            this.lblInfo.Location = new System.Drawing.Point(0, 184);
+            this.lblInfo.Location = new System.Drawing.Point(0, 170);
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(304, 30);
             this.lblInfo.TabIndex = 18;
@@ -154,7 +154,7 @@ namespace appFelxMax.appForms.MenuForms.EmpForms
             // 
             this.lblDateTime.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblDateTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.lblDateTime.Location = new System.Drawing.Point(0, 214);
+            this.lblDateTime.Location = new System.Drawing.Point(0, 200);
             this.lblDateTime.Name = "lblDateTime";
             this.lblDateTime.Size = new System.Drawing.Size(304, 30);
             this.lblDateTime.TabIndex = 19;
@@ -165,7 +165,7 @@ namespace appFelxMax.appForms.MenuForms.EmpForms
             // 
             this.lblDelayPeriod.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblDelayPeriod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.lblDelayPeriod.Location = new System.Drawing.Point(0, 244);
+            this.lblDelayPeriod.Location = new System.Drawing.Point(0, 230);
             this.lblDelayPeriod.Name = "lblDelayPeriod";
             this.lblDelayPeriod.Size = new System.Drawing.Size(304, 30);
             this.lblDelayPeriod.TabIndex = 20;
@@ -174,7 +174,7 @@ namespace appFelxMax.appForms.MenuForms.EmpForms
             // 
             // frmAttendanceDeparture
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(304, 261);
@@ -195,6 +195,7 @@ namespace appFelxMax.appForms.MenuForms.EmpForms
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "الحضور والانصراف ";
             this.pnlOperations.ResumeLayout(false);
             this.ResumeLayout(false);

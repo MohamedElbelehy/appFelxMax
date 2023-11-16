@@ -1,4 +1,6 @@
 ﻿using appFelxMax.appForms.MainForms;
+using appFelxMax.appForms.MenuForms.BillForms;
+using appFelxMax.appForms.MenuForms.Program_initialization;
 using System;
 using System.Windows.Forms;
 
@@ -14,7 +16,7 @@ namespace appFelxMax
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin()) ;
+            Application.Run(new frmPruchasesBill()) ;
         }
     }
 }

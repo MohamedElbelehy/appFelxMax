@@ -199,7 +199,7 @@ namespace appFelxMax.appForms.ServerForms
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmServerSettings";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "اعدادات السيرفر";
             this.ResumeLayout(false);
             this.PerformLayout();

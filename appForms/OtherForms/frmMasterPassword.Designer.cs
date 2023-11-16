@@ -100,7 +100,7 @@ namespace appFelxMax.appForms.OtherForms
             this.Name = "frmMasterPassword";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "كلمة المرور";
             ((System.ComponentModel.ISupportInitialize)(this.epPassword)).EndInit();
             this.ResumeLayout(false);

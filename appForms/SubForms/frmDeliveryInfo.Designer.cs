@@ -207,7 +207,7 @@ namespace appFelxMax.appForms.SubForms
             this.Name = "frmDeliveryInfo";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "بيانات التوصيل";
             this.pnlOperations.ResumeLayout(false);
             this.pnlValue.ResumeLayout(false);

@@ -30,7 +30,6 @@ namespace appFelxMax.appForms.SubForms
         private void InitializeComponent()
         {
             this.pnlOperations = new System.Windows.Forms.Panel();
-            this.btnESC = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
             this.pnlMain = new System.Windows.Forms.Panel();
@@ -59,6 +58,7 @@ namespace appFelxMax.appForms.SubForms
             this.lblName = new System.Windows.Forms.Label();
             this.lblCode = new System.Windows.Forms.Label();
             this.lblHead = new System.Windows.Forms.Label();
+            this.btnESC = new System.Windows.Forms.Button();
             this.pnlOperations.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.SuspendLayout();
@@ -74,23 +74,6 @@ namespace appFelxMax.appForms.SubForms
             this.pnlOperations.Name = "pnlOperations";
             this.pnlOperations.Size = new System.Drawing.Size(584, 40);
             this.pnlOperations.TabIndex = 15;
-            // 
-            // btnESC
-            // 
-            this.btnESC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnESC.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnESC.FlatAppearance.BorderSize = 0;
-            this.btnESC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnESC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnESC.ForeColor = System.Drawing.Color.Black;
-            this.btnESC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnESC.Location = new System.Drawing.Point(310, 3);
-            this.btnESC.Name = "btnESC";
-            this.btnESC.Size = new System.Drawing.Size(90, 30);
-            this.btnESC.TabIndex = 14;
-            this.btnESC.Text = "خروج - ESC";
-            this.btnESC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnESC.UseVisualStyleBackColor = false;
             // 
             // btnSave
             // 
@@ -425,6 +408,24 @@ namespace appFelxMax.appForms.SubForms
             this.lblHead.Text = "إضافة مورد ";
             this.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnESC
+            // 
+            this.btnESC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnESC.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnESC.FlatAppearance.BorderSize = 0;
+            this.btnESC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnESC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnESC.ForeColor = System.Drawing.Color.Black;
+            this.btnESC.Image = global::appFelxMax.Properties.Resources.EscColor;
+            this.btnESC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnESC.Location = new System.Drawing.Point(310, 3);
+            this.btnESC.Name = "btnESC";
+            this.btnESC.Size = new System.Drawing.Size(90, 30);
+            this.btnESC.TabIndex = 14;
+            this.btnESC.Text = "خروج";
+            this.btnESC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnESC.UseVisualStyleBackColor = false;
+            // 
             // frmAdd_Vendor
             // 
             this.AcceptButton = this.btnSave;
@@ -457,7 +458,6 @@ namespace appFelxMax.appForms.SubForms
 
         private System.Windows.Forms.Label lblHead;
         private System.Windows.Forms.Panel pnlOperations;
-        private System.Windows.Forms.Button btnESC;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Panel pnlMain;
@@ -485,5 +485,6 @@ namespace appFelxMax.appForms.SubForms
         private System.Windows.Forms.Label lblCode;
         private System.Windows.Forms.TextBox txtVend_ID;
         private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Button btnESC;
     }
 }

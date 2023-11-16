@@ -69,5 +69,10 @@ namespace appFelxMax.appForms.MainForms
                 frmInstallment.ShowDialog();
             }
         }
+
+        private void pnlFooter_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

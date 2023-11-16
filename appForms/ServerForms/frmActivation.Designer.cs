@@ -39,8 +39,8 @@ namespace appFelxMax.appForms.ServerForms
             this.txtOff = new System.Windows.Forms.TextBox();
             this.lblOn = new System.Windows.Forms.Label();
             this.txtOn = new System.Windows.Forms.TextBox();
-            this.lblHead = new System.Windows.Forms.Label();
             this.btnActivate = new System.Windows.Forms.Button();
+            this.lblHead = new System.Windows.Forms.Label();
             this.floMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -132,6 +132,19 @@ namespace appFelxMax.appForms.ServerForms
             this.txtOn.TabIndex = 5;
             this.txtOn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // btnActivate
+            // 
+            this.btnActivate.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnActivate.Image = global::appFelxMax.Properties.Resources.DoneColored;
+            this.btnActivate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnActivate.Location = new System.Drawing.Point(3, 111);
+            this.btnActivate.Name = "btnActivate";
+            this.btnActivate.Padding = new System.Windows.Forms.Padding(130, 0, 150, 0);
+            this.btnActivate.Size = new System.Drawing.Size(369, 35);
+            this.btnActivate.TabIndex = 6;
+            this.btnActivate.Text = "تفعيل";
+            this.btnActivate.UseVisualStyleBackColor = false;
+            // 
             // lblHead
             // 
             this.lblHead.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -147,19 +160,6 @@ namespace appFelxMax.appForms.ServerForms
             this.lblHead.TabIndex = 8;
             this.lblHead.Text = "تفعيل البرنامج";
             this.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnActivate
-            // 
-            this.btnActivate.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnActivate.Image = global::appFelxMax.Properties.Resources.DoneColored;
-            this.btnActivate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnActivate.Location = new System.Drawing.Point(3, 111);
-            this.btnActivate.Name = "btnActivate";
-            this.btnActivate.Padding = new System.Windows.Forms.Padding(130, 0, 150, 0);
-            this.btnActivate.Size = new System.Drawing.Size(369, 35);
-            this.btnActivate.TabIndex = 6;
-            this.btnActivate.Text = "تفعيل";
-            this.btnActivate.UseVisualStyleBackColor = false;
             // 
             // frmActivation
             // 
@@ -177,7 +177,7 @@ namespace appFelxMax.appForms.ServerForms
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmActivation";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "تفعيل البرنامج";
             this.Load += new System.EventHandler(this.frmActivation_Load);
             this.floMain.ResumeLayout(false);

@@ -32,15 +32,9 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomers));
             this.pnlOperations = new System.Windows.Forms.Panel();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.lblSearch = new System.Windows.Forms.Label();
             this.cmbSort = new System.Windows.Forms.ComboBox();
-            this.lblFilter = new System.Windows.Forms.Label();
-            this.btnPrint = new System.Windows.Forms.Button();
-            this.btnExcel = new System.Windows.Forms.Button();
-            this.btnNew = new System.Windows.Forms.Button();
             this.dgvNameList = new System.Windows.Forms.DataGridView();
             this.pnlFooter = new System.Windows.Forms.Panel();
-            this.btnSave = new System.Windows.Forms.Button();
             this.pnlSafe = new System.Windows.Forms.Panel();
             this.cmbSafe = new System.Windows.Forms.ComboBox();
             this.lblSafe = new System.Windows.Forms.Label();
@@ -58,6 +52,13 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.lblDoOperations = new System.Windows.Forms.Label();
             this.pnlData = new System.Windows.Forms.Panel();
             this.dgvData = new System.Windows.Forms.DataGridView();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnESC = new System.Windows.Forms.Button();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.lblFilter = new System.Windows.Forms.Label();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.btnExcel = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
             this.lblHead = new System.Windows.Forms.Label();
             this.pnlOperations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNameList)).BeginInit();
@@ -74,6 +75,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             // pnlOperations
             // 
             this.pnlOperations.BackColor = System.Drawing.Color.LightGray;
+            this.pnlOperations.Controls.Add(this.btnESC);
             this.pnlOperations.Controls.Add(this.txtSearch);
             this.pnlOperations.Controls.Add(this.lblSearch);
             this.pnlOperations.Controls.Add(this.cmbSort);
@@ -93,20 +95,10 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.txtSearch.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSearch.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(446, 6);
+            this.txtSearch.Location = new System.Drawing.Point(355, 6);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(218, 27);
             this.txtSearch.TabIndex = 18;
-            // 
-            // lblSearch
-            // 
-            this.lblSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSearch.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lblSearch.Image = global::appFelxMax.Properties.Resources.SearchB;
-            this.lblSearch.Location = new System.Drawing.Point(670, 3);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(30, 30);
-            this.lblSearch.TabIndex = 19;
             // 
             // cmbSort
             // 
@@ -120,74 +112,10 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             "الرصيد",
             "مدة التأخير",
             "اخر تعامل"});
-            this.cmbSort.Location = new System.Drawing.Point(706, 3);
+            this.cmbSort.Location = new System.Drawing.Point(615, 3);
             this.cmbSort.Name = "cmbSort";
             this.cmbSort.Size = new System.Drawing.Size(158, 30);
             this.cmbSort.TabIndex = 17;
-            // 
-            // lblFilter
-            // 
-            this.lblFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblFilter.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lblFilter.Image = global::appFelxMax.Properties.Resources.FilterColor;
-            this.lblFilter.Location = new System.Drawing.Point(870, 3);
-            this.lblFilter.Name = "lblFilter";
-            this.lblFilter.Size = new System.Drawing.Size(35, 30);
-            this.lblFilter.TabIndex = 16;
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPrint.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnPrint.FlatAppearance.BorderSize = 0;
-            this.btnPrint.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrint.ForeColor = System.Drawing.Color.Black;
-            this.btnPrint.Image = global::appFelxMax.Properties.Resources.PrinterColor;
-            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrint.Location = new System.Drawing.Point(911, 3);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(100, 30);
-            this.btnPrint.TabIndex = 15;
-            this.btnPrint.Text = "طباعة";
-            this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPrint.UseVisualStyleBackColor = false;
-            // 
-            // btnExcel
-            // 
-            this.btnExcel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExcel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnExcel.FlatAppearance.BorderSize = 0;
-            this.btnExcel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcel.ForeColor = System.Drawing.Color.Black;
-            this.btnExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExcel.Image")));
-            this.btnExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcel.Location = new System.Drawing.Point(1017, 3);
-            this.btnExcel.Name = "btnExcel";
-            this.btnExcel.Size = new System.Drawing.Size(100, 30);
-            this.btnExcel.TabIndex = 14;
-            this.btnExcel.Text = "Excel";
-            this.btnExcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExcel.UseVisualStyleBackColor = false;
-            // 
-            // btnNew
-            // 
-            this.btnNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNew.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnNew.FlatAppearance.BorderSize = 0;
-            this.btnNew.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNew.ForeColor = System.Drawing.Color.Black;
-            this.btnNew.Image = global::appFelxMax.Properties.Resources.AddColor;
-            this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNew.Location = new System.Drawing.Point(1123, 3);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(100, 30);
-            this.btnNew.TabIndex = 12;
-            this.btnNew.Text = "جديد - F1";
-            this.btnNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNew.UseVisualStyleBackColor = false;
             // 
             // dgvNameList
             // 
@@ -216,24 +144,6 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.pnlFooter.Name = "pnlFooter";
             this.pnlFooter.Size = new System.Drawing.Size(911, 60);
             this.pnlFooter.TabIndex = 17;
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Image = global::appFelxMax.Properties.Resources.DoneW;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(0, 0);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(91, 60);
-            this.btnSave.TabIndex = 19;
-            this.btnSave.Text = "حفظ - F2";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.UseVisualStyleBackColor = false;
             // 
             // pnlSafe
             // 
@@ -420,6 +330,116 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.dgvData.Size = new System.Drawing.Size(911, 724);
             this.dgvData.TabIndex = 17;
             // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Image = global::appFelxMax.Properties.Resources.DoneW;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(0, 0);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(91, 60);
+            this.btnSave.TabIndex = 19;
+            this.btnSave.Text = "حفظ - F2";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.UseVisualStyleBackColor = false;
+            // 
+            // btnESC
+            // 
+            this.btnESC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnESC.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnESC.FlatAppearance.BorderSize = 0;
+            this.btnESC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnESC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnESC.ForeColor = System.Drawing.Color.Black;
+            this.btnESC.Image = global::appFelxMax.Properties.Resources.EscColor;
+            this.btnESC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnESC.Location = new System.Drawing.Point(815, 3);
+            this.btnESC.Name = "btnESC";
+            this.btnESC.Size = new System.Drawing.Size(90, 30);
+            this.btnESC.TabIndex = 20;
+            this.btnESC.Text = "خروج";
+            this.btnESC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnESC.UseVisualStyleBackColor = false;
+            // 
+            // lblSearch
+            // 
+            this.lblSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSearch.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblSearch.Image = global::appFelxMax.Properties.Resources.SearchColor;
+            this.lblSearch.Location = new System.Drawing.Point(579, 3);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(30, 30);
+            this.lblSearch.TabIndex = 19;
+            // 
+            // lblFilter
+            // 
+            this.lblFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblFilter.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblFilter.Image = global::appFelxMax.Properties.Resources.FilterColor;
+            this.lblFilter.Location = new System.Drawing.Point(779, 3);
+            this.lblFilter.Name = "lblFilter";
+            this.lblFilter.Size = new System.Drawing.Size(30, 30);
+            this.lblFilter.TabIndex = 16;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPrint.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPrint.FlatAppearance.BorderSize = 0;
+            this.btnPrint.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrint.ForeColor = System.Drawing.Color.Black;
+            this.btnPrint.Image = global::appFelxMax.Properties.Resources.PrinterColor;
+            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrint.Location = new System.Drawing.Point(911, 3);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(100, 30);
+            this.btnPrint.TabIndex = 15;
+            this.btnPrint.Text = "طباعة";
+            this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPrint.UseVisualStyleBackColor = false;
+            // 
+            // btnExcel
+            // 
+            this.btnExcel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnExcel.FlatAppearance.BorderSize = 0;
+            this.btnExcel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcel.ForeColor = System.Drawing.Color.Black;
+            this.btnExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExcel.Image")));
+            this.btnExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExcel.Location = new System.Drawing.Point(1017, 3);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(100, 30);
+            this.btnExcel.TabIndex = 14;
+            this.btnExcel.Text = "Excel";
+            this.btnExcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExcel.UseVisualStyleBackColor = false;
+            // 
+            // btnNew
+            // 
+            this.btnNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNew.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnNew.FlatAppearance.BorderSize = 0;
+            this.btnNew.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNew.ForeColor = System.Drawing.Color.Black;
+            this.btnNew.Image = global::appFelxMax.Properties.Resources.AddColor;
+            this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNew.Location = new System.Drawing.Point(1123, 3);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(100, 30);
+            this.btnNew.TabIndex = 12;
+            this.btnNew.Text = "جديد - F1";
+            this.btnNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNew.UseVisualStyleBackColor = false;
+            // 
             // lblHead
             // 
             this.lblHead.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -455,6 +475,7 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
             this.Name = "frmCustomers";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCustomers";
             this.pnlOperations.ResumeLayout(false);
             this.pnlOperations.PerformLayout();
@@ -504,5 +525,6 @@ namespace appFelxMax.appForms.MenuForms.AccountForms
         private System.Windows.Forms.Label lblDoOperations;
         private System.Windows.Forms.Panel pnlData;
         private System.Windows.Forms.DataGridView dgvData;
+        private System.Windows.Forms.Button btnESC;
     }
 }

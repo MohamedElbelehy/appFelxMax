@@ -31,13 +31,11 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
         {
             this.lblHead = new System.Windows.Forms.Label();
             this.pnlData = new System.Windows.Forms.Panel();
-            this.cmbType = new System.Windows.Forms.ComboBox();
             this.chk_State = new System.Windows.Forms.CheckBox();
             this.lblUnit_State = new System.Windows.Forms.Label();
             this.txt_Name = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             this.txt_ID = new System.Windows.Forms.TextBox();
-            this.lblType = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
             this.pnlOperations = new System.Windows.Forms.Panel();
             this.btnESC = new System.Windows.Forms.Button();
@@ -70,33 +68,17 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // pnlData
             // 
             this.pnlData.BackColor = System.Drawing.SystemColors.Window;
-            this.pnlData.Controls.Add(this.cmbType);
             this.pnlData.Controls.Add(this.chk_State);
             this.pnlData.Controls.Add(this.lblUnit_State);
             this.pnlData.Controls.Add(this.txt_Name);
             this.pnlData.Controls.Add(this.lblName);
             this.pnlData.Controls.Add(this.txt_ID);
-            this.pnlData.Controls.Add(this.lblType);
             this.pnlData.Controls.Add(this.lblID);
             this.pnlData.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlData.Location = new System.Drawing.Point(0, 41);
             this.pnlData.Name = "pnlData";
-            this.pnlData.Size = new System.Drawing.Size(650, 80);
+            this.pnlData.Size = new System.Drawing.Size(650, 44);
             this.pnlData.TabIndex = 16;
-            // 
-            // cmbType
-            // 
-            this.cmbType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbType.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbType.FormattingEnabled = true;
-            this.cmbType.Items.AddRange(new object[] {
-            "كبري",
-            "صغرى"});
-            this.cmbType.Location = new System.Drawing.Point(405, 39);
-            this.cmbType.Name = "cmbType";
-            this.cmbType.Size = new System.Drawing.Size(195, 30);
-            this.cmbType.TabIndex = 27;
             // 
             // chk_State
             // 
@@ -105,7 +87,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.chk_State.Checked = true;
             this.chk_State.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chk_State.ForeColor = System.Drawing.Color.Green;
-            this.chk_State.Location = new System.Drawing.Point(298, 40);
+            this.chk_State.Location = new System.Drawing.Point(12, 7);
             this.chk_State.Name = "chk_State";
             this.chk_State.Size = new System.Drawing.Size(51, 26);
             this.chk_State.TabIndex = 26;
@@ -118,7 +100,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.lblUnit_State.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblUnit_State.AutoSize = true;
             this.lblUnit_State.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F);
-            this.lblUnit_State.Location = new System.Drawing.Point(353, 42);
+            this.lblUnit_State.Location = new System.Drawing.Point(67, 9);
             this.lblUnit_State.Name = "lblUnit_State";
             this.lblUnit_State.Size = new System.Drawing.Size(32, 22);
             this.lblUnit_State.TabIndex = 25;
@@ -129,9 +111,9 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txt_Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Name.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txt_Name.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Name.Location = new System.Drawing.Point(104, 10);
+            this.txt_Name.Location = new System.Drawing.Point(105, 9);
             this.txt_Name.Name = "txt_Name";
-            this.txt_Name.Size = new System.Drawing.Size(245, 23);
+            this.txt_Name.Size = new System.Drawing.Size(327, 23);
             this.txt_Name.TabIndex = 24;
             // 
             // lblName
@@ -139,7 +121,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F);
-            this.lblName.Location = new System.Drawing.Point(353, 10);
+            this.lblName.Location = new System.Drawing.Point(436, 9);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(30, 22);
             this.lblName.TabIndex = 23;
@@ -150,29 +132,18 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.txt_ID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_ID.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txt_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_ID.Location = new System.Drawing.Point(405, 10);
+            this.txt_ID.Location = new System.Drawing.Point(472, 9);
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.ReadOnly = true;
-            this.txt_ID.Size = new System.Drawing.Size(195, 23);
+            this.txt_ID.Size = new System.Drawing.Size(134, 23);
             this.txt_ID.TabIndex = 21;
-            // 
-            // lblType
-            // 
-            this.lblType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblType.AutoSize = true;
-            this.lblType.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F);
-            this.lblType.Location = new System.Drawing.Point(606, 42);
-            this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(25, 22);
-            this.lblType.TabIndex = 20;
-            this.lblType.Text = "نوع";
             // 
             // lblID
             // 
             this.lblID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Tanseek Modern Pro Arabic", 12F);
-            this.lblID.Location = new System.Drawing.Point(606, 10);
+            this.lblID.Location = new System.Drawing.Point(612, 9);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(26, 22);
             this.lblID.TabIndex = 19;
@@ -185,7 +156,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.pnlOperations.Controls.Add(this.btnSave);
             this.pnlOperations.Controls.Add(this.btnNew);
             this.pnlOperations.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlOperations.Location = new System.Drawing.Point(0, 121);
+            this.pnlOperations.Location = new System.Drawing.Point(0, 85);
             this.pnlOperations.Name = "pnlOperations";
             this.pnlOperations.Size = new System.Drawing.Size(650, 40);
             this.pnlOperations.TabIndex = 21;
@@ -250,9 +221,9 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             // 
             this.pnlDGV.Controls.Add(this.dgv);
             this.pnlDGV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDGV.Location = new System.Drawing.Point(0, 161);
+            this.pnlDGV.Location = new System.Drawing.Point(0, 125);
             this.pnlDGV.Name = "pnlDGV";
-            this.pnlDGV.Size = new System.Drawing.Size(650, 239);
+            this.pnlDGV.Size = new System.Drawing.Size(650, 275);
             this.pnlDGV.TabIndex = 22;
             // 
             // dgv
@@ -267,11 +238,12 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
             this.dgv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dgv.Size = new System.Drawing.Size(650, 239);
+            this.dgv.Size = new System.Drawing.Size(650, 275);
             this.dgv.TabIndex = 19;
             // 
             // frmUnits
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(650, 400);
@@ -286,6 +258,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
             this.Name = "frmUnits";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "تعريف الوحدات";
             this.Load += new System.EventHandler(this.frmUnits_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmUnits_KeyDown);
@@ -307,9 +280,7 @@ namespace appFelxMax.appForms.MenuForms.Program_initialization
         private System.Windows.Forms.TextBox txt_Name;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.TextBox txt_ID;
-        private System.Windows.Forms.Label lblType;
         private System.Windows.Forms.Label lblID;
-        private System.Windows.Forms.ComboBox cmbType;
         private System.Windows.Forms.Panel pnlOperations;
         private System.Windows.Forms.Button btnESC;
         private System.Windows.Forms.Button btnSave;

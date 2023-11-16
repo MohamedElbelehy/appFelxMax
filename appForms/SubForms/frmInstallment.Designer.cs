@@ -421,7 +421,7 @@ namespace appFelxMax.appForms.SubForms
             this.Name = "frmInstallment";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "تقسيط المنتجات";
             this.pnlOperations.ResumeLayout(false);
             this.pnlMain.ResumeLayout(false);
